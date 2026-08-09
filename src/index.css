@@ -1,0 +1,136 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------ *
+ * Tokens do "SAÚDE EM JOGO!"
+ * Paleta lida diretamente do mockup (APP Luciana.pdf): cartoon 3D,
+ * azul/verde no logo, acentos em amarelo, coral e lilás na trilha.
+ * ------------------------------------------------------------------ */
+@theme {
+  --color-ceu-50: #f4fbff;
+  --color-ceu-100: #dff2fd;
+  --color-ceu-200: #b8e5fb;
+  --color-ceu-300: #7fd3f9;
+  --color-ceu-400: #4fc3f7;
+  --color-ceu-500: #29aee6;
+  --color-ceu-600: #178dc2;
+  --color-ceu-700: #12709b;
+
+  --color-folha-100: #e4f6e5;
+  --color-folha-200: #c0e9c2;
+  --color-folha-300: #93d896;
+  --color-folha-400: #66bb6a;
+  --color-folha-500: #4a9d4e;
+  --color-folha-600: #367d3a;
+
+  --color-sol-100: #fff4d6;
+  --color-sol-200: #ffe6a3;
+  --color-sol-300: #ffd76b;
+  --color-sol-400: #ffca28;
+  --color-sol-500: #edb100;
+  --color-sol-600: #b98a00;
+
+  --color-coral-100: #ffe6de;
+  --color-coral-200: #ffc7b5;
+  --color-coral-300: #ff9d7f;
+  --color-coral-400: #ff7043;
+  --color-coral-500: #ea4f1d;
+  --color-coral-600: #bd3b0f;
+
+  --color-uva-100: #efe6ff;
+  --color-uva-200: #d9c4ff;
+  --color-uva-300: #bd9bfb;
+  --color-uva-400: #a175f2;
+  --color-uva-500: #8354da;
+  --color-uva-600: #6740b0;
+
+  --color-tinta-400: #7b8794;
+  --color-tinta-600: #4a5560;
+  --color-tinta-900: #1f2933;
+
+  /* Fonte arredondada. Trocar por uma self-hosted (.woff2) mantém o
+     resto do sistema intacto — só esta linha muda. */
+  --font-display:
+    'Baloo 2', 'Fredoka', 'Nunito', ui-rounded, 'Segoe UI Variable Display',
+    'Segoe UI', system-ui, sans-serif;
+  --font-sans:
+    'Nunito', ui-rounded, 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif;
+
+  /* Alvo mínimo de toque: criança de 6 anos com mouse de laboratório. */
+  --spacing-toque: 4rem;
+
+  --radius-bolha: 1.75rem;
+
+  --shadow-elevado: 0 0.5rem 0 0 rgb(0 0 0 / 0.12);
+  --shadow-flutuante: 0 1rem 2rem -0.75rem rgb(23 141 194 / 0.35);
+
+  --ease-pulo: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ------------------------------------------------------------------ *
+ * Base
+ * ------------------------------------------------------------------ */
+@layer base {
+  html {
+    /* Um pouco maior que o padrão: o público-alvo tem 6 a 11 anos. */
+    font-size: 18px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    font-family: var(--font-sans);
+    color: var(--color-tinta-900);
+    background: var(--color-ceu-50);
+    /* Criança arrasta o dedo na tela; o pull-to-refresh atrapalha o
+       drag-and-drop dos jogos. */
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  button {
+    font-family: inherit;
+    touch-action: manipulation;
+  }
+
+  /* Foco sempre visível: o app precisa ser jogável só no teclado. */
+  :focus-visible {
+    outline: 4px solid var(--color-uva-400);
+    outline-offset: 3px;
+    border-radius: 0.5rem;
+  }
+
+  /* Modo Turma: um projetor e a turma inteira jogando junto.
+     Escalar a raiz aumenta texto, botões e alvos de uma vez. */
+  html[data-modo='turma'] {
+    font-size: 26px;
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * Movimento
+ * ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@utility fundo-ceu {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, var(--color-ceu-200), transparent 70%),
+    var(--color-ceu-50);
+}

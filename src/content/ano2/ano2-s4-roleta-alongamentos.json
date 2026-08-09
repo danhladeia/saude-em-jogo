@@ -1,0 +1,93 @@
+{
+  "id": "ano2-s4-roleta-alongamentos",
+  "motor": "roleta",
+  "titulo": "Roleta giratória",
+  "instrucao": "Clique em GIRAR. Onde a roleta parar, é o alongamento que você vai fazer!",
+  "rodadas": 5,
+  "itens": [
+    {
+      "id": "pescoco",
+      "rotulo": "Pescoço",
+      "emoji": "🙂",
+      "instrucao": "Incline a cabeça para o ombro direito, depois para o esquerdo. Bem devagar.",
+      "segundos": 20
+    },
+    {
+      "id": "bracos-alto",
+      "rotulo": "Braços para o alto",
+      "emoji": "🙌",
+      "instrucao": "Estique os dois braços bem alto e cresça o máximo que conseguir.",
+      "segundos": 20
+    },
+    {
+      "id": "ombro",
+      "rotulo": "Ombro",
+      "emoji": "💪",
+      "instrucao": "Passe um braço na frente do peito e puxe com o outro. Troque o lado.",
+      "segundos": 25
+    },
+    {
+      "id": "tronco",
+      "rotulo": "Tronco",
+      "emoji": "🔄",
+      "instrucao": "Com os pés firmes no chão, gire o tronco devagar para um lado e para o outro.",
+      "segundos": 25
+    },
+    {
+      "id": "lateral",
+      "rotulo": "Lateral do corpo",
+      "emoji": "🤸",
+      "instrucao": "Levante um braço e incline o corpo para o lado contrário. Troque.",
+      "segundos": 25
+    },
+    {
+      "id": "perna-tras",
+      "rotulo": "Atrás da perna",
+      "emoji": "🦵",
+      "instrucao": "Sente no chão com as pernas esticadas e tente alcançar a ponta dos pés sem forçar.",
+      "segundos": 25
+    },
+    {
+      "id": "coxa",
+      "rotulo": "Frente da coxa",
+      "emoji": "🦿",
+      "instrucao": "Em pé, dobre uma perna para trás e segure o pé. Troque de perna.",
+      "segundos": 25
+    },
+    {
+      "id": "panturrilha",
+      "rotulo": "Panturrilha",
+      "emoji": "🦶",
+      "instrucao": "Apoie as mãos na parede e estique uma perna para trás, com o calcanhar no chão.",
+      "segundos": 25
+    },
+    {
+      "id": "borboleta",
+      "rotulo": "Borboleta",
+      "emoji": "🦋",
+      "instrucao": "Sente com as solas dos pés juntas e balance os joelhos devagar.",
+      "segundos": 20
+    },
+    {
+      "id": "gato",
+      "rotulo": "Gatinho",
+      "emoji": "🐈",
+      "instrucao": "De quatro apoios, arredonde as costas para cima e depois abaixe devagar.",
+      "segundos": 20
+    },
+    {
+      "id": "maos",
+      "rotulo": "Mãos e punhos",
+      "emoji": "🤲",
+      "instrucao": "Abra e feche as mãos, depois gire os punhos para os dois lados.",
+      "segundos": 15
+    },
+    {
+      "id": "respirar",
+      "rotulo": "Respiração",
+      "emoji": "🌬️",
+      "instrucao": "Puxe o ar pelo nariz contando até 4 e solte pela boca contando até 4.",
+      "segundos": 20
+    }
+  ]
+}

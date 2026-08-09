@@ -1,0 +1,27 @@
+{
+  "id": "ano1-s4-corpo-que-danca",
+  "motor": "corpo-ativo",
+  "titulo": "Corpo que dança",
+  "instrucao": "Copie os movimentos do personagem com o seu corpo!",
+  "bloco": {
+    "titulo": "Corpo que dança",
+    "instrucao": "O personagem vai mostrar um passo de cada vez. Faça junto com ele!",
+    "passos": [
+      { "id": "pular", "rotulo": "Pular", "descricao": "Pule no lugar com os dois pés juntos.", "emoji": "🦘", "segundos": 20 },
+      { "id": "girar", "rotulo": "Girar", "descricao": "Dê uma voltinha devagar, de braços abertos.", "emoji": "🌀", "segundos": 15 },
+      { "id": "esticar", "rotulo": "Esticar os braços", "descricao": "Estique os dois braços bem alto, como se fosse tocar o céu.", "emoji": "🙌", "segundos": 15 },
+      { "id": "levantar", "rotulo": "Levantar", "descricao": "Fique na ponta dos pés e cresça bem alto.", "emoji": "⬆️", "segundos": 15 },
+      { "id": "abaixar", "rotulo": "Abaixar", "descricao": "Agache devagar e fique pequenininho.", "emoji": "⬇️", "segundos": 15 },
+      { "id": "respirar", "rotulo": "Respirar", "descricao": "Puxe o ar pelo nariz e solte devagar pela boca.", "emoji": "🌬️", "segundos": 20 }
+    ],
+    "perguntaEmocao": {
+      "enunciado": "Como você se sentiu dançando?",
+      "opcoes": [
+        { "id": "feliz", "rotulo": "Feliz", "emoji": "😄" },
+        { "id": "animado", "rotulo": "Animado", "emoji": "🤩" },
+        { "id": "cansado", "rotulo": "Cansado", "emoji": "😮‍💨" },
+        { "id": "com-energia", "rotulo": "Com energia", "emoji": "⚡" }
+      ]
+    }
+  }
+}

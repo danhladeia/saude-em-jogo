@@ -1,0 +1,78 @@
+{
+  "id": "ano2-s2-movimente-se",
+  "motor": "quiz",
+  "titulo": "Movimente-se",
+  "instrucao": "Marque as atividades que fazem o corpo se movimentar. Cada acerto dá energia ao personagem!",
+  "feedback": "energia",
+  "perguntas": [
+    {
+      "id": "quais-movimentam",
+      "enunciado": "Quais destas atividades fazem o corpo se movimentar?",
+      "tipo": "multipla",
+      "opcoes": [
+        { "id": "correr", "rotulo": "Correr", "emoji": "🏃", "correta": true },
+        { "id": "nadar", "rotulo": "Nadar", "emoji": "🏊", "correta": true },
+        { "id": "tv", "rotulo": "Assistir TV deitado", "emoji": "📺", "correta": false },
+        { "id": "pular-corda", "rotulo": "Pular corda", "emoji": "🪢", "correta": true }
+      ],
+      "explicacao": "Correr, nadar e pular corda colocam o corpo inteiro em movimento."
+    },
+    {
+      "id": "beneficio-coracao",
+      "enunciado": "O que acontece com o coração quando a gente se movimenta?",
+      "tipo": "unica",
+      "opcoes": [
+        { "id": "forte", "rotulo": "Fica mais forte", "emoji": "❤️", "correta": true },
+        { "id": "para", "rotulo": "Para de bater", "emoji": "🛑", "correta": false },
+        { "id": "nada", "rotulo": "Não muda nada", "emoji": "😐", "correta": false }
+      ],
+      "explicacao": "O coração é um músculo: quanto mais a gente se movimenta, mais forte ele fica."
+    },
+    {
+      "id": "brincadeiras",
+      "enunciado": "Quais brincadeiras são atividade física?",
+      "tipo": "multipla",
+      "opcoes": [
+        { "id": "pique", "rotulo": "Pique-pega", "emoji": "🏃", "correta": true },
+        { "id": "amarelinha", "rotulo": "Amarelinha", "emoji": "🔢", "correta": true },
+        { "id": "celular", "rotulo": "Jogar no celular sentado", "emoji": "📱", "correta": false },
+        { "id": "bicicleta", "rotulo": "Andar de bicicleta", "emoji": "🚲", "correta": true }
+      ],
+      "explicacao": "Brincar correndo, pulando ou pedalando também é atividade física."
+    },
+    {
+      "id": "quanto-tempo",
+      "enunciado": "Quanto tempo por dia uma criança precisa se movimentar?",
+      "tipo": "unica",
+      "opcoes": [
+        { "id": "uma-hora", "rotulo": "Pelo menos 1 hora", "emoji": "⏰", "correta": true },
+        { "id": "cinco-min", "rotulo": "5 minutos", "emoji": "⏱️", "correta": false },
+        { "id": "nenhum", "rotulo": "Nenhum tempo", "emoji": "🚫", "correta": false }
+      ],
+      "explicacao": "O recomendado é pelo menos 1 hora de movimento por dia — e brincar já conta!"
+    },
+    {
+      "id": "beneficios",
+      "enunciado": "O que a atividade física faz pelo nosso corpo?",
+      "tipo": "multipla",
+      "opcoes": [
+        { "id": "energia", "rotulo": "Dá mais energia", "emoji": "⚡", "correta": true },
+        { "id": "sono", "rotulo": "Ajuda a dormir melhor", "emoji": "😴", "correta": true },
+        { "id": "humor", "rotulo": "Deixa mais feliz", "emoji": "😄", "correta": true },
+        { "id": "preguica", "rotulo": "Deixa com preguiça", "emoji": "🦥", "correta": false }
+      ],
+      "explicacao": "Movimentar-se dá energia, melhora o sono e ainda deixa a gente mais feliz."
+    },
+    {
+      "id": "musculos",
+      "enunciado": "O que fica mais forte quando nos movimentamos?",
+      "tipo": "unica",
+      "opcoes": [
+        { "id": "musculos", "rotulo": "Os músculos e os ossos", "emoji": "💪", "correta": true },
+        { "id": "cabelo", "rotulo": "O cabelo", "emoji": "💇", "correta": false },
+        { "id": "unhas", "rotulo": "As unhas", "emoji": "💅", "correta": false }
+      ],
+      "explicacao": "Movimento fortalece músculos e ossos — por isso é tão importante na infância."
+    }
+  ]
+}

@@ -1,0 +1,975 @@
+[
+  {
+    "chave": "0hhhfw5",
+    "texto": "Arraste cada parte do corpo para o lugar certo.",
+    "onde": [
+      "ano1-s1-monte-o-corpo"
+    ]
+  },
+  {
+    "chave": "1kwgea5",
+    "texto": "Toque a cabeça. Coloque as duas mãos na sua cabeça.",
+    "onde": [
+      "ano1-s1-monte-o-corpo/movimento"
+    ]
+  },
+  {
+    "chave": "1ow3hw6",
+    "texto": "Abrace o tronco. Cruze os braços e abrace o seu tronco.",
+    "onde": [
+      "ano1-s1-monte-o-corpo/movimento"
+    ]
+  },
+  {
+    "chave": "1b4t7gh",
+    "texto": "Mexa os braços. Estique os dois braços para os lados e balance.",
+    "onde": [
+      "ano1-s1-monte-o-corpo/movimento"
+    ]
+  },
+  {
+    "chave": "1cztwsd",
+    "texto": "Mexa as pernas. Marche no lugar levantando bem os joelhos.",
+    "onde": [
+      "ano1-s1-monte-o-corpo/movimento"
+    ]
+  },
+  {
+    "chave": "0nnylc0",
+    "texto": "Cabeça",
+    "onde": [
+      "ano1-s1-monte-o-corpo/peça"
+    ]
+  },
+  {
+    "chave": "0cnu72w",
+    "texto": "Tronco",
+    "onde": [
+      "ano1-s1-monte-o-corpo/peça"
+    ]
+  },
+  {
+    "chave": "034u7me",
+    "texto": "Braço direito",
+    "onde": [
+      "ano1-s1-monte-o-corpo/peça"
+    ]
+  },
+  {
+    "chave": "0lot7ia",
+    "texto": "Braço esquerdo",
+    "onde": [
+      "ano1-s1-monte-o-corpo/peça"
+    ]
+  },
+  {
+    "chave": "1xa6s1z",
+    "texto": "Perna direita",
+    "onde": [
+      "ano1-s1-monte-o-corpo/peça"
+    ]
+  },
+  {
+    "chave": "1kmcqyl",
+    "texto": "Perna esquerda",
+    "onde": [
+      "ano1-s1-monte-o-corpo/peça"
+    ]
+  },
+  {
+    "chave": "03on40v",
+    "texto": "Escolha a atitude certa para cuidar do seu corpo.",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas"
+    ]
+  },
+  {
+    "chave": "14gyjvn",
+    "texto": "O que usamos para tomar banho?",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/banho"
+    ]
+  },
+  {
+    "chave": "1r0nc7k",
+    "texto": "De quanto em quanto tempo devemos tomar banho?",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/banho-quando"
+    ]
+  },
+  {
+    "chave": "02hhsjx",
+    "texto": "Banho todos os dias tira o suor e a sujeira que o corpo junta.",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/banho-quando/explicação"
+    ]
+  },
+  {
+    "chave": "1340vdi",
+    "texto": "Sabonete e água limpam o corpo e tiram os germes.",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/banho/explicação"
+    ]
+  },
+  {
+    "chave": "020b7ph",
+    "texto": "O que usamos para lavar o cabelo?",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/cabelo"
+    ]
+  },
+  {
+    "chave": "1cobo4e",
+    "texto": "O xampu limpa o cabelo e o couro cabeludo.",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/cabelo/explicação"
+    ]
+  },
+  {
+    "chave": "0x35aa8",
+    "texto": "Quais destes cuidados deixam o corpo saudável?",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/cuidados"
+    ]
+  },
+  {
+    "chave": "1k43776",
+    "texto": "Cuidar do corpo é um hábito de todo dia.",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/cuidados/explicação"
+    ]
+  },
+  {
+    "chave": "0ocu1of",
+    "texto": "A escova de dentes pode ser dividida com o amigo?",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/escova-de-quem"
+    ]
+  },
+  {
+    "chave": "0w7sibj",
+    "texto": "Cada pessoa tem a sua escova. Dividir passa germes de uma boca para a outra.",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/escova-de-quem/explicação"
+    ]
+  },
+  {
+    "chave": "01uue0e",
+    "texto": "Quantas vezes por dia devemos escovar os dentes?",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/escovar-quantas"
+    ]
+  },
+  {
+    "chave": "0o75uni",
+    "texto": "O certo é escovar depois de cada refeição, pelo menos 3 vezes por dia.",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/escovar-quantas/explicação"
+    ]
+  },
+  {
+    "chave": "0wixa7w",
+    "texto": "Quando precisamos lavar as mãos?",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/lavar-maos"
+    ]
+  },
+  {
+    "chave": "1o0nsow",
+    "texto": "Mãos limpas evitam que os germes entrem no nosso corpo.",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/lavar-maos/explicação"
+    ]
+  },
+  {
+    "chave": "1lm4it1",
+    "texto": "O que fazemos com as unhas para cuidar do corpo?",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/unhas"
+    ]
+  },
+  {
+    "chave": "0y1udgt",
+    "texto": "Unhas grandes guardam sujeira embaixo. Cortadas e limpas é melhor.",
+    "onde": [
+      "ano1-s2-jogo-de-escolhas/unhas/explicação"
+    ]
+  },
+  {
+    "chave": "0ow2noe",
+    "texto": "Arraste cada rostinho para o sentimento certo.",
+    "onde": [
+      "ano1-s3-como-me-sinto"
+    ]
+  },
+  {
+    "chave": "0w271f4",
+    "texto": "Faça alegria. Sorria bem grande e levante os braços.",
+    "onde": [
+      "ano1-s3-como-me-sinto/movimento"
+    ]
+  },
+  {
+    "chave": "0lmmbms",
+    "texto": "Faça surpresa. Abra bem a boca e arregale os olhos.",
+    "onde": [
+      "ano1-s3-como-me-sinto/movimento"
+    ]
+  },
+  {
+    "chave": "15k9akp",
+    "texto": "Faça tristeza. Abaixe os ombros e faça um bico.",
+    "onde": [
+      "ano1-s3-como-me-sinto/movimento"
+    ]
+  },
+  {
+    "chave": "0dn2ln7",
+    "texto": "Volte à calma. Respire fundo três vezes e solte o corpo.",
+    "onde": [
+      "ano1-s3-como-me-sinto/movimento"
+    ]
+  },
+  {
+    "chave": "0b1o7fw",
+    "texto": "Alegria",
+    "onde": [
+      "ano1-s3-como-me-sinto/peça"
+    ]
+  },
+  {
+    "chave": "0xpfgb5",
+    "texto": "Tristeza",
+    "onde": [
+      "ano1-s3-como-me-sinto/peça"
+    ]
+  },
+  {
+    "chave": "01v2ngi",
+    "texto": "Medo",
+    "onde": [
+      "ano1-s3-como-me-sinto/peça"
+    ]
+  },
+  {
+    "chave": "05qlbn2",
+    "texto": "Raiva",
+    "onde": [
+      "ano1-s3-como-me-sinto/peça"
+    ]
+  },
+  {
+    "chave": "05vxot0",
+    "texto": "Choro",
+    "onde": [
+      "ano1-s3-como-me-sinto/peça"
+    ]
+  },
+  {
+    "chave": "0fwfqlm",
+    "texto": "Surpresa",
+    "onde": [
+      "ano1-s3-como-me-sinto/peça"
+    ]
+  },
+  {
+    "chave": "10x5kdp",
+    "texto": "Sério",
+    "onde": [
+      "ano1-s3-como-me-sinto/peça"
+    ]
+  },
+  {
+    "chave": "15y7wqx",
+    "texto": "Espanto",
+    "onde": [
+      "ano1-s3-como-me-sinto/peça"
+    ]
+  },
+  {
+    "chave": "11mz6oj",
+    "texto": "Copie os movimentos do personagem com o seu corpo!",
+    "onde": [
+      "ano1-s4-corpo-que-danca"
+    ]
+  },
+  {
+    "chave": "1t5441e",
+    "texto": "Pular. Pule no lugar com os dois pés juntos.",
+    "onde": [
+      "ano1-s4-corpo-que-danca/movimento"
+    ]
+  },
+  {
+    "chave": "0uojfrj",
+    "texto": "Girar. Dê uma voltinha devagar, de braços abertos.",
+    "onde": [
+      "ano1-s4-corpo-que-danca/movimento"
+    ]
+  },
+  {
+    "chave": "18yk1jm",
+    "texto": "Esticar os braços. Estique os dois braços bem alto, como se fosse tocar o céu.",
+    "onde": [
+      "ano1-s4-corpo-que-danca/movimento"
+    ]
+  },
+  {
+    "chave": "1tyw60n",
+    "texto": "Levantar. Fique na ponta dos pés e cresça bem alto.",
+    "onde": [
+      "ano1-s4-corpo-que-danca/movimento"
+    ]
+  },
+  {
+    "chave": "1jbeuo8",
+    "texto": "Abaixar. Agache devagar e fique pequenininho.",
+    "onde": [
+      "ano1-s4-corpo-que-danca/movimento"
+    ]
+  },
+  {
+    "chave": "1eg4xau",
+    "texto": "Respirar. Puxe o ar pelo nariz e solte devagar pela boca.",
+    "onde": [
+      "ano1-s4-corpo-que-danca/movimento"
+    ]
+  },
+  {
+    "chave": "1g1jl8p",
+    "texto": "Ligue cada gesto ao que o corpo está dizendo.",
+    "onde": [
+      "ano2-s1-corpo-que-fala"
+    ]
+  },
+  {
+    "chave": "01bafjx",
+    "texto": "Bater palmas",
+    "onde": [
+      "ano2-s1-corpo-que-fala/aplauso"
+    ]
+  },
+  {
+    "chave": "0wuie9x",
+    "texto": "Palmas comemoram e elogiam alguém.",
+    "onde": [
+      "ano2-s1-corpo-que-fala/aplauso/par"
+    ]
+  },
+  {
+    "chave": "0co0i6z",
+    "texto": "Polegar para cima",
+    "onde": [
+      "ano2-s1-corpo-que-fala/bem"
+    ]
+  },
+  {
+    "chave": "19sqbte",
+    "texto": "O polegar para cima diz que está tudo certo.",
+    "onde": [
+      "ano2-s1-corpo-que-fala/bem/par"
+    ]
+  },
+  {
+    "chave": "1ahlzaq",
+    "texto": "Polegar para baixo",
+    "onde": [
+      "ano2-s1-corpo-que-fala/mal"
+    ]
+  },
+  {
+    "chave": "1tghfgr",
+    "texto": "O polegar para baixo mostra que algo não está legal.",
+    "onde": [
+      "ano2-s1-corpo-que-fala/mal/par"
+    ]
+  },
+  {
+    "chave": "02tmtyo",
+    "texto": "Peça silêncio. Faça o gesto de silêncio para um colega.",
+    "onde": [
+      "ano2-s1-corpo-que-fala/movimento"
+    ]
+  },
+  {
+    "chave": "12azvmy",
+    "texto": "Diga sim e não. Use só a cabeça: sim, depois não.",
+    "onde": [
+      "ano2-s1-corpo-que-fala/movimento"
+    ]
+  },
+  {
+    "chave": "03e0faz",
+    "texto": "Comemore. Bata palmas e levante os braços!",
+    "onde": [
+      "ano2-s1-corpo-que-fala/movimento"
+    ]
+  },
+  {
+    "chave": "0b1iq6i",
+    "texto": "Balançar a cabeça para os lados",
+    "onde": [
+      "ano2-s1-corpo-que-fala/nao"
+    ]
+  },
+  {
+    "chave": "1v61mho",
+    "texto": "Para os lados, a cabeça está dizendo não.",
+    "onde": [
+      "ano2-s1-corpo-que-fala/nao/par"
+    ]
+  },
+  {
+    "chave": "087h3y6",
+    "texto": "Mão aberta na frente",
+    "onde": [
+      "ano2-s1-corpo-que-fala/pare"
+    ]
+  },
+  {
+    "chave": "1fgul2f",
+    "texto": "A mão aberta na frente do corpo pede para parar.",
+    "onde": [
+      "ano2-s1-corpo-que-fala/pare/par"
+    ]
+  },
+  {
+    "chave": "1nqtdd7",
+    "texto": "Dedo na boca",
+    "onde": [
+      "ano2-s1-corpo-que-fala/silencio"
+    ]
+  },
+  {
+    "chave": "0i6g8m8",
+    "texto": "O dedo na boca pede silêncio sem usar nenhuma palavra.",
+    "onde": [
+      "ano2-s1-corpo-que-fala/silencio/par"
+    ]
+  },
+  {
+    "chave": "1lacx5p",
+    "texto": "Balançar a cabeça para cima e para baixo",
+    "onde": [
+      "ano2-s1-corpo-que-fala/sim"
+    ]
+  },
+  {
+    "chave": "1gtji5r",
+    "texto": "A cabeça também responde: para cima e para baixo é sim.",
+    "onde": [
+      "ano2-s1-corpo-que-fala/sim/par"
+    ]
+  },
+  {
+    "chave": "04ggpit",
+    "texto": "Mão balançando",
+    "onde": [
+      "ano2-s1-corpo-que-fala/tchau"
+    ]
+  },
+  {
+    "chave": "0pcfviu",
+    "texto": "Acenar com a mão é dizer oi ou tchau.",
+    "onde": [
+      "ano2-s1-corpo-que-fala/tchau/par"
+    ]
+  },
+  {
+    "chave": "14ahf2t",
+    "texto": "Marque as atividades que fazem o corpo se movimentar. Cada acerto dá energia ao personagem!",
+    "onde": [
+      "ano2-s2-movimente-se"
+    ]
+  },
+  {
+    "chave": "1lxlu2k",
+    "texto": "O que acontece com o coração quando a gente se movimenta?",
+    "onde": [
+      "ano2-s2-movimente-se/beneficio-coracao"
+    ]
+  },
+  {
+    "chave": "1sy3lvf",
+    "texto": "O coração é um músculo: quanto mais a gente se movimenta, mais forte ele fica.",
+    "onde": [
+      "ano2-s2-movimente-se/beneficio-coracao/explicação"
+    ]
+  },
+  {
+    "chave": "1ogf3xx",
+    "texto": "O que a atividade física faz pelo nosso corpo?",
+    "onde": [
+      "ano2-s2-movimente-se/beneficios"
+    ]
+  },
+  {
+    "chave": "0kw2xwl",
+    "texto": "Movimentar-se dá energia, melhora o sono e ainda deixa a gente mais feliz.",
+    "onde": [
+      "ano2-s2-movimente-se/beneficios/explicação"
+    ]
+  },
+  {
+    "chave": "17ih8vh",
+    "texto": "Quais brincadeiras são atividade física?",
+    "onde": [
+      "ano2-s2-movimente-se/brincadeiras"
+    ]
+  },
+  {
+    "chave": "15yeklc",
+    "texto": "Brincar correndo, pulando ou pedalando também é atividade física.",
+    "onde": [
+      "ano2-s2-movimente-se/brincadeiras/explicação"
+    ]
+  },
+  {
+    "chave": "14cruu4",
+    "texto": "O que fica mais forte quando nos movimentamos?",
+    "onde": [
+      "ano2-s2-movimente-se/musculos"
+    ]
+  },
+  {
+    "chave": "0e61jbs",
+    "texto": "Movimento fortalece músculos e ossos — por isso é tão importante na infância.",
+    "onde": [
+      "ano2-s2-movimente-se/musculos/explicação"
+    ]
+  },
+  {
+    "chave": "0q4c0cu",
+    "texto": "Quais destas atividades fazem o corpo se movimentar?",
+    "onde": [
+      "ano2-s2-movimente-se/quais-movimentam"
+    ]
+  },
+  {
+    "chave": "0dxe3wm",
+    "texto": "Correr, nadar e pular corda colocam o corpo inteiro em movimento.",
+    "onde": [
+      "ano2-s2-movimente-se/quais-movimentam/explicação"
+    ]
+  },
+  {
+    "chave": "124ugg1",
+    "texto": "Quanto tempo por dia uma criança precisa se movimentar?",
+    "onde": [
+      "ano2-s2-movimente-se/quanto-tempo"
+    ]
+  },
+  {
+    "chave": "1onhrrm",
+    "texto": "O recomendado é pelo menos 1 hora de movimento por dia — e brincar já conta!",
+    "onde": [
+      "ano2-s2-movimente-se/quanto-tempo/explicação"
+    ]
+  },
+  {
+    "chave": "1a4stxo",
+    "texto": "Qual dessas ações exige equilíbrio? Cada acerto mantém o personagem de pé na prancha!",
+    "onde": [
+      "ano2-s3-equilibrista-mirim"
+    ]
+  },
+  {
+    "chave": "1mb5av0",
+    "texto": "E andar de bicicleta?",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/bicicleta"
+    ]
+  },
+  {
+    "chave": "1s6j5c5",
+    "texto": "Muito! Foi por isso que aprender a pedalar deu tanto trabalho no começo.",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/bicicleta/explicação"
+    ]
+  },
+  {
+    "chave": "0oh1yrl",
+    "texto": "E ficar deitado na cama?",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/deitado"
+    ]
+  },
+  {
+    "chave": "1qidfgm",
+    "texto": "Deitado o corpo está todo apoiado — não precisa de equilíbrio.",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/deitado/explicação"
+    ]
+  },
+  {
+    "chave": "0etnips",
+    "texto": "E subir uma escada?",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/escada"
+    ]
+  },
+  {
+    "chave": "0v3r0en",
+    "texto": "Sim! A cada degrau o corpo fica um instante em um pé só.",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/escada/explicação"
+    ]
+  },
+  {
+    "chave": "16pbwzy",
+    "texto": "E descer no escorregador sentado?",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/escorregar"
+    ]
+  },
+  {
+    "chave": "1w6mr83",
+    "texto": "Sentado no escorregador o corpo está apoiado e só desliza.",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/escorregar/explicação"
+    ]
+  },
+  {
+    "chave": "1b6rj0t",
+    "texto": "Andar em cima de uma linha exige equilíbrio?",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/linha"
+    ]
+  },
+  {
+    "chave": "1qcpst0",
+    "texto": "Sim! O corpo precisa se ajustar o tempo todo para não sair da linha.",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/linha/explicação"
+    ]
+  },
+  {
+    "chave": "17k5qev",
+    "texto": "Um pé só. Fique em um pé só. Segure o máximo que conseguir!",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/movimento"
+    ]
+  },
+  {
+    "chave": "1c88vvg",
+    "texto": "Careta em um pé só. Continue em um pé só e faça a careta mais engraçada que souber.",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/movimento"
+    ]
+  },
+  {
+    "chave": "0x7auuu",
+    "texto": "Palmas em um pé só. Ainda em um pé só, bata palmas sem cair.",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/movimento"
+    ]
+  },
+  {
+    "chave": "1f0rbjo",
+    "texto": "Rodadinha em um pé só. Dê uma voltinha devagar apoiado em um pé só.",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/movimento"
+    ]
+  },
+  {
+    "chave": "0cu4cmf",
+    "texto": "Troque o pé!. Agora repita tudo apoiado no outro pé.",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/movimento"
+    ]
+  },
+  {
+    "chave": "091pcvo",
+    "texto": "E andar na ponta dos pés?",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/na-ponta"
+    ]
+  },
+  {
+    "chave": "0g0cyi9",
+    "texto": "Sim! Quanto menor o apoio no chão, mais equilíbrio o corpo precisa.",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/na-ponta/explicação"
+    ]
+  },
+  {
+    "chave": "1m2bbi2",
+    "texto": "E ficar sentado na cadeira?",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/sentado"
+    ]
+  },
+  {
+    "chave": "03p6vn5",
+    "texto": "Sentado a cadeira segura o corpo, então o equilíbrio descansa.",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/sentado/explicação"
+    ]
+  },
+  {
+    "chave": "0tsoq0n",
+    "texto": "E ficar em um pé só?",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/um-pe"
+    ]
+  },
+  {
+    "chave": "04z1guw",
+    "texto": "Muito! Com um apoio só, o corpo trabalha bem mais para se manter firme.",
+    "onde": [
+      "ano2-s3-equilibrista-mirim/um-pe/explicação"
+    ]
+  },
+  {
+    "chave": "1e07krq",
+    "texto": "Clique em GIRAR. Onde a roleta parar, é o alongamento que você vai fazer!",
+    "onde": [
+      "ano2-s4-roleta-alongamentos"
+    ]
+  },
+  {
+    "chave": "0bvmlav",
+    "texto": "Borboleta. Sente com as solas dos pés juntas e balance os joelhos devagar.",
+    "onde": [
+      "ano2-s4-roleta-alongamentos/borboleta"
+    ]
+  },
+  {
+    "chave": "1fa3hjh",
+    "texto": "Braços para o alto. Estique os dois braços bem alto e cresça o máximo que conseguir.",
+    "onde": [
+      "ano2-s4-roleta-alongamentos/bracos-alto"
+    ]
+  },
+  {
+    "chave": "0l6bhco",
+    "texto": "Frente da coxa. Em pé, dobre uma perna para trás e segure o pé. Troque de perna.",
+    "onde": [
+      "ano2-s4-roleta-alongamentos/coxa"
+    ]
+  },
+  {
+    "chave": "0t8458j",
+    "texto": "Gatinho. De quatro apoios, arredonde as costas para cima e depois abaixe devagar.",
+    "onde": [
+      "ano2-s4-roleta-alongamentos/gato"
+    ]
+  },
+  {
+    "chave": "09rhuz9",
+    "texto": "Lateral do corpo. Levante um braço e incline o corpo para o lado contrário. Troque.",
+    "onde": [
+      "ano2-s4-roleta-alongamentos/lateral"
+    ]
+  },
+  {
+    "chave": "0q0da33",
+    "texto": "Mãos e punhos. Abra e feche as mãos, depois gire os punhos para os dois lados.",
+    "onde": [
+      "ano2-s4-roleta-alongamentos/maos"
+    ]
+  },
+  {
+    "chave": "1fsmu3j",
+    "texto": "Ombro. Passe um braço na frente do peito e puxe com o outro. Troque o lado.",
+    "onde": [
+      "ano2-s4-roleta-alongamentos/ombro"
+    ]
+  },
+  {
+    "chave": "19lzsd8",
+    "texto": "Panturrilha. Apoie as mãos na parede e estique uma perna para trás, com o calcanhar no chão.",
+    "onde": [
+      "ano2-s4-roleta-alongamentos/panturrilha"
+    ]
+  },
+  {
+    "chave": "0p3229o",
+    "texto": "Atrás da perna. Sente no chão com as pernas esticadas e tente alcançar a ponta dos pés sem forçar.",
+    "onde": [
+      "ano2-s4-roleta-alongamentos/perna-tras"
+    ]
+  },
+  {
+    "chave": "14tny9w",
+    "texto": "Pescoço. Incline a cabeça para o ombro direito, depois para o esquerdo. Bem devagar.",
+    "onde": [
+      "ano2-s4-roleta-alongamentos/pescoco"
+    ]
+  },
+  {
+    "chave": "09arh6b",
+    "texto": "Respiração. Puxe o ar pelo nariz contando até 4 e solte pela boca contando até 4.",
+    "onde": [
+      "ano2-s4-roleta-alongamentos/respirar"
+    ]
+  },
+  {
+    "chave": "0i6wexx",
+    "texto": "Tronco. Com os pés firmes no chão, gire o tronco devagar para um lado e para o outro.",
+    "onde": [
+      "ano2-s4-roleta-alongamentos/tronco"
+    ]
+  },
+  {
+    "chave": "189geyv",
+    "texto": "Alimentação. Quanto mais cores no prato, mais nutrientes para o corpo. Frutas e verduras dão energia de verdade. Beba água ao longo do dia, mesmo sem sentir sede. Alimentos ultraprocessados são para de vez em quando, não todo dia.",
+    "onde": [
+      "dicas/alimentacao"
+    ]
+  },
+  {
+    "chave": "1442dw7",
+    "texto": "Atividade Física. Movimente-se todos os dias: brincar também é se exercitar. Alongue o corpo antes e depois de se mexer. Brincar ao ar livre faz bem para o corpo e para a cabeça. Quem se movimenta, se cuida!",
+    "onde": [
+      "dicas/atividade-fisica"
+    ]
+  },
+  {
+    "chave": "145mskc",
+    "texto": "Higiene. Tome banho todos os dias — o corpo agradece. Lave as mãos antes de comer e depois de usar o banheiro. Escove os dentes três vezes por dia, sempre depois das refeições. Corte as unhas e lave os cabelos com frequência.",
+    "onde": [
+      "dicas/higiene"
+    ]
+  },
+  {
+    "chave": "08n5vy1",
+    "texto": "Sono. Dormir bem ajuda a crescer e a aprender. Desligue as telas antes de deitar — elas atrapalham o sono. Tenha um horário para dormir e acordar. O corpo fala quando está cansado. Escute ele!",
+    "onde": [
+      "dicas/sono"
+    ]
+  },
+  {
+    "chave": "1fcgf9c",
+    "texto": "Saúde em jogo!",
+    "onde": [
+      "interface"
+    ]
+  },
+  {
+    "chave": "0bz2taj",
+    "texto": "Seja bem-vindo! Digite o seu nome.",
+    "onde": [
+      "interface"
+    ]
+  },
+  {
+    "chave": "0je24vz",
+    "texto": "Isso mesmo!",
+    "onde": [
+      "interface"
+    ]
+  },
+  {
+    "chave": "0qycl0j",
+    "texto": "Tente outro lugar.",
+    "onde": [
+      "interface"
+    ]
+  },
+  {
+    "chave": "15jivpn",
+    "texto": "Muito bem! Você ganhou 1 estrela.",
+    "onde": [
+      "interface"
+    ]
+  },
+  {
+    "chave": "0the2pb",
+    "texto": "Muito bem! Você ganhou 2 estrelas.",
+    "onde": [
+      "interface"
+    ]
+  },
+  {
+    "chave": "030oxqw",
+    "texto": "Muito bem! Você ganhou 3 estrelas.",
+    "onde": [
+      "interface"
+    ]
+  },
+  {
+    "chave": "1x8afrs",
+    "texto": "Pescoço. Incline a cabeça para um lado e depois para o outro.",
+    "onde": [
+      "movimento/alongamentos/movimento"
+    ]
+  },
+  {
+    "chave": "1o9yjr2",
+    "texto": "Braços para cima. Estique os dois braços bem alto, como se fosse pegar o teto.",
+    "onde": [
+      "movimento/alongamentos/movimento"
+    ]
+  },
+  {
+    "chave": "0qc3e3p",
+    "texto": "Ombros. Puxe um braço na frente do peito com a ajuda do outro. Troque o lado.",
+    "onde": [
+      "movimento/alongamentos/movimento"
+    ]
+  },
+  {
+    "chave": "1er7d5t",
+    "texto": "Tronco. Com os pés firmes, gire o tronco devagar para um lado e para o outro.",
+    "onde": [
+      "movimento/alongamentos/movimento"
+    ]
+  },
+  {
+    "chave": "1gazq74",
+    "texto": "Atrás da perna. Sentado ou em pé, tente encostar as mãos na ponta dos pés sem forçar.",
+    "onde": [
+      "movimento/alongamentos/movimento"
+    ]
+  },
+  {
+    "chave": "120ijp8",
+    "texto": "Respirar fundo. Puxe o ar pelo nariz contando até 4 e solte pela boca contando até 4.",
+    "onde": [
+      "movimento/alongamentos/movimento"
+    ]
+  },
+  {
+    "chave": "0gdxmat",
+    "texto": "Marchar no lugar. Levante bem os joelhos, um de cada vez.",
+    "onde": [
+      "movimento/movimentos/movimento"
+    ]
+  },
+  {
+    "chave": "0m1er0c",
+    "texto": "Pular. Pule com os dois pés juntos, sem sair do lugar.",
+    "onde": [
+      "movimento/movimentos/movimento"
+    ]
+  },
+  {
+    "chave": "0zl2msi",
+    "texto": "Equilibrar. Fique em um pé só. Depois troque o pé.",
+    "onde": [
+      "movimento/movimentos/movimento"
+    ]
+  },
+  {
+    "chave": "0sfl0et",
+    "texto": "Girar. Dê uma volta devagar para um lado e outra para o outro.",
+    "onde": [
+      "movimento/movimentos/movimento"
+    ]
+  },
+  {
+    "chave": "05joa5n",
+    "texto": "Agachar e levantar. Agache como se fosse sentar numa cadeira e volte devagar.",
+    "onde": [
+      "movimento/movimentos/movimento"
+    ]
+  },
+  {
+    "chave": "0hweex6",
+    "texto": "Acalmar. Pare, respire fundo e sinta o coração batendo.",
+    "onde": [
+      "movimento/movimentos/movimento"
+    ]
+  }
+]

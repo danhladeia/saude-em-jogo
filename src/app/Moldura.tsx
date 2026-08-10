@@ -16,7 +16,7 @@ export function Moldura() {
 
   return (
     <div className="fundo-ceu flex min-h-dvh flex-col">
-      <header className="flex items-center gap-4 px-4 py-3 sm:px-8">
+      <header className="flex items-center gap-4 px-4 py-2 sm:px-8 sm:py-3">
         {!noMenu && (
           <button
             onClick={() => {
@@ -41,7 +41,7 @@ export function Moldura() {
 
         <Link to="/menu" className="shrink-0" aria-label="Início">
           <img
-            src="/marca/logo-horizontal.png"
+            src={`${import.meta.env.BASE_URL}marca/logo-horizontal.png`}
             alt="Saúde em Jogo!"
             className="h-14 w-auto sm:h-16"
           />
@@ -69,7 +69,7 @@ export function Moldura() {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.25 }}
-        className="mx-auto w-full max-w-5xl flex-1 px-4 pb-12 sm:px-8"
+        className="mx-auto w-full max-w-5xl flex-1 px-4 pb-6 sm:px-8 sm:pb-8"
       >
         <Outlet />
       </motion.main>

@@ -15,7 +15,7 @@
  * cai para a voz do sistema (ver narracao.ts).
  */
 
-const PASTA = '/falas'
+const PASTA = `${import.meta.env.BASE_URL}falas`
 
 /**
  * Chave determinística de uma fala.

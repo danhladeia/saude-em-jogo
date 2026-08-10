@@ -19,9 +19,10 @@ export function Iniciar() {
   return (
     <div className="fundo-ceu flex min-h-dvh flex-col items-center justify-center gap-10 px-6">
       <motion.img
-        src="/marca/logo-vertical.png"
+        src={`${import.meta.env.BASE_URL}marca/logo-vertical.png`}
         alt="Saúde em Jogo! Jogo que ensina, saúde que transforma!"
-        className="w-full max-w-sm"
+        className="w-full max-w-sm object-contain"
+        style={{ maxHeight: '45dvh' }}
         initial={{ scale: 0.85, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 160, damping: 16 }}

@@ -1,4 +1,5 @@
 import type { Ilustracao } from '@/content/schemas'
+import { urlDoSprite } from '@/assets/registro'
 import { cn } from '@/design/cn'
 
 interface FiguraProps {
@@ -9,15 +10,25 @@ interface FiguraProps {
 }
 
 /**
- * Renderiza um item do conteúdo. Enquanto a arte definitiva não existe, o
- * emoji do JSON segura o jogo; trocar por `imagem` depois não mexe em
- * nenhum motor.
+ * Renderiza um item do conteúdo.
+ *
+ * `imagem` é chave lógica no registro de sprites ("corpo/cabeca"), não
+ * caminho de arquivo — ver src/assets/registro.ts. Se a chave não existir,
+ * cai no emoji: conteúdo novo continua jogável antes de a arte chegar, e o
+ * validador de conteúdo é quem reclama da chave errada, no build.
  */
 export function Figura({ item, className, semTexto = false }: FiguraProps) {
+  const url = urlDoSprite(item.imagem)
+
   return (
     <span className={cn('flex flex-col items-center justify-center gap-2 text-center', className)}>
-      {item.imagem ? (
-        <img src={item.imagem} alt={semTexto ? item.rotulo : ''} className="h-24 w-24 object-contain" />
+      {url ? (
+        <img
+          src={url}
+          alt={semTexto ? item.rotulo : ''}
+          draggable={false}
+          className="h-24 w-24 select-none object-contain"
+        />
       ) : item.emoji ? (
         <span aria-hidden={!semTexto} className="text-6xl leading-none">
           {item.emoji}

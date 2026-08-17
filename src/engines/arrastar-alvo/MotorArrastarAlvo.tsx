@@ -109,9 +109,18 @@ export function MotorArrastarAlvo({ conteudo, aoConcluir }: PropsDeMotor<Conteud
       >
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start">
           {/* cenário com os alvos */}
+          {/* O cenário é dimensionado pela ALTURA, não pela largura.
+              Um cenário em pé (proporção 0,72) com largura de 32rem daria
+              711px de altura — mais que a tela de 768px de um laboratório
+              escolar, empurrando a bandeja de peças para fora do campo de
+              visão. A criança teria que rolar a página no meio do arraste. */}
           <div
-            className="relative mx-auto w-full max-w-lg overflow-hidden rounded-bolha border-4 border-ceu-200 bg-white"
-            style={{ aspectRatio: conteudo.cenario.proporcao, background: conteudo.cenario.corDeFundo }}
+            className="relative mx-auto max-w-full shrink-0 overflow-hidden rounded-bolha border-4 border-ceu-200 bg-white"
+            style={{
+              aspectRatio: conteudo.cenario.proporcao,
+              height: 'min(70vh, 36rem)',
+              background: conteudo.cenario.corDeFundo,
+            }}
           >
             {conteudo.cenario.imagem && (
               <img

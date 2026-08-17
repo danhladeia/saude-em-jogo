@@ -7,50 +7,114 @@
   "pares": [
     {
       "id": "silencio",
-      "esquerda": { "rotulo": "Dedo na boca", "emoji": "🤫" },
-      "direita": { "rotulo": "Silêncio", "emoji": "🔇" },
+      "esquerda": {
+        "rotulo": "Dedo na boca",
+        "emoji": "🤫",
+        "imagem": "gestos/silencio-gesto"
+      },
+      "direita": {
+        "rotulo": "Silêncio",
+        "emoji": "🔇",
+        "imagem": "simbolos/silencio"
+      },
       "explicacao": "O dedo na boca pede silêncio sem usar nenhuma palavra."
     },
     {
       "id": "tchau",
-      "esquerda": { "rotulo": "Mão balançando", "emoji": "👋" },
-      "direita": { "rotulo": "Tchau", "emoji": "🚪" },
+      "esquerda": {
+        "rotulo": "Mão balançando",
+        "emoji": "👋",
+        "imagem": "gestos/tchau-gesto"
+      },
+      "direita": {
+        "rotulo": "Tchau",
+        "emoji": "🚪",
+        "imagem": "simbolos/tchau"
+      },
       "explicacao": "Acenar com a mão é dizer oi ou tchau."
     },
     {
       "id": "bem",
-      "esquerda": { "rotulo": "Polegar para cima", "emoji": "👍" },
-      "direita": { "rotulo": "Está bem", "emoji": "✅" },
+      "esquerda": {
+        "rotulo": "Polegar para cima",
+        "emoji": "👍",
+        "imagem": "gestos/polegar-cima"
+      },
+      "direita": {
+        "rotulo": "Está bem",
+        "emoji": "✅",
+        "imagem": "simbolos/esta-bem"
+      },
       "explicacao": "O polegar para cima diz que está tudo certo."
     },
     {
       "id": "mal",
-      "esquerda": { "rotulo": "Polegar para baixo", "emoji": "👎" },
-      "direita": { "rotulo": "Não está bem", "emoji": "❌" },
+      "esquerda": {
+        "rotulo": "Polegar para baixo",
+        "emoji": "👎",
+        "imagem": "gestos/polegar-baixo"
+      },
+      "direita": {
+        "rotulo": "Não está bem",
+        "emoji": "❌",
+        "imagem": "simbolos/nao-esta-bem"
+      },
       "explicacao": "O polegar para baixo mostra que algo não está legal."
     },
     {
       "id": "sim",
-      "esquerda": { "rotulo": "Balançar a cabeça para cima e para baixo", "emoji": "🙆" },
-      "direita": { "rotulo": "Sim", "emoji": "☑️" },
+      "esquerda": {
+        "rotulo": "Balançar a cabeça para cima e para baixo",
+        "emoji": "🙆",
+        "imagem": "movimentos/cabeca-sim"
+      },
+      "direita": {
+        "rotulo": "Sim",
+        "emoji": "☑️",
+        "imagem": "simbolos/sim"
+      },
       "explicacao": "A cabeça também responde: para cima e para baixo é sim."
     },
     {
       "id": "nao",
-      "esquerda": { "rotulo": "Balançar a cabeça para os lados", "emoji": "🙅" },
-      "direita": { "rotulo": "Não", "emoji": "🚫" },
+      "esquerda": {
+        "rotulo": "Balançar a cabeça para os lados",
+        "emoji": "🙅",
+        "imagem": "movimentos/cabeca-nao"
+      },
+      "direita": {
+        "rotulo": "Não",
+        "emoji": "🚫",
+        "imagem": "simbolos/nao"
+      },
       "explicacao": "Para os lados, a cabeça está dizendo não."
     },
     {
       "id": "pare",
-      "esquerda": { "rotulo": "Mão aberta na frente", "emoji": "✋" },
-      "direita": { "rotulo": "Pare", "emoji": "🛑" },
+      "esquerda": {
+        "rotulo": "Mão aberta na frente",
+        "emoji": "✋",
+        "imagem": "gestos/mao-pare"
+      },
+      "direita": {
+        "rotulo": "Pare",
+        "emoji": "🛑",
+        "imagem": "simbolos/pare"
+      },
       "explicacao": "A mão aberta na frente do corpo pede para parar."
     },
     {
       "id": "aplauso",
-      "esquerda": { "rotulo": "Bater palmas", "emoji": "👏" },
-      "direita": { "rotulo": "Parabéns", "emoji": "🎉" },
+      "esquerda": {
+        "rotulo": "Bater palmas",
+        "emoji": "👏",
+        "imagem": "gestos/palmas"
+      },
+      "direita": {
+        "rotulo": "Parabéns",
+        "emoji": "🎉",
+        "imagem": "simbolos/parabens"
+      },
       "explicacao": "Palmas comemoram e elogiam alguém."
     }
   ],
@@ -58,9 +122,27 @@
     "titulo": "Fale com o corpo!",
     "instrucao": "Agora é a sua vez de falar sem usar palavras.",
     "passos": [
-      { "id": "peca-silencio", "rotulo": "Peça silêncio", "descricao": "Faça o gesto de silêncio para um colega.", "emoji": "🤫", "segundos": 10 },
-      { "id": "diga-sim", "rotulo": "Diga sim e não", "descricao": "Use só a cabeça: sim, depois não.", "emoji": "🙆", "segundos": 12 },
-      { "id": "comemore", "rotulo": "Comemore", "descricao": "Bata palmas e levante os braços!", "emoji": "👏", "segundos": 12 }
+      {
+        "id": "peca-silencio",
+        "rotulo": "Peça silêncio",
+        "descricao": "Faça o gesto de silêncio para um colega.",
+        "emoji": "🤫",
+        "segundos": 10
+      },
+      {
+        "id": "diga-sim",
+        "rotulo": "Diga sim e não",
+        "descricao": "Use só a cabeça: sim, depois não.",
+        "emoji": "🙆",
+        "segundos": 12
+      },
+      {
+        "id": "comemore",
+        "rotulo": "Comemore",
+        "descricao": "Bata palmas e levante os braços!",
+        "emoji": "👏",
+        "segundos": 12
+      }
     ]
   }
 }

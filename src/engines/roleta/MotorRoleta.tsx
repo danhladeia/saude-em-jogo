@@ -8,6 +8,8 @@ import { Botao } from '@/design/Botao'
 import { celebrarConclusao } from '@/design/celebrar'
 import { narrar } from '@/lib/narracao'
 import { movimentoReduzido } from '@/lib/movimento'
+import { urlDoSprite } from '@/assets/registro'
+import { anguloParaParar, caminhoDaFatia, posicaoDoRotulo } from '@/design/geometriaDaRoda'
 import { usarPerfil } from '@/store/usarPerfil'
 
 const CORES = [
@@ -67,11 +69,7 @@ export function MotorRoleta({ conteudo, aoConcluir }: PropsDeMotor<ConteudoRolet
     const alvo = Math.floor(Math.random() * conteudo.itens.length)
     pendente.current = alvo
     setFase('girando')
-
-    // O ponteiro fica no topo. Para a fatia `alvo` parar sob ele, giramos
-    // algumas voltas cheias e descontamos o centro da fatia.
-    const voltas = 4 + Math.floor(Math.random() * 3)
-    setAngulo((a) => a - (a % 360) + voltas * 360 + (360 - (alvo * fatia + fatia / 2)))
+    setAngulo((a) => anguloParaParar(a, alvo, conteudo.itens.length))
   }
 
   /**
@@ -151,21 +149,28 @@ export function MotorRoleta({ conteudo, aoConcluir }: PropsDeMotor<ConteudoRolet
           role="img"
           aria-label={`Roleta com ${conteudo.itens.length} alongamentos`}
         >
-          {conteudo.itens.map((it, i) => (
-            <g key={it.id}>
-              <path d={caminhoDaFatia(i, fatia)} fill={CORES[i % CORES.length]} stroke="white" strokeWidth="2" />
-              <text
-                x={0}
-                y={0}
-                textAnchor="middle"
-                dominantBaseline="central"
-                fontSize="18"
-                transform={posicaoDoRotulo(i, fatia)}
-              >
-                {it.emoji ?? '🤸'}
-              </text>
-            </g>
-          ))}
+          {conteudo.itens.map((it, i) => {
+            const sprite = urlDoSprite(it.imagem)
+            return (
+              <g key={it.id}>
+                <path d={caminhoDaFatia(i, fatia)} fill={CORES[i % CORES.length]} stroke="white" strokeWidth="2" />
+                <g transform={posicaoDoRotulo(i, fatia)}>
+                  {sprite ? (
+                    // A fatia é pequena: o desenho precisa de fundo claro
+                    // atrás para não sumir sobre as cores fortes da roleta.
+                    <>
+                      <circle r="17" fill="white" opacity="0.9" />
+                      <image href={sprite} x={-15} y={-15} width={30} height={30} />
+                    </>
+                  ) : (
+                    <text textAnchor="middle" dominantBaseline="central" fontSize="18">
+                      {it.emoji ?? '🤸'}
+                    </text>
+                  )}
+                </g>
+              </g>
+            )
+          })}
           <circle cx="0" cy="0" r="26" fill="white" stroke="var(--color-ceu-200)" strokeWidth="4" />
         </svg>
         </div>
@@ -183,9 +188,18 @@ export function MotorRoleta({ conteudo, aoConcluir }: PropsDeMotor<ConteudoRolet
           animate={{ opacity: 1, scale: 1 }}
           className="flex w-full flex-col items-center gap-4 rounded-bolha border-4 border-folha-400 bg-folha-100 p-6 text-center"
         >
-          <span aria-hidden="true" className="text-7xl">
-            {item.emoji ?? '🤸'}
-          </span>
+          {urlDoSprite(item.imagem) ? (
+            <img
+              src={urlDoSprite(item.imagem)}
+              alt=""
+              draggable={false}
+              className="h-40 w-40 select-none object-contain"
+            />
+          ) : (
+            <span aria-hidden="true" className="text-7xl">
+              {item.emoji ?? '🤸'}
+            </span>
+          )}
           <h3 className="text-3xl text-folha-600">{item.rotulo}</h3>
           <p className="max-w-lg text-xl text-tinta-600">{item.instrucao}</p>
 
@@ -200,23 +214,3 @@ export function MotorRoleta({ conteudo, aoConcluir }: PropsDeMotor<ConteudoRolet
   )
 }
 
-/** Fatia de pizza com raio 100, começando no topo e crescendo no sentido horário. */
-function caminhoDaFatia(indice: number, fatia: number): string {
-  const inicio = indice * fatia - 90
-  const fim = inicio + fatia
-  const r = 100
-  const x1 = r * Math.cos((inicio * Math.PI) / 180)
-  const y1 = r * Math.sin((inicio * Math.PI) / 180)
-  const x2 = r * Math.cos((fim * Math.PI) / 180)
-  const y2 = r * Math.sin((fim * Math.PI) / 180)
-  const arcoGrande = fatia > 180 ? 1 : 0
-  return `M 0 0 L ${x1} ${y1} A ${r} ${r} 0 ${arcoGrande} 1 ${x2} ${y2} Z`
-}
-
-function posicaoDoRotulo(indice: number, fatia: number): string {
-  const meio = indice * fatia + fatia / 2 - 90
-  const r = 64
-  const x = r * Math.cos((meio * Math.PI) / 180)
-  const y = r * Math.sin((meio * Math.PI) / 180)
-  return `translate(${x} ${y})`
-}

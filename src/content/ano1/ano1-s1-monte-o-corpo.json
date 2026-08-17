@@ -8,37 +8,161 @@
     "corDeFundo": "#F4FBFF"
   },
   "alvos": [
-    { "id": "cabeca", "rotulo": "Cabeça", "x": 50, "y": 13, "largura": 28, "altura": 20 },
-    { "id": "tronco", "rotulo": "Tronco", "x": 50, "y": 42, "largura": 34, "altura": 30 },
-    { "id": "braco-direito", "rotulo": "Braço direito", "x": 19, "y": 40, "largura": 20, "altura": 26 },
-    { "id": "braco-esquerdo", "rotulo": "Braço esquerdo", "x": 81, "y": 40, "largura": 20, "altura": 26 },
-    { "id": "perna-direita", "rotulo": "Perna direita", "x": 36, "y": 78, "largura": 22, "altura": 30 },
-    { "id": "perna-esquerda", "rotulo": "Perna esquerda", "x": 64, "y": 78, "largura": 22, "altura": 30 }
+    {
+      "id": "cabeca",
+      "rotulo": "Cabeça",
+      "x": 50,
+      "y": 13,
+      "largura": 28,
+      "altura": 20,
+      "imagem": "corpo/cabeca"
+    },
+    {
+      "id": "tronco",
+      "rotulo": "Tronco",
+      "x": 50,
+      "y": 42,
+      "largura": 34,
+      "altura": 30,
+      "imagem": "corpo/tronco"
+    },
+    {
+      "id": "braco-direito",
+      "rotulo": "Braço direito",
+      "x": 19,
+      "y": 40,
+      "largura": 20,
+      "altura": 26,
+      "imagem": "corpo/braco-direito"
+    },
+    {
+      "id": "braco-esquerdo",
+      "rotulo": "Braço esquerdo",
+      "x": 81,
+      "y": 40,
+      "largura": 20,
+      "altura": 26,
+      "imagem": "corpo/braco-esquerdo"
+    },
+    {
+      "id": "perna-direita",
+      "rotulo": "Perna direita",
+      "x": 36,
+      "y": 78,
+      "largura": 22,
+      "altura": 30,
+      "imagem": "corpo/perna-direita"
+    },
+    {
+      "id": "perna-esquerda",
+      "rotulo": "Perna esquerda",
+      "x": 64,
+      "y": 78,
+      "largura": 22,
+      "altura": 30,
+      "imagem": "corpo/perna-esquerda"
+    }
   ],
   "pecas": [
-    { "id": "p-cabeca", "rotulo": "Cabeça", "emoji": "😀", "alvoId": "cabeca" },
-    { "id": "p-tronco", "rotulo": "Tronco", "emoji": "👕", "alvoId": "tronco" },
-    { "id": "p-braco-d", "rotulo": "Braço direito", "emoji": "💪", "alvoId": "braco-direito" },
-    { "id": "p-braco-e", "rotulo": "Braço esquerdo", "emoji": "🦾", "alvoId": "braco-esquerdo" },
-    { "id": "p-perna-d", "rotulo": "Perna direita", "emoji": "🦵", "alvoId": "perna-direita" },
-    { "id": "p-perna-e", "rotulo": "Perna esquerda", "emoji": "🦶", "alvoId": "perna-esquerda" }
+    {
+      "id": "p-cabeca",
+      "rotulo": "Cabeça",
+      "emoji": "😀",
+      "alvoId": "cabeca",
+      "imagem": "corpo/cabeca"
+    },
+    {
+      "id": "p-tronco",
+      "rotulo": "Tronco",
+      "emoji": "👕",
+      "alvoId": "tronco",
+      "imagem": "corpo/tronco"
+    },
+    {
+      "id": "p-braco-d",
+      "rotulo": "Braço direito",
+      "emoji": "💪",
+      "alvoId": "braco-direito",
+      "imagem": "corpo/braco-direito"
+    },
+    {
+      "id": "p-braco-e",
+      "rotulo": "Braço esquerdo",
+      "emoji": "🦾",
+      "alvoId": "braco-esquerdo",
+      "imagem": "corpo/braco-esquerdo"
+    },
+    {
+      "id": "p-perna-d",
+      "rotulo": "Perna direita",
+      "emoji": "🦵",
+      "alvoId": "perna-direita",
+      "imagem": "corpo/perna-direita"
+    },
+    {
+      "id": "p-perna-e",
+      "rotulo": "Perna esquerda",
+      "emoji": "🦶",
+      "alvoId": "perna-esquerda",
+      "imagem": "corpo/perna-esquerda"
+    }
   ],
   "corpoAtivo": {
     "titulo": "Agora no seu corpo!",
     "instrucao": "Vamos encontrar cada parte no seu próprio corpo.",
     "passos": [
-      { "id": "toque-cabeca", "rotulo": "Toque a cabeça", "descricao": "Coloque as duas mãos na sua cabeça.", "emoji": "🙋", "segundos": 10 },
-      { "id": "toque-tronco", "rotulo": "Abrace o tronco", "descricao": "Cruze os braços e abrace o seu tronco.", "emoji": "🤗", "segundos": 10 },
-      { "id": "mexa-bracos", "rotulo": "Mexa os braços", "descricao": "Estique os dois braços para os lados e balance.", "emoji": "🙌", "segundos": 12 },
-      { "id": "mexa-pernas", "rotulo": "Mexa as pernas", "descricao": "Marche no lugar levantando bem os joelhos.", "emoji": "🚶", "segundos": 15 }
+      {
+        "id": "toque-cabeca",
+        "rotulo": "Toque a cabeça",
+        "descricao": "Coloque as duas mãos na sua cabeça.",
+        "emoji": "🙋",
+        "segundos": 10
+      },
+      {
+        "id": "toque-tronco",
+        "rotulo": "Abrace o tronco",
+        "descricao": "Cruze os braços e abrace o seu tronco.",
+        "emoji": "🤗",
+        "segundos": 10
+      },
+      {
+        "id": "mexa-bracos",
+        "rotulo": "Mexa os braços",
+        "descricao": "Estique os dois braços para os lados e balance.",
+        "emoji": "🙌",
+        "segundos": 12
+      },
+      {
+        "id": "mexa-pernas",
+        "rotulo": "Mexa as pernas",
+        "descricao": "Marche no lugar levantando bem os joelhos.",
+        "emoji": "🚶",
+        "segundos": 15
+      }
     ],
     "perguntaEmocao": {
       "enunciado": "Como você se sentiu mexendo o corpo?",
       "opcoes": [
-        { "id": "feliz", "rotulo": "Feliz", "emoji": "😄" },
-        { "id": "animado", "rotulo": "Animado", "emoji": "🤩" },
-        { "id": "com-energia", "rotulo": "Com energia", "emoji": "⚡" },
-        { "id": "cansado", "rotulo": "Cansado", "emoji": "😮‍💨" }
+        {
+          "id": "feliz",
+          "rotulo": "Feliz",
+          "emoji": "😄"
+        },
+        {
+          "id": "animado",
+          "rotulo": "Animado",
+          "emoji": "🤩"
+        },
+        {
+          "id": "com-energia",
+          "rotulo": "Com energia",
+          "emoji": "⚡"
+        },
+        {
+          "id": "cansado",
+          "rotulo": "Cansado",
+          "emoji": "😮‍💨"
+        }
       ]
     }
   }

@@ -10,9 +10,27 @@
       "enunciado": "O que usamos para tomar banho?",
       "tipo": "unica",
       "opcoes": [
-        { "id": "urso", "rotulo": "Urso de pelúcia", "emoji": "🧸", "correta": false },
-        { "id": "sapato", "rotulo": "Sapato", "emoji": "👞", "correta": false },
-        { "id": "sabonete", "rotulo": "Sabonete", "emoji": "🧼", "correta": true }
+        {
+          "id": "urso",
+          "rotulo": "Urso de pelúcia",
+          "emoji": "🧸",
+          "correta": false,
+          "imagem": "higiene/urso-de-pelucia"
+        },
+        {
+          "id": "sapato",
+          "rotulo": "Sapato",
+          "emoji": "👞",
+          "correta": false,
+          "imagem": "higiene/sapato"
+        },
+        {
+          "id": "sabonete",
+          "rotulo": "Sabonete",
+          "emoji": "🧼",
+          "correta": true,
+          "imagem": "higiene/sabonete"
+        }
       ],
       "explicacao": "Sabonete e água limpam o corpo e tiram os germes."
     },
@@ -21,9 +39,24 @@
       "enunciado": "Quantas vezes por dia devemos escovar os dentes?",
       "tipo": "unica",
       "opcoes": [
-        { "id": "uma", "rotulo": "1 vez", "emoji": "1️⃣", "correta": false },
-        { "id": "tres", "rotulo": "3 vezes", "emoji": "3️⃣", "correta": true },
-        { "id": "nenhuma", "rotulo": "Nenhuma", "emoji": "🚫", "correta": false }
+        {
+          "id": "uma",
+          "rotulo": "1 vez",
+          "emoji": "1️⃣",
+          "correta": false
+        },
+        {
+          "id": "tres",
+          "rotulo": "3 vezes",
+          "emoji": "3️⃣",
+          "correta": true
+        },
+        {
+          "id": "nenhuma",
+          "rotulo": "Nenhuma",
+          "emoji": "🚫",
+          "correta": false
+        }
       ],
       "explicacao": "O certo é escovar depois de cada refeição, pelo menos 3 vezes por dia."
     },
@@ -32,9 +65,24 @@
       "enunciado": "De quanto em quanto tempo devemos tomar banho?",
       "tipo": "unica",
       "opcoes": [
-        { "id": "todo-dia", "rotulo": "Todo dia", "emoji": "🚿", "correta": true },
-        { "id": "por-mes", "rotulo": "Uma vez por mês", "emoji": "📅", "correta": false },
-        { "id": "nunca", "rotulo": "Nunca", "emoji": "🙅", "correta": false }
+        {
+          "id": "todo-dia",
+          "rotulo": "Todo dia",
+          "emoji": "🚿",
+          "correta": true
+        },
+        {
+          "id": "por-mes",
+          "rotulo": "Uma vez por mês",
+          "emoji": "📅",
+          "correta": false
+        },
+        {
+          "id": "nunca",
+          "rotulo": "Nunca",
+          "emoji": "🙅",
+          "correta": false
+        }
       ],
       "explicacao": "Banho todos os dias tira o suor e a sujeira que o corpo junta."
     },
@@ -43,10 +91,30 @@
       "enunciado": "Quando precisamos lavar as mãos?",
       "tipo": "multipla",
       "opcoes": [
-        { "id": "antes-comer", "rotulo": "Antes de comer", "emoji": "🍽️", "correta": true },
-        { "id": "depois-banheiro", "rotulo": "Depois do banheiro", "emoji": "🚽", "correta": true },
-        { "id": "depois-brincar", "rotulo": "Depois de brincar na terra", "emoji": "🪴", "correta": true },
-        { "id": "dormindo", "rotulo": "Enquanto dorme", "emoji": "😴", "correta": false }
+        {
+          "id": "antes-comer",
+          "rotulo": "Antes de comer",
+          "emoji": "🍽️",
+          "correta": true
+        },
+        {
+          "id": "depois-banheiro",
+          "rotulo": "Depois do banheiro",
+          "emoji": "🚽",
+          "correta": true
+        },
+        {
+          "id": "depois-brincar",
+          "rotulo": "Depois de brincar na terra",
+          "emoji": "🪴",
+          "correta": true
+        },
+        {
+          "id": "dormindo",
+          "rotulo": "Enquanto dorme",
+          "emoji": "😴",
+          "correta": false
+        }
       ],
       "explicacao": "Mãos limpas evitam que os germes entrem no nosso corpo."
     },
@@ -55,9 +123,25 @@
       "enunciado": "O que fazemos com as unhas para cuidar do corpo?",
       "tipo": "unica",
       "opcoes": [
-        { "id": "cortar", "rotulo": "Cortar e limpar", "emoji": "💅", "correta": true },
-        { "id": "deixar", "rotulo": "Deixar bem compridas", "emoji": "🖐️", "correta": false },
-        { "id": "pintar", "rotulo": "Só pintar", "emoji": "🎨", "correta": false }
+        {
+          "id": "cortar",
+          "rotulo": "Cortar e limpar",
+          "emoji": "💅",
+          "correta": true,
+          "imagem": "higiene/cortar-unhas"
+        },
+        {
+          "id": "deixar",
+          "rotulo": "Deixar bem compridas",
+          "emoji": "🖐️",
+          "correta": false
+        },
+        {
+          "id": "pintar",
+          "rotulo": "Só pintar",
+          "emoji": "🎨",
+          "correta": false
+        }
       ],
       "explicacao": "Unhas grandes guardam sujeira embaixo. Cortadas e limpas é melhor."
     },
@@ -66,9 +150,27 @@
       "enunciado": "O que usamos para lavar o cabelo?",
       "tipo": "unica",
       "opcoes": [
-        { "id": "shampoo", "rotulo": "Xampu", "emoji": "🧴", "correta": true },
-        { "id": "areia", "rotulo": "Areia", "emoji": "🏖️", "correta": false },
-        { "id": "suco", "rotulo": "Suco", "emoji": "🧃", "correta": false }
+        {
+          "id": "shampoo",
+          "rotulo": "Xampu",
+          "emoji": "🧴",
+          "correta": true,
+          "imagem": "higiene/xampu"
+        },
+        {
+          "id": "areia",
+          "rotulo": "Areia",
+          "emoji": "🏖️",
+          "correta": false,
+          "imagem": "higiene/areia"
+        },
+        {
+          "id": "suco",
+          "rotulo": "Suco",
+          "emoji": "🧃",
+          "correta": false,
+          "imagem": "higiene/suco"
+        }
       ],
       "explicacao": "O xampu limpa o cabelo e o couro cabeludo."
     },
@@ -77,8 +179,18 @@
       "enunciado": "A escova de dentes pode ser dividida com o amigo?",
       "tipo": "unica",
       "opcoes": [
-        { "id": "nao", "rotulo": "Não, é só minha", "emoji": "🪥", "correta": true },
-        { "id": "sim", "rotulo": "Sim, pode emprestar", "emoji": "🤝", "correta": false }
+        {
+          "id": "nao",
+          "rotulo": "Não, é só minha",
+          "emoji": "🪥",
+          "correta": true
+        },
+        {
+          "id": "sim",
+          "rotulo": "Sim, pode emprestar",
+          "emoji": "🤝",
+          "correta": false
+        }
       ],
       "explicacao": "Cada pessoa tem a sua escova. Dividir passa germes de uma boca para a outra."
     },
@@ -87,10 +199,33 @@
       "enunciado": "Quais destes cuidados deixam o corpo saudável?",
       "tipo": "multipla",
       "opcoes": [
-        { "id": "banho", "rotulo": "Tomar banho", "emoji": "🚿", "correta": true },
-        { "id": "escovar", "rotulo": "Escovar os dentes", "emoji": "🪥", "correta": true },
-        { "id": "dormir-bem", "rotulo": "Dormir bem", "emoji": "😴", "correta": true },
-        { "id": "sujeira", "rotulo": "Ficar com as mãos sujas", "emoji": "🫳", "correta": false }
+        {
+          "id": "banho",
+          "rotulo": "Tomar banho",
+          "emoji": "🚿",
+          "correta": true,
+          "imagem": "higiene/tomar-banho"
+        },
+        {
+          "id": "escovar",
+          "rotulo": "Escovar os dentes",
+          "emoji": "🪥",
+          "correta": true,
+          "imagem": "higiene/escovar-dentes"
+        },
+        {
+          "id": "dormir-bem",
+          "rotulo": "Dormir bem",
+          "emoji": "😴",
+          "correta": true,
+          "imagem": "higiene/dormir-bem"
+        },
+        {
+          "id": "sujeira",
+          "rotulo": "Ficar com as mãos sujas",
+          "emoji": "🫳",
+          "correta": false
+        }
       ],
       "explicacao": "Cuidar do corpo é um hábito de todo dia."
     }

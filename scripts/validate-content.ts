@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 // Extensões explícitas: este arquivo roda no Node direto, sem bundler.
@@ -12,8 +12,28 @@ import { z } from 'zod'
  */
 
 const raiz = fileURLToPath(new URL('../src/content', import.meta.url))
+const biblioteca = fileURLToPath(new URL('../src/assets/library', import.meta.url))
 const problemas: string[] = []
 let validados = 0
+
+/**
+ * Todo valor sob uma chave `imagem`, em qualquer profundidade.
+ *
+ * Os campos de imagem estão espalhados pelos schemas — opção de quiz, peça de
+ * arrastar, passo do corpo ativo, cenário, item de roleta. Varrer é mais
+ * seguro que listar cada caminho e esquecer um quando o schema crescer.
+ */
+function chavesDeImagem(valor: unknown, achadas: string[] = []): string[] {
+  if (Array.isArray(valor)) {
+    for (const item of valor) chavesDeImagem(item, achadas)
+  } else if (valor && typeof valor === 'object') {
+    for (const [chave, dentro] of Object.entries(valor)) {
+      if (chave === 'imagem' && typeof dentro === 'string') achadas.push(dentro)
+      else chavesDeImagem(dentro, achadas)
+    }
+  }
+  return achadas
+}
 
 for (const pasta of readdirSync(raiz, { withFileTypes: true })) {
   if (!pasta.isDirectory() || !pasta.name.startsWith('ano')) continue
@@ -50,6 +70,16 @@ for (const pasta of readdirSync(raiz, { withFileTypes: true })) {
       problemas.push(
         `${caminho}: o catálogo diz motor "${atividade.motor}", o arquivo diz "${conteudo.motor}".`,
       )
+    }
+
+    // Chave de sprite que não existe vira imagem quebrada só na aula.
+    // Aqui ela quebra o build, que é onde custa menos.
+    for (const chave of chavesDeImagem(conteudo)) {
+      if (!existsSync(join(biblioteca, `${chave}.webp`))) {
+        problemas.push(
+          `${caminho}: a imagem "${chave}" não existe em src/assets/library/${chave}.webp`,
+        )
+      }
     }
 
     // Toda peça precisa de um alvo real, senão o jogo fica impossível.

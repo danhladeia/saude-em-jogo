@@ -8,41 +8,193 @@
     "corDeFundo": "#FFF4D6"
   },
   "alvos": [
-    { "id": "alegria", "rotulo": "Alegria", "x": 14, "y": 26, "largura": 22, "altura": 38 },
-    { "id": "tristeza", "rotulo": "Tristeza", "x": 38, "y": 26, "largura": 22, "altura": 38 },
-    { "id": "medo", "rotulo": "Medo", "x": 62, "y": 26, "largura": 22, "altura": 38 },
-    { "id": "raiva", "rotulo": "Raiva", "x": 86, "y": 26, "largura": 22, "altura": 38 },
-    { "id": "choro", "rotulo": "Choro", "x": 14, "y": 74, "largura": 22, "altura": 38 },
-    { "id": "surpresa", "rotulo": "Surpresa", "x": 38, "y": 74, "largura": 22, "altura": 38 },
-    { "id": "serio", "rotulo": "Sério", "x": 62, "y": 74, "largura": 22, "altura": 38 },
-    { "id": "espanto", "rotulo": "Espanto", "x": 86, "y": 74, "largura": 22, "altura": 38 }
+    {
+      "id": "alegria",
+      "rotulo": "Alegria",
+      "x": 14,
+      "y": 26,
+      "largura": 22,
+      "altura": 38,
+      "imagem": "emocoes/alegria"
+    },
+    {
+      "id": "tristeza",
+      "rotulo": "Tristeza",
+      "x": 38,
+      "y": 26,
+      "largura": 22,
+      "altura": 38,
+      "imagem": "emocoes/tristeza"
+    },
+    {
+      "id": "medo",
+      "rotulo": "Medo",
+      "x": 62,
+      "y": 26,
+      "largura": 22,
+      "altura": 38,
+      "imagem": "emocoes/medo"
+    },
+    {
+      "id": "raiva",
+      "rotulo": "Raiva",
+      "x": 86,
+      "y": 26,
+      "largura": 22,
+      "altura": 38,
+      "imagem": "emocoes/raiva"
+    },
+    {
+      "id": "choro",
+      "rotulo": "Choro",
+      "x": 14,
+      "y": 74,
+      "largura": 22,
+      "altura": 38,
+      "imagem": "emocoes/choro"
+    },
+    {
+      "id": "surpresa",
+      "rotulo": "Surpresa",
+      "x": 38,
+      "y": 74,
+      "largura": 22,
+      "altura": 38,
+      "imagem": "emocoes/surpresa"
+    },
+    {
+      "id": "serio",
+      "rotulo": "Sério",
+      "x": 62,
+      "y": 74,
+      "largura": 22,
+      "altura": 38,
+      "imagem": "emocoes/serio"
+    },
+    {
+      "id": "espanto",
+      "rotulo": "Espanto",
+      "x": 86,
+      "y": 74,
+      "largura": 22,
+      "altura": 38,
+      "imagem": "emocoes/espanto"
+    }
   ],
   "pecas": [
-    { "id": "f-alegria", "rotulo": "Alegria", "emoji": "😄", "alvoId": "alegria" },
-    { "id": "f-tristeza", "rotulo": "Tristeza", "emoji": "🙁", "alvoId": "tristeza" },
-    { "id": "f-medo", "rotulo": "Medo", "emoji": "😨", "alvoId": "medo" },
-    { "id": "f-raiva", "rotulo": "Raiva", "emoji": "😠", "alvoId": "raiva" },
-    { "id": "f-choro", "rotulo": "Choro", "emoji": "😢", "alvoId": "choro" },
-    { "id": "f-surpresa", "rotulo": "Surpresa", "emoji": "😮", "alvoId": "surpresa" },
-    { "id": "f-serio", "rotulo": "Sério", "emoji": "😐", "alvoId": "serio" },
-    { "id": "f-espanto", "rotulo": "Espanto", "emoji": "😲", "alvoId": "espanto" }
+    {
+      "id": "f-alegria",
+      "rotulo": "Alegria",
+      "emoji": "😄",
+      "alvoId": "alegria",
+      "imagem": "emocoes/alegria"
+    },
+    {
+      "id": "f-tristeza",
+      "rotulo": "Tristeza",
+      "emoji": "🙁",
+      "alvoId": "tristeza",
+      "imagem": "emocoes/tristeza"
+    },
+    {
+      "id": "f-medo",
+      "rotulo": "Medo",
+      "emoji": "😨",
+      "alvoId": "medo",
+      "imagem": "emocoes/medo"
+    },
+    {
+      "id": "f-raiva",
+      "rotulo": "Raiva",
+      "emoji": "😠",
+      "alvoId": "raiva",
+      "imagem": "emocoes/raiva"
+    },
+    {
+      "id": "f-choro",
+      "rotulo": "Choro",
+      "emoji": "😢",
+      "alvoId": "choro",
+      "imagem": "emocoes/choro"
+    },
+    {
+      "id": "f-surpresa",
+      "rotulo": "Surpresa",
+      "emoji": "😮",
+      "alvoId": "surpresa",
+      "imagem": "emocoes/surpresa"
+    },
+    {
+      "id": "f-serio",
+      "rotulo": "Sério",
+      "emoji": "😐",
+      "alvoId": "serio",
+      "imagem": "emocoes/serio"
+    },
+    {
+      "id": "f-espanto",
+      "rotulo": "Espanto",
+      "emoji": "😲",
+      "alvoId": "espanto",
+      "imagem": "emocoes/espanto"
+    }
   ],
   "corpoAtivo": {
     "titulo": "Agora faça você!",
     "instrucao": "Mostre cada sentimento com o seu rosto e com o seu corpo.",
     "passos": [
-      { "id": "faca-alegria", "rotulo": "Faça alegria", "descricao": "Sorria bem grande e levante os braços.", "emoji": "😄", "segundos": 10 },
-      { "id": "faca-surpresa", "rotulo": "Faça surpresa", "descricao": "Abra bem a boca e arregale os olhos.", "emoji": "😮", "segundos": 10 },
-      { "id": "faca-tristeza", "rotulo": "Faça tristeza", "descricao": "Abaixe os ombros e faça um bico.", "emoji": "🙁", "segundos": 10 },
-      { "id": "faca-calma", "rotulo": "Volte à calma", "descricao": "Respire fundo três vezes e solte o corpo.", "emoji": "😌", "segundos": 15 }
+      {
+        "id": "faca-alegria",
+        "rotulo": "Faça alegria",
+        "descricao": "Sorria bem grande e levante os braços.",
+        "emoji": "😄",
+        "segundos": 10
+      },
+      {
+        "id": "faca-surpresa",
+        "rotulo": "Faça surpresa",
+        "descricao": "Abra bem a boca e arregale os olhos.",
+        "emoji": "😮",
+        "segundos": 10
+      },
+      {
+        "id": "faca-tristeza",
+        "rotulo": "Faça tristeza",
+        "descricao": "Abaixe os ombros e faça um bico.",
+        "emoji": "🙁",
+        "segundos": 10
+      },
+      {
+        "id": "faca-calma",
+        "rotulo": "Volte à calma",
+        "descricao": "Respire fundo três vezes e solte o corpo.",
+        "emoji": "😌",
+        "segundos": 15
+      }
     ],
     "perguntaEmocao": {
       "enunciado": "Como você está se sentindo agora?",
       "opcoes": [
-        { "id": "feliz", "rotulo": "Feliz", "emoji": "😄" },
-        { "id": "calmo", "rotulo": "Calmo", "emoji": "😌" },
-        { "id": "animado", "rotulo": "Animado", "emoji": "🤩" },
-        { "id": "cansado", "rotulo": "Cansado", "emoji": "😮‍💨" }
+        {
+          "id": "feliz",
+          "rotulo": "Feliz",
+          "emoji": "😄"
+        },
+        {
+          "id": "calmo",
+          "rotulo": "Calmo",
+          "emoji": "😌"
+        },
+        {
+          "id": "animado",
+          "rotulo": "Animado",
+          "emoji": "🤩"
+        },
+        {
+          "id": "cansado",
+          "rotulo": "Cansado",
+          "emoji": "😮‍💨"
+        }
       ]
     }
   }

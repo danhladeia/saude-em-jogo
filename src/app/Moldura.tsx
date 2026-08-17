@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import { Link, Outlet, useLocation, useNavigate } from 'react-router'
 import { motion } from 'framer-motion'
 import { usarPerfil, totalDeEstrelas } from '@/store/usarPerfil'
@@ -11,6 +12,7 @@ export function Moldura() {
   const perfil = usarPerfil((e) => e.perfil)
   const progresso = usarPerfil((e) => e.progresso)
   const estrelas = totalDeEstrelas(progresso)
+  const toqueLongo = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
 
   const noMenu = pathname === '/menu'
 
@@ -39,7 +41,19 @@ export function Moldura() {
           </button>
         )}
 
-        <Link to="/menu" className="shrink-0" aria-label="Início">
+        {/* Toque longo no logo abre a Área do Professor.
+            Fica escondido de propósito: um botão visível na barra seria
+            clicado por criança de 7 anos no primeiro minuto de aula. */}
+        <Link
+          to="/menu"
+          className="shrink-0"
+          aria-label="Início"
+          onPointerDown={() => {
+            toqueLongo.current = setTimeout(() => navegar('/professor'), 1500)
+          }}
+          onPointerUp={() => clearTimeout(toqueLongo.current)}
+          onPointerLeave={() => clearTimeout(toqueLongo.current)}
+        >
           <img
             src="/marca/logo-horizontal.png"
             alt="Saúde em Jogo!"

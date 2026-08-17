@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "npm run validate:content && tsc -b && vite build",
     "validate:content": "node --experimental-strip-types scripts/validate-content.ts",
+    "test:laco": "node --experimental-strip-types scripts/testar-laco.mjs",
     "falas:extrair": "node --experimental-strip-types scripts/extrair-falas.ts",
     "falas:gerar": "node --experimental-strip-types scripts/gerar-audio.ts",
     "falas:manifesto": "node --experimental-strip-types scripts/gerar-audio.ts --somente-manifesto",

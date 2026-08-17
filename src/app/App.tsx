@@ -12,6 +12,8 @@ import { DesafiosDaSaude } from '@/telas/DesafiosDaSaude'
 import { DicasDeSaude } from '@/telas/DicasDeSaude'
 import { MinhasConquistas } from '@/telas/MinhasConquistas'
 import { Jogo } from '@/telas/Jogo'
+import { Questionario } from '@/telas/Questionario'
+import { Professor } from '@/telas/Professor'
 
 export function App() {
   const carregar = usarPerfil((e) => e.carregar)
@@ -41,6 +43,8 @@ export function App() {
           <Route path="/conquistas" element={<MinhasConquistas />} />
         </Route>
         <Route path="/jogo/:atividadeId" element={<Jogo />} />
+        <Route path="/questionario/:momento" element={<Questionario />} />
+        <Route path="/professor" element={<Professor />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </HashRouter>

@@ -1,0 +1,123 @@
+{
+  "titulo": "Como você cuida do seu corpo?",
+  "instrucao": "Não existe resposta errada. Responda pensando na sua semana.",
+  "perguntas": [
+    {
+      "id": "banho",
+      "enunciado": "Quantas vezes por dia você toma banho?",
+      "tipo": "habito",
+      "eixo": "promocao-da-saude",
+      "opcoes": [
+        { "id": "nenhuma", "rotulo": "Quase nunca", "emoji": "🙈", "valor": 0 },
+        { "id": "as-vezes", "rotulo": "Às vezes", "emoji": "🤔", "valor": 1 },
+        { "id": "uma", "rotulo": "Uma vez por dia", "emoji": "🚿", "valor": 2 },
+        { "id": "mais", "rotulo": "Mais de uma vez", "emoji": "✨", "valor": 3 }
+      ]
+    },
+    {
+      "id": "dentes",
+      "enunciado": "Quantas vezes por dia você escova os dentes?",
+      "tipo": "habito",
+      "eixo": "promocao-da-saude",
+      "opcoes": [
+        { "id": "nenhuma", "rotulo": "Quase nunca", "emoji": "🙈", "valor": 0 },
+        { "id": "uma", "rotulo": "Uma vez", "emoji": "1️⃣", "valor": 1 },
+        { "id": "duas", "rotulo": "Duas vezes", "emoji": "2️⃣", "valor": 2 },
+        { "id": "tres", "rotulo": "Três ou mais", "emoji": "🪥", "valor": 3 }
+      ]
+    },
+    {
+      "id": "agua",
+      "enunciado": "Quantos copos de água você bebe por dia?",
+      "tipo": "habito",
+      "eixo": "promocao-da-saude",
+      "opcoes": [
+        { "id": "quase-nada", "rotulo": "Quase nenhum", "emoji": "🏜️", "valor": 0 },
+        { "id": "poucos", "rotulo": "Uns dois", "emoji": "💧", "valor": 1 },
+        { "id": "medio", "rotulo": "Uns quatro", "emoji": "🥤", "valor": 2 },
+        { "id": "muitos", "rotulo": "Cinco ou mais", "emoji": "🌊", "valor": 3 }
+      ]
+    },
+    {
+      "id": "movimento",
+      "enunciado": "Quantos dias por semana você corre, pula ou brinca se mexendo?",
+      "tipo": "habito",
+      "eixo": "letramento-corporal",
+      "opcoes": [
+        { "id": "nenhum", "rotulo": "Nenhum dia", "emoji": "🛋️", "valor": 0 },
+        { "id": "poucos", "rotulo": "Um ou dois", "emoji": "🚶", "valor": 1 },
+        { "id": "varios", "rotulo": "Três ou quatro", "emoji": "🏃", "valor": 2 },
+        { "id": "todos", "rotulo": "Quase todos", "emoji": "⚡", "valor": 3 }
+      ]
+    },
+    {
+      "id": "sono",
+      "enunciado": "Você costuma dormir cedo nos dias de aula?",
+      "tipo": "habito",
+      "eixo": "promocao-da-saude",
+      "opcoes": [
+        { "id": "nunca", "rotulo": "Nunca", "emoji": "🌙", "valor": 0 },
+        { "id": "as-vezes", "rotulo": "Às vezes", "emoji": "🤔", "valor": 1 },
+        { "id": "quase-sempre", "rotulo": "Quase sempre", "emoji": "😴", "valor": 2 },
+        { "id": "sempre", "rotulo": "Sempre", "emoji": "⭐", "valor": 3 }
+      ]
+    },
+    {
+      "id": "tela",
+      "enunciado": "Você usa celular ou tablet pouco antes de dormir?",
+      "tipo": "habito",
+      "eixo": "promocao-da-saude",
+      "opcoes": [
+        { "id": "sempre", "rotulo": "Sempre", "emoji": "📱", "valor": 0 },
+        { "id": "quase-sempre", "rotulo": "Quase sempre", "emoji": "🤳", "valor": 1 },
+        { "id": "as-vezes", "rotulo": "Às vezes", "emoji": "🤔", "valor": 2 },
+        { "id": "nunca", "rotulo": "Quase nunca", "emoji": "🌛", "valor": 3 }
+      ]
+    },
+    {
+      "id": "frutas",
+      "enunciado": "Você come frutas ou verduras todos os dias?",
+      "tipo": "habito",
+      "eixo": "promocao-da-saude",
+      "opcoes": [
+        { "id": "nunca", "rotulo": "Quase nunca", "emoji": "🙈", "valor": 0 },
+        { "id": "as-vezes", "rotulo": "Às vezes", "emoji": "🤔", "valor": 1 },
+        { "id": "quase-sempre", "rotulo": "Quase sempre", "emoji": "🥦", "valor": 2 },
+        { "id": "sempre", "rotulo": "Todo dia", "emoji": "🍎", "valor": 3 }
+      ]
+    },
+    {
+      "id": "sinais",
+      "enunciado": "Quando o seu corpo está cansado, você percebe?",
+      "tipo": "conhecimento",
+      "eixo": "letramento-corporal",
+      "opcoes": [
+        { "id": "nao", "rotulo": "Não percebo", "emoji": "🤷", "valor": 0 },
+        { "id": "as-vezes", "rotulo": "Às vezes", "emoji": "🤔", "valor": 2 },
+        { "id": "sim", "rotulo": "Sim, percebo", "emoji": "💡", "valor": 3 }
+      ]
+    },
+    {
+      "id": "alongar",
+      "enunciado": "Para que serve alongar o corpo?",
+      "tipo": "conhecimento",
+      "eixo": "letramento-corporal",
+      "opcoes": [
+        { "id": "nada", "rotulo": "Não serve para nada", "emoji": "🚫", "valor": 0 },
+        { "id": "cansar", "rotulo": "Para cansar", "emoji": "😮‍💨", "valor": 0 },
+        { "id": "preparar", "rotulo": "Para preparar e relaxar o corpo", "emoji": "🧘", "valor": 3 }
+      ]
+    },
+    {
+      "id": "diferencas",
+      "enunciado": "As pessoas têm corpos diferentes umas das outras. Isso é...",
+      "tipo": "conhecimento",
+      "eixo": "letramento-corporal",
+      "opcoes": [
+        { "id": "problema", "rotulo": "Um problema", "emoji": "🚫", "valor": 0 },
+        { "id": "tanto-faz", "rotulo": "Tanto faz", "emoji": "🤷", "valor": 1 },
+        { "id": "normal", "rotulo": "Normal, cada corpo é único", "emoji": "🌈", "valor": 3 }
+      ]
+    }
+  ]
+}

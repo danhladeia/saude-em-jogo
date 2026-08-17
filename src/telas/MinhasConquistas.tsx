@@ -5,13 +5,18 @@ import { usarPerfil, totalDeEstrelas } from '@/store/usarPerfil'
 import { Estrela, FileiraDeEstrelas } from '@/design/Estrela'
 import { Mascote } from '@/design/Mascote'
 import { Botao } from '@/design/Botao'
+import { Album } from '@/design/Album'
+import { sequenciaVisivel } from '@/lib/dias'
 import type { Ano } from '@/dominio/tipos'
 
 /** Tela 8 do mockup: as estrelas do aluno, com o nome dele no topo. */
 export function MinhasConquistas() {
   const nome = usarPerfil((e) => e.perfil.nome)
   const progresso = usarPerfil((e) => e.progresso)
+  const figurinhas = usarPerfil((e) => e.figurinhas)
+  const sequencia = usarPerfil((e) => e.sequencia)
   const estrelas = totalDeEstrelas(progresso)
+  const diasSeguidos = sequenciaVisivel(sequencia)
 
   const concluidas = CATALOGO.filter((a) => progresso[a.id])
 
@@ -30,8 +35,15 @@ export function MinhasConquistas() {
           <p className="mt-1 text-tinta-400">
             {concluidas.length} de {CATALOGO.length} atividades concluídas
           </p>
+          {diasSeguidos > 0 && (
+            <p className="mt-1 font-display text-lg font-bold text-coral-500">
+              🔥 {diasSeguidos} {diasSeguidos === 1 ? 'dia seguido' : 'dias seguidos'}
+            </p>
+          )}
         </div>
       </div>
+
+      <Album coletadas={figurinhas} />
 
       <p className="rounded-bolha bg-sol-100 p-4 text-center font-display text-lg font-bold text-sol-600">
         Cada desafio cumprido ganha uma estrela ⭐

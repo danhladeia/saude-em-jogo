@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { CHAVES, gravar, ler } from '@/lib/armazenamento'
+import { hoje, semanaAtual, sequenciaVisivel } from '@/lib/dias'
+import { usarPerfil } from '@/store/usarPerfil'
 import { Estrela } from '@/design/Estrela'
 import { celebrarAcerto } from '@/design/celebrar'
 import { cn } from '@/design/cn'
@@ -19,23 +21,13 @@ const SEMANAIS = [
   { id: 'jogo-familia', rotulo: 'Criar um jogo de movimento com a família', emoji: '🎲' },
 ]
 
-/** ISO curto no fuso local — o dia vira aqui à meia-noite do aluno. */
-function hoje(): string {
-  const d = new Date()
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
-}
-
-function semanaAtual(): string {
-  const d = new Date()
-  const inicio = new Date(d.getFullYear(), 0, 1)
-  const dias = Math.floor((d.getTime() - inicio.getTime()) / 86_400_000)
-  return `${d.getFullYear()}-S${Math.ceil((dias + inicio.getDay() + 1) / 7)}`
-}
-
 type Marcados = Record<string, string[]>
 
 export function DesafiosDaSaude() {
   const [marcados, setMarcados] = useState<Marcados>({})
+  const sequencia = usarPerfil((e) => e.sequencia)
+  const marcarDiaDeDesafio = usarPerfil((e) => e.marcarDiaDeDesafio)
+  const diasSeguidos = sequenciaVisivel(sequencia)
 
   useEffect(() => {
     void ler<Marcados>(CHAVES.desafios, {}).then(setMarcados)
@@ -46,8 +38,15 @@ export function DesafiosDaSaude() {
 
   function alternar(periodo: string, id: string) {
     const atual = marcados[periodo] ?? []
-    const proximo = atual.includes(id) ? atual.filter((x) => x !== id) : [...atual, id]
-    if (!atual.includes(id)) celebrarAcerto()
+    const marcando = !atual.includes(id)
+    const proximo = marcando ? [...atual, id] : atual.filter((x) => x !== id)
+
+    if (marcando) {
+      celebrarAcerto()
+      // Só o desafio DIÁRIO alimenta a sequência. O semanal seria um jeito
+      // fácil demais de manter a corrente sem hábito nenhum.
+      if (periodo === dia) marcarDiaDeDesafio()
+    }
 
     const novos = { ...marcados, [periodo]: proximo }
     setMarcados(novos)
@@ -57,6 +56,8 @@ export function DesafiosDaSaude() {
   return (
     <div className="flex flex-col gap-8 py-4">
       <h1 className="text-4xl uppercase text-coral-500">Desafios da Saúde</h1>
+
+      <Sequencia dias={diasSeguidos} />
 
       <Grupo
         titulo="Diários"
@@ -76,6 +77,48 @@ export function DesafiosDaSaude() {
 
       <p className="rounded-bolha bg-sol-100 p-5 text-center font-display text-lg font-bold text-sol-600">
         Cada desafio cumprido ganha uma estrela ⭐
+      </p>
+    </div>
+  )
+}
+
+/**
+ * A corrente de dias.
+ *
+ * É o núcleo do laço diário, e aqui ela recompensa hábito real — beber água,
+ * dormir cedo, caminhar com a família — e não tempo de tela. Num app cujo 5º
+ * ano ensina equilíbrio no uso de telas, premiar permanência seria contradizer
+ * o próprio conteúdo.
+ */
+function Sequencia({ dias }: { dias: number }) {
+  if (dias === 0) {
+    return (
+      <div className="rounded-bolha border-4 border-dashed border-coral-200 bg-white p-5 text-center">
+        <p className="font-display text-xl font-bold text-tinta-600">
+          Marque um desafio hoje e comece a sua sequência! 🔥
+        </p>
+      </div>
+    )
+  }
+
+  return (
+    <div className="flex items-center gap-4 rounded-bolha border-4 border-coral-300 bg-coral-100 p-5">
+      <motion.span
+        aria-hidden="true"
+        className="text-6xl"
+        animate={{ scale: [1, 1.12, 1] }}
+        transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
+      >
+        🔥
+      </motion.span>
+      <div>
+        <p className="font-display text-4xl font-extrabold leading-none text-coral-600">{dias}</p>
+        <p className="font-display text-lg font-bold text-coral-600">
+          {dias === 1 ? 'dia seguido' : 'dias seguidos'}
+        </p>
+      </div>
+      <p className="ml-auto max-w-[14rem] text-right text-sm font-medium text-tinta-600">
+        Marque um desafio todo dia para não perder a sequência.
       </p>
     </div>
   )

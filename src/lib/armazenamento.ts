@@ -13,7 +13,10 @@ export const CHAVES = {
   perfil: 'sej:perfil',
   progresso: 'sej:progresso',
   desafios: 'sej:desafios',
+  figurinhas: 'sej:figurinhas',
+  sequencia: 'sej:sequencia',
   turma: 'sej:turma',
+  alunos: 'sej:alunos',
   questionario: 'sej:questionario',
   preferencias: 'sej:preferencias',
 } as const

@@ -9,6 +9,7 @@ import { usarPerfil } from '@/store/usarPerfil'
 import { Botao } from '@/design/Botao'
 import { Card } from '@/design/Card'
 import { Mascote } from '@/design/Mascote'
+import { RoletaDeRecompensa } from '@/design/RoletaDeRecompensa'
 import { FileiraDeEstrelas } from '@/design/Estrela'
 import { celebrarConclusao } from '@/design/celebrar'
 import { calar, narrar } from '@/lib/narracao'
@@ -33,7 +34,7 @@ const MotorCorpoAtivo = lazy(() =>
   import('@/engines/corpo-ativo/MotorCorpoAtivo').then((m) => ({ default: m.MotorCorpoAtivo })),
 )
 
-type Etapa = 'carregando' | 'jogando' | 'corpo-ativo' | 'resultado' | 'erro'
+type Etapa = 'carregando' | 'jogando' | 'corpo-ativo' | 'resultado' | 'recompensa' | 'erro'
 
 export function Jogo() {
   const { atividadeId } = useParams()
@@ -154,6 +155,7 @@ export function Jogo() {
         {etapa === 'resultado' && (
           <Resultado
             resultado={resultado}
+            aoGirar={() => setEtapa('recompensa')}
             aoRepetir={() => {
               setResultado({ acertos: 0, total: 0 })
               inicio.current = Date.now()
@@ -162,6 +164,12 @@ export function Jogo() {
             }}
             aoSair={() => navegar(`/atividades/${atividade.ano}`)}
           />
+        )}
+
+        {etapa === 'recompensa' && (
+          <Card className="mx-auto mt-8 max-w-xl">
+            <RoletaDeRecompensa aoTerminar={() => navegar('/conquistas')} />
+          </Card>
         )}
       </main>
     </div>
@@ -192,10 +200,12 @@ function Motor({
 
 function Resultado({
   resultado,
+  aoGirar,
   aoRepetir,
   aoSair,
 }: {
   resultado: ResultadoDeJogo
+  aoGirar: () => void
   aoRepetir: () => void
   aoSair: () => void
 }) {
@@ -210,12 +220,19 @@ function Resultado({
         <p className="text-xl text-tinta-600">
           Você acertou {resultado.acertos} de {resultado.total}.
         </p>
+
+        {/* O giro é a recompensa da atividade, então vem antes das outras
+            saídas — é o que a criança quer fazer agora. */}
+        <Botao cor="uva" tamanho="grande" largo onClick={aoGirar}>
+          🎁 Girar a roleta de figurinhas
+        </Botao>
+
         <div className="flex w-full flex-col gap-3 sm:flex-row">
           <Botao cor="neutro" largo onClick={aoRepetir}>
             Jogar de novo
           </Botao>
-          <Botao cor="folha" largo onClick={aoSair}>
-            Continuar
+          <Botao cor="neutro" largo onClick={aoSair}>
+            Voltar
           </Botao>
         </div>
       </div>

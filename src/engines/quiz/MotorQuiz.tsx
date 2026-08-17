@@ -9,6 +9,7 @@ import { Botao } from '@/design/Botao'
 import { celebrarAcerto } from '@/design/celebrar'
 import { narrar } from '@/lib/narracao'
 import { usarPerfil } from '@/store/usarPerfil'
+import { urlDoSprite } from '@/assets/registro'
 import { cn } from '@/design/cn'
 
 type Fase = 'respondendo' | 'conferindo'
@@ -23,6 +24,7 @@ type Fase = 'respondendo' | 'conferindo'
  */
 export function MotorQuiz({ conteudo, aoConcluir }: PropsDeMotor<ConteudoQuiz>) {
   const narracaoLigada = usarPerfil((e) => e.preferencias.narracao)
+  const personagem = usarPerfil((e) => e.perfil.personagem)
 
   const [indice, setIndice] = useState(0)
   const [fase, setFase] = useState<Fase>('respondendo')
@@ -127,11 +129,12 @@ export function MotorQuiz({ conteudo, aoConcluir }: PropsDeMotor<ConteudoQuiz>) 
         >
           <Enunciado texto={pergunta.enunciado} chave={pergunta.id} />
 
-          {pergunta.imagem && (
+          {urlDoSprite(pergunta.imagem, personagem) && (
             <img
-              src={pergunta.imagem}
+              src={urlDoSprite(pergunta.imagem, personagem)}
               alt=""
-              className="mx-auto max-h-56 w-auto object-contain"
+              draggable={false}
+              className="mx-auto max-h-56 w-auto select-none object-contain"
             />
           )}
 

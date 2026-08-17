@@ -1,5 +1,6 @@
 import type { Ilustracao } from '@/content/schemas'
 import { urlDoSprite } from '@/assets/registro'
+import { usarPerfil } from '@/store/usarPerfil'
 import { cn } from '@/design/cn'
 
 interface FiguraProps {
@@ -18,7 +19,8 @@ interface FiguraProps {
  * validador de conteúdo é quem reclama da chave errada, no build.
  */
 export function Figura({ item, className, semTexto = false }: FiguraProps) {
-  const url = urlDoSprite(item.imagem)
+  const personagem = usarPerfil((e) => e.perfil.personagem)
+  const url = urlDoSprite(item.imagem, personagem)
 
   return (
     <span className={cn('flex flex-col items-center justify-center gap-2 text-center', className)}>

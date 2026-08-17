@@ -23,7 +23,8 @@
           "correta": false
         }
       ],
-      "explicacao": "Sim! O corpo precisa se ajustar o tempo todo para não sair da linha."
+      "explicacao": "Sim! O corpo precisa se ajustar o tempo todo para não sair da linha.",
+      "imagem": "equilibrio/linha"
     },
     {
       "id": "um-pe",
@@ -43,7 +44,8 @@
           "correta": false
         }
       ],
-      "explicacao": "Muito! Com um apoio só, o corpo trabalha bem mais para se manter firme."
+      "explicacao": "Muito! Com um apoio só, o corpo trabalha bem mais para se manter firme.",
+      "imagem": "equilibrio/um-pe"
     },
     {
       "id": "deitado",
@@ -63,7 +65,8 @@
           "correta": true
         }
       ],
-      "explicacao": "Deitado o corpo está todo apoiado — não precisa de equilíbrio."
+      "explicacao": "Deitado o corpo está todo apoiado — não precisa de equilíbrio.",
+      "imagem": "equilibrio/deitado"
     },
     {
       "id": "escada",
@@ -83,7 +86,8 @@
           "correta": false
         }
       ],
-      "explicacao": "Sim! A cada degrau o corpo fica um instante em um pé só."
+      "explicacao": "Sim! A cada degrau o corpo fica um instante em um pé só.",
+      "imagem": "equilibrio/escada-a"
     },
     {
       "id": "sentado",
@@ -103,7 +107,8 @@
           "correta": true
         }
       ],
-      "explicacao": "Sentado a cadeira segura o corpo, então o equilíbrio descansa."
+      "explicacao": "Sentado a cadeira segura o corpo, então o equilíbrio descansa.",
+      "imagem": "equilibrio/sentado"
     },
     {
       "id": "bicicleta",
@@ -123,7 +128,8 @@
           "correta": false
         }
       ],
-      "explicacao": "Muito! Foi por isso que aprender a pedalar deu tanto trabalho no começo."
+      "explicacao": "Muito! Foi por isso que aprender a pedalar deu tanto trabalho no começo.",
+      "imagem": "equilibrio/bicicleta"
     },
     {
       "id": "escorregar",
@@ -143,7 +149,8 @@
           "correta": true
         }
       ],
-      "explicacao": "Sentado no escorregador o corpo está apoiado e só desliza."
+      "explicacao": "Sentado no escorregador o corpo está apoiado e só desliza.",
+      "imagem": "equilibrio/escorregador"
     },
     {
       "id": "na-ponta",
@@ -163,7 +170,8 @@
           "correta": false
         }
       ],
-      "explicacao": "Sim! Quanto menor o apoio no chão, mais equilíbrio o corpo precisa."
+      "explicacao": "Sim! Quanto menor o apoio no chão, mais equilíbrio o corpo precisa.",
+      "imagem": "equilibrio/ponta-dos-pes"
     }
   ],
   "corpoAtivo": {

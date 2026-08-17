@@ -29,8 +29,29 @@ const POR_CHAVE = new Map<string, string>(
   }),
 )
 
-export function urlDoSprite(chave: string | undefined): string | undefined {
+/**
+ * Pastas que existem em duas versões, uma por personagem.
+ *
+ * O conteúdo escreve sempre a chave neutra ("corpo/cabeca"). Quando a
+ * criança escolhe a menina, a resolução tenta antes "menina-corpo/cabeca".
+ *
+ * Sem isto uma menina escolhe a menina na abertura e, dois cliques depois,
+ * monta o corpo de um menino e arrasta emoções de um rosto que não é o dela —
+ * justamente no conteúdo que trabalha reconhecer o próprio corpo.
+ */
+const POR_PERSONAGEM = new Set(['corpo', 'emocoes'])
+
+export function urlDoSprite(chave: string | undefined, personagem?: string): string | undefined {
   if (!chave) return undefined
+
+  if (personagem === 'menina') {
+    const [pasta, nome] = chave.split('/')
+    if (POR_PERSONAGEM.has(pasta)) {
+      const daMenina = POR_CHAVE.get(`menina-${pasta}/${nome}`)
+      if (daMenina) return daMenina
+    }
+  }
+
   return POR_CHAVE.get(chave)
 }
 

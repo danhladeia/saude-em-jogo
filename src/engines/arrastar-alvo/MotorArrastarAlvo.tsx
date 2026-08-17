@@ -21,6 +21,7 @@ import { Botao } from '@/design/Botao'
 import { celebrarAcerto } from '@/design/celebrar'
 import { narrar } from '@/lib/narracao'
 import { usarPerfil } from '@/store/usarPerfil'
+import { urlDoSprite } from '@/assets/registro'
 import { cn } from '@/design/cn'
 
 /**
@@ -33,6 +34,7 @@ import { cn } from '@/design/cn'
  */
 export function MotorArrastarAlvo({ conteudo, aoConcluir }: PropsDeMotor<ConteudoArrastarAlvo>) {
   const narracaoLigada = usarPerfil((e) => e.preferencias.narracao)
+  const personagem = usarPerfil((e) => e.perfil.personagem)
 
   /** pecaId -> alvoId onde ela foi encaixada corretamente. */
   const [encaixadas, setEncaixadas] = useState<Record<string, string>>({})
@@ -122,9 +124,9 @@ export function MotorArrastarAlvo({ conteudo, aoConcluir }: PropsDeMotor<Conteud
               background: conteudo.cenario.corDeFundo,
             }}
           >
-            {conteudo.cenario.imagem && (
+            {urlDoSprite(conteudo.cenario.imagem, personagem) && (
               <img
-                src={conteudo.cenario.imagem}
+                src={urlDoSprite(conteudo.cenario.imagem, personagem)}
                 alt=""
                 className="absolute inset-0 h-full w-full object-contain"
               />

@@ -7,6 +7,7 @@ import { Mascote } from '@/design/Mascote'
 import { celebrarConclusao } from '@/design/celebrar'
 import { narrar } from '@/lib/narracao'
 import { usarPerfil } from '@/store/usarPerfil'
+import { urlDoSprite } from '@/assets/registro'
 import { cn } from '@/design/cn'
 
 interface CorpoAtivoProps {
@@ -31,6 +32,7 @@ type Etapa = 'convite' | 'movendo' | 'emocao'
  */
 export function CorpoAtivo({ bloco, aoConcluir }: CorpoAtivoProps) {
   const narracaoLigada = usarPerfil((e) => e.preferencias.narracao)
+  const personagem = usarPerfil((e) => e.perfil.personagem)
 
   const [etapa, setEtapa] = useState<Etapa>('convite')
   const [indice, setIndice] = useState(0)
@@ -131,8 +133,8 @@ export function CorpoAtivo({ bloco, aoConcluir }: CorpoAtivoProps) {
           animate={{ opacity: 1, scale: 1 }}
           className="flex flex-col items-center gap-4 text-center"
         >
-          {passo.imagem ? (
-            <img src={passo.imagem} alt="" className="h-48 w-auto object-contain" />
+          {urlDoSprite(passo.imagem, personagem) ? (
+            <img src={urlDoSprite(passo.imagem, personagem)} alt="" draggable={false} className="h-48 w-auto select-none object-contain" />
           ) : (
             <span aria-hidden="true" className="text-8xl">
               {passo.emoji ?? '🤸'}

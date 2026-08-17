@@ -17,6 +17,15 @@ export type Motor =
 /** Os dois eixos que a cartilha atravessa do começo ao fim. */
 export type Eixo = 'letramento-corporal' | 'promocao-da-saude'
 
+/**
+ * Quem guia a criança pelo app.
+ *
+ * A escolha existe porque metade da turma é menina, e um menino como corpo
+ * universal seria uma escolha fraca para um conteúdo que trabalha justamente
+ * diversidade corporal no 5º ano.
+ */
+export type Personagem = 'menino' | 'menina'
+
 export interface Atividade {
   id: string
   ano: Ano

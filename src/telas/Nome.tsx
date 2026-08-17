@@ -2,12 +2,17 @@ import { useEffect, useState, type FormEvent } from 'react'
 import { useNavigate } from 'react-router'
 import { Botao } from '@/design/Botao'
 import { Card } from '@/design/Card'
-import { Mascote } from '@/design/Mascote'
+import { Mascote, RetratoDoPersonagem } from '@/design/Mascote'
 import { usarPerfil } from '@/store/usarPerfil'
 import { ANOS, TITULO_DO_ANO } from '@/dominio/catalogo'
 import { narrar } from '@/lib/narracao'
 import { cn } from '@/design/cn'
-import type { Ano } from '@/dominio/tipos'
+import type { Ano, Personagem } from '@/dominio/tipos'
+
+const PERSONAGENS: { id: Personagem; rotulo: string }[] = [
+  { id: 'menino', rotulo: 'Menino' },
+  { id: 'menina', rotulo: 'Menina' },
+]
 
 /**
  * Tela 2 do mockup: "Seja bem vindo!!! Digite o seu nome:".
@@ -19,10 +24,12 @@ export function Nome() {
   const navegar = useNavigate()
   const definirNome = usarPerfil((e) => e.definirNome)
   const definirAno = usarPerfil((e) => e.definirAno)
+  const definirPersonagem = usarPerfil((e) => e.definirPersonagem)
   const narracaoLigada = usarPerfil((e) => e.preferencias.narracao)
 
   const [nome, setNome] = useState('')
   const [ano, setAno] = useState<Ano | null>(null)
+  const [personagem, setPersonagem] = useState<Personagem | null>(null)
 
   useEffect(() => {
     if (narracaoLigada) narrar('Seja bem-vindo! Digite o seu nome.')
@@ -30,10 +37,14 @@ export function Nome() {
 
   function enviar(evento: FormEvent) {
     evento.preventDefault()
-    if (!nome.trim() || ano === null) return
+    if (!nome.trim() || ano === null || personagem === null) return
     definirNome(nome)
     definirAno(ano)
-    navegar('/menu')
+    definirPersonagem(personagem)
+    // Aluno recém-cadastrado nunca respondeu o pré. Mandar para o menu aqui
+    // deixaria a criança começar a jogar e o dado de linha de base se perderia
+    // — e sem linha de base a dissertação não tem o que comparar.
+    navegar('/questionario/pre')
   }
 
   return (
@@ -59,6 +70,31 @@ export function Nome() {
                 className="min-h-toque rounded-bolha border-4 border-ceu-200 bg-white px-6 text-3xl font-bold outline-none focus:border-ceu-400"
               />
             </div>
+
+            <fieldset className="flex flex-col gap-3">
+              <legend className="mb-2 font-display text-2xl font-bold">
+                Quem vai jogar com você?
+              </legend>
+              <div className="grid grid-cols-2 gap-4">
+                {PERSONAGENS.map((p) => (
+                  <button
+                    key={p.id}
+                    type="button"
+                    onClick={() => setPersonagem(p.id)}
+                    aria-pressed={personagem === p.id}
+                    className={cn(
+                      'flex flex-col items-center gap-2 rounded-bolha border-4 p-4 transition-colors',
+                      personagem === p.id
+                        ? 'border-folha-400 bg-folha-100'
+                        : 'border-ceu-100 bg-white hover:border-ceu-300',
+                    )}
+                  >
+                    <RetratoDoPersonagem personagem={p.id} className="max-h-40" />
+                    <span className="font-display text-xl font-bold">{p.rotulo}</span>
+                  </button>
+                ))}
+              </div>
+            </fieldset>
 
             <fieldset className="flex flex-col gap-3">
               <legend className="mb-2 font-display text-2xl font-bold">Em que ano você está?</legend>
@@ -95,7 +131,7 @@ export function Nome() {
               cor="folha"
               tamanho="grande"
               largo
-              disabled={!nome.trim() || ano === null}
+              disabled={!nome.trim() || ano === null || personagem === null}
             >
               Vamos jogar!
             </Botao>

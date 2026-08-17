@@ -38,3 +38,8 @@ __pycache__/
 # Clipes de narração gerados por TTS. Gravações humanas devem ser
 # versionadas — remova esta linha quando elas existirem.
 public/falas/*.mp3
+
+# Exportacoes da Area do Professor. NUNCA versionar: contem nome e
+# respostas de criancas reais, dado pessoal sensivel sob a LGPD.
+saude-em-jogo-*.csv
+*.csv

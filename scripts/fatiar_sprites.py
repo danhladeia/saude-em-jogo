@@ -126,6 +126,38 @@ def componentes(mascara: np.ndarray) -> list[tuple[int, int, int, int]]:
     return caixas
 
 
+def caixas_por_grade(mascara: np.ndarray, colunas: int, linhas: int):
+    """Uma caixa por celula de uma grade regular.
+
+    Quando a folha ja vem numa grade — as vezes o gerador ate desenha as
+    linhas —, dividir e pegar todo o conteudo de cada celula e melhor que
+    detectar componente: nao ha o que adivinhar. Resolve o caso classico da
+    peca solta dentro da celula (a bola de golfe longe do golfista, a seta
+    ao lado da cabeca) que a deteccao separaria em duas figuras.
+    """
+    alt, larg = mascara.shape
+    passo_x, passo_y = larg / colunas, alt / linhas
+    caixas = []
+
+    for linha in range(linhas):
+        for coluna in range(colunas):
+            x0, x1 = round(coluna * passo_x), round((coluna + 1) * passo_x)
+            y0, y1 = round(linha * passo_y), round((linha + 1) * passo_y)
+            celula = mascara[y0:y1, x0:x1]
+
+            cheias_y = np.nonzero(celula.any(axis=1))[0]
+            cheias_x = np.nonzero(celula.any(axis=0))[0]
+            if cheias_y.size == 0 or cheias_x.size == 0:
+                continue  # celula vazia: a grade tinha mais lugares que figuras
+
+            caixas.append((
+                x0 + int(cheias_x[0]), y0 + int(cheias_y[0]),
+                x0 + int(cheias_x[-1]) + 1, y0 + int(cheias_y[-1]) + 1,
+            ))
+
+    return caixas
+
+
 def ordem_de_leitura(caixas: list[tuple[int, int, int, int]]) -> list[tuple[int, int, int, int]]:
     """Agrupa em linhas e ordena esquerda->direita. Grade torta nao atrapalha."""
     if not caixas:
@@ -206,6 +238,9 @@ def main() -> int:
                    help="descarta figuras mais baixas que isso; util contra titulo de secao")
     p.add_argument("--regiao", default="",
                    help="recorta antes de detectar: x0,y0,x1,y1. Use para fatiar uma secao por vez")
+    p.add_argument("--grade", default="",
+                   help="COLSxLINHAS. Uma figura por celula, sem adivinhar componente. "
+                        "Use quando a folha tiver grade regular")
     p.add_argument("--conferir", action="store_true", help="so gera a folha numerada, nao grava sprites")
     args = p.parse_args()
 
@@ -229,10 +264,19 @@ def main() -> int:
     arr = np.array(img)
 
     mascara = mascara_do_conteudo(arr, args.tolerancia)
-    caixas = componentes(dilatar(mascara, args.raio))
-    caixas = [c for c in caixas if (c[2] - c[0]) * (c[3] - c[1]) >= args.area_minima]
-    caixas = [c for c in caixas if (c[3] - c[1]) >= args.altura_minima]
-    caixas = ordem_de_leitura(caixas)
+
+    if args.grade:
+        try:
+            colunas, linhas = (int(v) for v in args.grade.lower().split("x"))
+        except ValueError:
+            print("x --grade precisa do formato COLSxLINHAS, por exemplo 4x4", file=sys.stderr)
+            return 1
+        caixas = caixas_por_grade(mascara, colunas, linhas)
+    else:
+        caixas = componentes(dilatar(mascara, args.raio))
+        caixas = [c for c in caixas if (c[2] - c[0]) * (c[3] - c[1]) >= args.area_minima]
+        caixas = [c for c in caixas if (c[3] - c[1]) >= args.altura_minima]
+        caixas = ordem_de_leitura(caixas)
 
     if not caixas:
         print("x nenhuma figura encontrada. Tente --tolerancia maior.", file=sys.stderr)

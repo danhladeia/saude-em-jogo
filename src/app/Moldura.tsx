@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 import { usarPerfil, totalDeEstrelas } from '@/store/usarPerfil'
 import { Estrela } from '@/design/Estrela'
 import { calar } from '@/lib/narracao'
+// Ver comentário em Iniciar.tsx: caminho absoluto quebra sob a base do Pages.
+import logoHorizontal from '@/assets/marca/logo-horizontal.png'
 
 /** Moldura das telas internas: voltar, marca, contador de estrelas. */
 export function Moldura() {
@@ -55,7 +57,7 @@ export function Moldura() {
           onPointerLeave={() => clearTimeout(toqueLongo.current)}
         >
           <img
-            src="/marca/logo-horizontal.png"
+            src={logoHorizontal}
             alt="Saúde em Jogo!"
             className="h-14 w-auto sm:h-16"
           />

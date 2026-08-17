@@ -3,6 +3,10 @@ import { motion } from 'framer-motion'
 import { Botao } from '@/design/Botao'
 import { usarPerfil } from '@/store/usarPerfil'
 import { narrar } from '@/lib/narracao'
+// Importado, não escrito como caminho: o app é servido sob /saude-em-jogo/
+// no GitHub Pages, e um "/marca/..." absoluto aponta para fora da base —
+// o logo dava 404 no site publicado. O import deixa o Vite resolver.
+import logoVertical from '@/assets/marca/logo-vertical.png'
 
 /** Tela 1 do mockup: a marca e um único botão, INICIAR. */
 export function Iniciar() {
@@ -28,7 +32,7 @@ export function Iniciar() {
   return (
     <div className="fundo-ceu flex min-h-dvh flex-col items-center justify-center gap-8 px-6">
       <motion.img
-        src="/marca/logo-vertical.png"
+        src={logoVertical}
         alt="Saúde em Jogo! Jogo que ensina, saúde que transforma!"
         className="w-full max-w-sm"
         initial={{ scale: 0.85, opacity: 0 }}

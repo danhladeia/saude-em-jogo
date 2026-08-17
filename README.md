@@ -2,6 +2,10 @@
 
 > Jogo que ensina, saúde que transforma!
 
+**📖 Toda a documentação está em [`docs/`](docs/README.md).**
+Para usar em aula: [manual da professora](docs/manual-da-professora.md).
+Para retomar o desenvolvimento: [estado atual](docs/estado-atual.md).
+
 PWA de letramento corporal e promoção da saúde para os anos iniciais do Ensino
 Fundamental. Produto educacional do Mestrado Profissional em Educação Física em
 Rede Nacional (PROEF/Unimontes) — Profa. Luciana Pereira Miranda Paccelli,

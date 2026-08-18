@@ -20,7 +20,7 @@ export function Moldura() {
 
   return (
     <div className="fundo-ceu flex min-h-dvh flex-col">
-      <header className="flex items-center gap-4 px-4 py-3 sm:px-8">
+      <header className="flex items-center gap-4 px-4 py-2 sm:px-8 sm:py-3">
         {!noMenu && (
           <button
             onClick={() => {
@@ -85,7 +85,7 @@ export function Moldura() {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.25 }}
-        className="mx-auto w-full max-w-5xl flex-1 px-4 pb-12 sm:px-8"
+        className="mx-auto w-full max-w-5xl flex-1 px-4 pb-6 sm:px-8 sm:pb-8"
       >
         <Outlet />
       </motion.main>

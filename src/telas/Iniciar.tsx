@@ -34,7 +34,8 @@ export function Iniciar() {
       <motion.img
         src={logoVertical}
         alt="Saúde em Jogo! Jogo que ensina, saúde que transforma!"
-        className="w-full max-w-sm"
+        className="w-full max-w-sm object-contain"
+        style={{ maxHeight: '45dvh' }}
         initial={{ scale: 0.85, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 160, damping: 16 }}

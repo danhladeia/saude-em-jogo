@@ -1,6 +1,11 @@
 # Voz natural e por faixa etária — SAÚDE EM JOGO!
 
-> Plano para a narracao soar humana. Ainda nao executado: o app usa a voz do sistema.
+> Plano para a narração soar humana.
+>
+> **Fases 1, 3 e 6 feitas** (17/08/2026). As 343 falas estão geradas na voz
+> `pt-BR-FranciscaNeural` e versionadas em `public/falas/`. Faltam a 2
+> (faixas etárias), a 4 (SSML) e a 5 (voz do mascote, que depende do nome).
+> A voz do sistema virou o que sempre devia ter sido: a rede de segurança.
 
 ## Contexto
 
@@ -58,7 +63,7 @@ resolver só isso, mantendo o roteiro atual, ainda soaria a leitura de bula.
 
 ## O plano
 
-### Fase 1 — Reescrever as 139 falas para o ouvido
+### Fase 1 — Reescrever as falas para o ouvido ✅
 
 Maior ganho, custo zero, não depende de escolher provedor. Regras:
 
@@ -71,8 +76,32 @@ Maior ganho, custo zero, não depende de escolher provedor. Regras:
   está longa demais.
 
 Falas com várias ordens viram **sequência de falas curtas** com pausa real entre
-elas — o que exige uma pequena mudança no schema (`dicas` passa de uma string
-para uma lista de falas).
+elas.
+
+**O que foi feito:**
+
+- `narrarSequencia()` em `src/lib/narracao.ts` toca falas curtas em fila, com
+  meio segundo de silêncio entre elas, e é cancelada por qualquer `calar()`.
+  O avanço tem temporizador de segurança: `ended` do `<audio>` e `onend` da Web
+  Speech não chegam com a aba em segundo plano nem quando não há voz pt-BR
+  instalada, e a sequência não pode ficar parada esperando um evento que talvez
+  não venha. Mesmo princípio do resultado por temporizador nos motores.
+- As quatro dicas de saúde deixaram de ser um parágrafo de ~40 palavras cada.
+  Cada dica virou uma fala própria, precedida de um convite ("Vamos falar de
+  higiene!"), narradas em sequência. `dicas` passou de string única para lista;
+  `falaDoTema()` virou `falasDoTema()`.
+- 28 falas de conteúdo reescritas: travessão e dois-pontos viraram ponto final,
+  orações de 13 a 16 palavras foram partidas em duas.
+- **Bug de produção corrigido no caminho:** `src/lib/falas.ts` procurava os
+  clipes em `/falas/…`, ignorando a base `/saude-em-jogo/` do Vite. O manifesto
+  dava 404, `temClipe()` respondia sempre `false` e **todo clipe gravado seria
+  ignorado em silêncio.** Passou despercebido porque ainda não há áudio gerado —
+  a Fase 6 teria sido entregue e "não teria funcionado", sem nenhum erro na
+  tela. Mesma classe do logo que já quebrou no Pages.
+
+**A régua virou comando:** `npm run falas:revisar` extrai as falas e reprova
+travessão, dois-pontos, grupo respiratório acima de 12 palavras e fala acima de
+30. As 343 passam. Rodar depois de escrever qualquer conteúdo novo.
 
 ### Fase 2 — Três faixas etárias, não cinco
 
@@ -91,18 +120,45 @@ por ano — o que exige apenas revisar cada JSON contra a régua da sua faixa.
 O app já sabe o ano do aluno (`perfil.ano`), então a seleção da variante é
 trivial.
 
-### Fase 3 — Marcar a intenção de cada fala
+### Fase 3 — Marcar a intenção de cada fala ✅
 
 Cada fala ganha uma etiqueta de entrega:
 
 `instrucao` · `pergunta` · `comemoracao` · `consolo` · `convite-movimento` ·
 `curiosidade` · `acalmar`
 
-Uma tabela mapeia **intenção × faixa → parâmetros do motor**: estilo e prosódia
-no Azure, `instructions` no OpenAI, `stability`/`style` no ElevenLabs.
+É isto que faz "Isso mesmo!" soar diferente de "Tente outro lugar." — antes as
+duas saíam com a mesma energia, o sinal mais óbvio de máquina falando.
 
-É isto que faz "Isso mesmo!" soar diferente de "Tente outro lugar." — hoje as
-duas saem com a mesma energia, o que é o sinal mais óbvio de máquina falando.
+**Como foi feito:** a intenção é **deduzida de onde a fala mora**, não escrita
+uma a uma. Enunciado de quiz é `pergunta`, explicação é `curiosidade`, passo de
+bloco de movimento é `convite-movimento`, e assim por diante — zero conteúdo
+reescrito, e conteúdo novo já nasce etiquetado. Só onde o lugar não basta é que
+se declara:
+
+- `src/content/interface.ts` — "Isso mesmo!" e "Tente outro lugar." vêm do mesmo
+  ponto do código, então a lista virou `{ texto, intencao }`.
+- `intencao` opcional no passo do bloco de movimento e no item da roleta —
+  "Pule com os dois pés" e "Respire fundo" moram no mesmo lugar. Os oito passos
+  de respiração declaram `acalmar`.
+
+**O vocabulário e a direção de atuação** vivem em `src/content/intencoes.ts`.
+`DIRECAO` é escrita em português para gente, não para API: o roteiro de gravação
+ganhou a coluna **"Como dizer"**, porque quem grava é a professora ou um locutor,
+e `style="cheerful"` numa folha de papel não ajuda ninguém.
+
+**Os três provedores** passaram a receber a intenção em vez de um tom único:
+estilo `mstts:express-as` e `prosody rate` no Azure, `instructions` no OpenAI,
+`stability`/`style` no ElevenLabs. A tabela está em `scripts/gerar-audio.ts`.
+
+Falta a outra metade do cruzamento previsto no plano — **intenção × faixa
+etária** —, que depende da Fase 2.
+
+**De quebra, 24 falas que nunca entrariam no roteiro:** a roleta de recompensa
+monta a fala com o rótulo da figurinha sorteada (`Você ganhou Estrela!`). Texto
+dinâmico, mas conjunto fechado — doze figurinhas, duas formas cada. Sem isso o
+momento mais comemorativo do app seria o único garantidamente robótico, para
+sempre. Agora saem no roteiro como `comemoracao`.
 
 ### Fase 4 — Gerar SSML, não string crua
 
@@ -118,7 +174,39 @@ mascote (já era pendência da autora) e travar uma única voz para ele.
 
 É a diferença entre "o app está lendo para mim" e "alguém está jogando comigo".
 
-### Fase 6 — O caminho humano
+### Fase 6 — Gerar os clipes ✅
+
+**Feito com `edge-tts`, voz `pt-BR-FranciscaNeural`**, por
+`npm run falas:gerar:edge` (`scripts/gerar-audio-edge.py`).
+
+O caminho até aqui foi por eliminação, e vale registrar para ninguém
+refazer:
+
+| Tentativa | Por que não |
+|---|---|
+| ElevenLabs | Conta no plano gratuito. A API recusa vozes da biblioteca, e a cota mensal é menor que o trabalho. |
+| OpenAI | Chave válida, conta sem crédito. |
+| Piper (Hugging Face) | As quatro vozes pt-BR são masculinas. |
+| Kokoro `pf_dora` (Hugging Face) | Funcionou, licença Apache 2.0, roda offline. Perdeu na comparação de ouvido. |
+
+**A procedência, dita por inteiro:** o `edge-tts` usa o endpoint por trás do
+"Ler em voz alta" do Edge. Não é uma API contratada da Microsoft, pode parar
+de funcionar sem aviso, e o uso programático é área cinzenta nos termos dela.
+Foi escolha consciente do Danilo, depois de ouvir as duas opções lado a lado.
+Os MP3 gerados são do projeto e continuam tocando se o endpoint cair.
+
+Se um dia for preciso trocar por procedência contratada, `npm run falas:gerar`
+com Azure regera tudo — e o Azure usa a mesma família de voz.
+
+**As intenções sobreviveram à troca de motor.** O `edge-tts` não aceita
+instrução de estilo em texto livre como o OpenAI, mas aceita ritmo e tom, que
+é o que mais carrega a intenção. A tabela está em `scripts/gerar-audio-edge.py`.
+
+**Os MP3 são versionados**, ao contrário do que o `.gitignore` dizia antes. O
+deploy é `checkout` + `build` no CI, que não regera áudio: ignorá-los
+publicaria o site mudo, sem erro nenhum na tela.
+
+### Fase 6b — O caminho humano, que continua valendo
 
 Como eu não gravo, as opções reais são:
 
@@ -166,23 +254,38 @@ Nenhuma das duas versões precisa de motor melhor para soar melhor que a atual.
 
 ## Arquivos afetados
 
-- `src/content/dicas.ts` — dica vira lista de falas curtas com intenção
-- `src/content/interface.ts` — variantes por faixa
-- `src/content/movimento.ts` — revisar descrições dos passos para o ouvido
-- `src/content/ano1/*.json`, `ano2/*.json` — passar cada `instrucao`,
-  `enunciado`, `explicacao` e `descricao` pela régua da faixa
-- `src/content/schemas.ts` — campos `intencao` e variantes por faixa
+Já tocados nas Fases 1 e 3:
+
+- `src/content/dicas.ts` — dica virou lista de falas curtas ✅
+- `src/content/movimento.ts` e `src/content/ano*/*.json` — descrições,
+  instruções e explicações passadas pela régua; passos de respirar marcados
+  como `acalmar` ✅
+- `src/content/intencoes.ts` — vocabulário de intenção e direção de atuação ✅
+- `src/content/interface.ts` — lista virou `{ texto, intencao }` ✅
+- `src/content/schemas.ts` — campo `intencao` no passo e no item da roleta ✅
+- `src/lib/narracao.ts` — `narrarSequencia()` ✅
+- `src/lib/falas.ts` — fim do clipe encadeável, e o caminho com a base ✅
+- `scripts/extrair-falas.ts` — intenção por fala, e as falas da recompensa ✅
+- `scripts/gerar-audio.ts` — parâmetros por intenção nos três provedores ✅
+- `scripts/revisar-falas.ts` — a régua como comando ✅
+- `public/falas/roteiro.md` — coluna "Como dizer" ✅
+
+Pendentes, das fases seguintes:
+
+- `src/content/interface.ts` — variantes por faixa etária
+- `src/content/schemas.ts` — variantes por faixa
 - `src/lib/falas.ts` — chave passa a considerar a faixa etária
-- `scripts/extrair-falas.ts` — emitir SSML e parâmetros de tom por fala
-- `scripts/gerar-audio.ts` — enviar SSML e estilo em vez de texto cru
-- `public/falas/roteiro.md` — ganha coluna de intenção e direção de atuação
+- `scripts/extrair-falas.ts` — emitir SSML por fala
+- `scripts/gerar-audio.ts` — enviar SSML em vez de texto cru
 
 ---
 
 ## Verificação
 
 - **Teste da respiração:** ler cada fala em voz alta. Se não sai numa
-  respiração natural, está longa demais. Aplicar às 139.
+  respiração natural, está longa demais. O que dá para medir sem ouvido humano
+  já está em `npm run falas:revisar`; ler em voz alta continua sendo o teste
+  que decide, e nenhum script substitui.
 - **Teste A/B:** gerar as 10 piores falas atuais nas versões antiga e nova, e
   deixar a Luciana escolher no cego.
 - **Teste de faixa:** tocar a variante `pequenos` para um aluno de 5º ano. Se

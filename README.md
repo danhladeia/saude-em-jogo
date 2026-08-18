@@ -15,8 +15,9 @@ Mendes Cunha.
 ## O princípio: motor é código, jogo é JSON
 
 As 20 atividades da intervenção (5 anos × 4 semanas) não são 20 programas. Elas
-usam **nove motores** — o de quiz sozinho atende cinco jogos. Cada motor é
-escrito e testado uma vez; cada jogo é um arquivo JSON validado por schema.
+usam **cinco motores** — o de arrastar-alvo sozinho atende oito jogos. Cada
+motor é escrito e testado uma vez; cada jogo é um arquivo JSON validado por
+schema.
 
 Consequência prática: **trocar uma atividade não exige programador**. Basta
 editar o JSON em `src/content/anoN/`. É exatamente o que o documento da autora
@@ -25,16 +26,23 @@ substituímos por outra com o mesmo tema").
 
 | Motor | Jogos que atende |
 |---|---|
-| `quiz` | Jogo de escolhas, Movimente-se, Equilibrista mirim, Água em jogo, Corpos do mundo |
-| `arrastar-alvo` | Monte o corpo humano, Como me sinto? |
-| `associacao` | Corpo que fala, Jogo da memória |
+| `quiz` | Jogo de escolhas, Movimente-se, Equilibrista mirim, Água em jogo, Trilha saudável do sono, Missão corpo e movimento, Corpos do mundo |
+| `arrastar-alvo` | Monte o corpo humano, Como me sinto?, Classificação corporal, Prato colorido, Super lanche, Dia ativo saudável, Digital saúde, Missão ambiente saudável |
+| `associacao` | Corpo que fala, Jogo da memória dos esportes |
 | `roleta` | Roleta giratória de alongamentos |
 | `corpo-ativo` | Corpo que dança, Corpo em ação |
-| `classificar` | Classificação corporal, Missão ambiente saudável *(a fazer)* |
-| `rotina` | Dia ativo saudável, Digital saúde *(a fazer)* |
-| `montagem` | Prato colorido, Super lanche *(a fazer)* |
-| `trilha` | Trilha saudável do sono *(a fazer)* |
-| `runner` | Missão corpo e movimento *(a fazer)* |
+
+O plano original previa dez motores. Cinco nunca precisaram existir:
+
+| Motor previsto | Como foi resolvido |
+|---|---|
+| `classificar`, `montagem` | `arrastar-alvo` com `layout: "colunas"` — caixas grandes recebendo várias peças |
+| `rotina` | `arrastar-alvo` com `layout: "linha-do-tempo"` — as mesmas caixas, numeradas |
+| `trilha` | `quiz` com `feedback: "trilha"` — cada acerto anda uma casa até a cama |
+| `runner` | `corpo-ativo` — em vez de clicar num boneco que pula, a criança pula |
+
+São 45h de motor que viraram 10h de extensão. O raciocínio completo está em
+[`docs/plano-remodelacao.md`](docs/plano-remodelacao.md).
 
 ## Comandos
 
@@ -134,14 +142,65 @@ npm run falas:extrair
 ```
 
 Varre todo o conteúdo e gera `public/falas/falas.json` (o que precisa de áudio) e
-`public/falas/roteiro.md` (lista legível para gravação humana). Hoje são **139
-falas, ~1400 palavras** — cerca de 40 minutos de estúdio.
+`public/falas/roteiro.md` (lista legível para gravação humana). Com os cinco anos
+escolares no ar são **343 falas, ~3300 palavras** — cerca de 90 minutos de
+estúdio. Dá para gravar por ano escolar.
+
+Cada fala carrega uma **intenção** (`instrucao`, `pergunta`, `comemoracao`,
+`consolo`, `convite-movimento`, `curiosidade`, `acalmar`), deduzida de onde ela
+mora no conteúdo. É o que faz "Isso mesmo!" não sair com a mesma energia de
+"Tente outro lugar.". O roteiro traz a direção de atuação em português na coluna
+**"Como dizer"**; o gerador manda estilo e prosódia correspondentes para o
+provedor. O vocabulário está em `src/content/intencoes.ts`.
+
+```bash
+npm run falas:revisar
+```
+
+Extrai e passa cada fala pela **régua da voz**: nada de travessão nem
+dois-pontos (o TTS não os transforma em pausa), no máximo 12 palavras entre
+duas pausas e 30 por fala. Falha o comando quando alguma escapa. É o que
+impede o roteiro de voltar a ter parágrafo empilhado numa string só — ver
+[`docs/plano-da-voz.md`](docs/plano-da-voz.md).
+
+Fala com mais de uma ideia não vira uma string comprida: vira **uma sequência
+de falas curtas** com pausa real entre elas, via `narrarSequencia()`. É assim
+que as Dicas de Saúde funcionam.
+
+Gera também `public/falas/elevenlabs.md`, o roteiro para gerar as falas no
+ElevenLabs — falas agrupadas por intenção, com os controles de `stability` e
+`style` de cada grupo e o **nome exato** que cada arquivo precisa ter. É o
+documento para quem vai gerar pelo site em vez da API.
+
+```bash
+npm run falas:gerar:edge
+```
+
+**É o comando que gerou os clipes que estão no repositório.** Usa a voz neural
+`pt-BR-FranciscaNeural` pelo `edge-tts`, sem chave e sem custo. Gera só o que
+falta e nunca sobrescreve.
+
+Procedência, dita por inteiro: esse é o endpoint por trás do "Ler em voz alta"
+do Edge, **não uma API contratada da Microsoft**. Foi escolha consciente,
+depois de comparar com a alternativa de licença limpa (Kokoro `pf_dora`,
+Apache 2.0, que roda offline e cuja qualidade ficava abaixo). Pode parar de
+funcionar sem aviso — mas os MP3 já gerados continuam tocando, porque estão
+versionados.
 
 ```bash
 PROVEDOR=azure AZURE_TTS_KEY=... npm run falas:gerar
 ```
 
-Gera os MP3 que faltam. Provedores suportados: `openai`, `elevenlabs`, `azure`.
+O caminho por API paga, se um dia quiser regerar tudo com procedência
+contratada. Provedores suportados: `openai`, `elevenlabs`, `azure`. Os
+parâmetros de tom de cada um estão em `scripts/vozes.ts` — fonte única, para o
+áudio gerado pela API bater com o gerado à mão no site. O equivalente do
+`edge-tts` está em `scripts/gerar-audio-edge.py`, porque aquele motor não é
+REST e só tem cliente em Python.
+
+**Os MP3 são versionados de propósito.** O deploy é `checkout` + `build` no CI,
+que não regera áudio; ignorá-los publicaria o site mudo, caindo na voz robótica
+sem nenhum erro na tela.
 
 **Arquivo que já existe nunca é sobrescrito.** É assim que a voz gravada convive
 com a sintética: a professora grava as falas que quiser, o script preenche o
@@ -172,6 +231,14 @@ mistura sem nenhuma mudança de código.
 automaticamente. Texto dinâmico (com o nome da criança, por exemplo) nunca terá
 clipe — prefira frases estáticas.
 
+**Texto montado a partir de um conjunto fechado é exceção:** a roleta de
+recompensa diz `Você ganhou ${figurinha}!`, e as doze figurinhas estão
+enumeradas no extrator. Se o texto for dinâmico mas as possibilidades forem
+contáveis, enumere — senão aquela fala fica robótica para sempre, sem ninguém
+perceber.
+
+Depois de escrever, rode `npm run falas:revisar`.
+
 ## Arte
 
 Os assets ficam em `src/assets/library/`, numa biblioteca compartilhada entre
@@ -196,7 +263,9 @@ enviesam forte contra corpos gordos e pessoas com deficiência.
 ## Estado atual
 
 Jogável de ponta a ponta: shell completo (as 8 telas do mockup), Jogos de
-Movimento, Desafios da Saúde, Dicas de Saúde, Minhas Conquistas, e os **8 jogos
-de 1º e 2º ano**.
+Movimento, Desafios da Saúde, Dicas de Saúde, Minhas Conquistas, Área do
+Professor, e as **20 atividades dos cinco anos escolares**.
 
-A fazer: Área do Professor, os 5 motores restantes e os 12 jogos de 3º a 5º ano.
+As 343 falas já estão escritas para o ouvido, dentro da régua e com direção de
+atuação. A fazer: gravar ou gerar os clipes — ver
+[`docs/estado-atual.md`](docs/estado-atual.md).

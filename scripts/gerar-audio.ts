@@ -19,18 +19,25 @@ import { fileURLToPath } from 'node:url'
  *   PROVEDOR=azure       AZURE_TTS_KEY=...      AZURE_TTS_REGION=brazilsouth npm run falas:gerar
  */
 
+import type { Intencao } from '../src/content/intencoes.ts'
+import { AZURE, BASE_OPENAI, ELEVENLABS, ELEVENLABS_FIXO, OPENAI } from './vozes.ts'
+
 interface Fala {
   chave: string
   texto: string
+  intencao: Intencao
   onde: string[]
 }
 
-type Provedor = (texto: string) => Promise<Buffer>
+type Provedor = (fala: Fala) => Promise<Buffer>
 
 const destino = fileURLToPath(new URL('../public/falas', import.meta.url))
 
 /* ------------------------------------------------------------------ *
  * Provedores
+ *
+ * Os parâmetros de tom por intenção vivem em ./vozes.ts, porque o roteiro
+ * do ElevenLabs precisa exatamente dos mesmos números.
  * ------------------------------------------------------------------ */
 
 function openai(): Provedor {
@@ -38,20 +45,18 @@ function openai(): Provedor {
   const voz = process.env.OPENAI_VOICE ?? 'nova'
   const modelo = process.env.OPENAI_TTS_MODEL ?? 'gpt-4o-mini-tts'
 
-  return async (texto) => {
+  return async (fala) => {
     const r = await fetch('https://api.openai.com/v1/audio/speech', {
       method: 'POST',
       headers: { Authorization: `Bearer ${chave}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
         model: modelo,
         voice: voz,
-        input: texto,
+        input: fala.texto,
         response_format: 'mp3',
         // A instrução importa mais que a escolha da voz: sem ela a
         // leitura sai em ritmo de locutor adulto.
-        instructions:
-          'Fale em português do Brasil com uma professora carinhosa dos anos iniciais. ' +
-          'Ritmo pausado, entonação calorosa e clara, como quem conta uma história para crianças de 6 a 10 anos.',
+        instructions: BASE_OPENAI + OPENAI[fala.intencao],
       }),
     })
     if (!r.ok) throw new Error(`OpenAI ${r.status}: ${await r.text()}`)
@@ -62,16 +67,17 @@ function openai(): Provedor {
 function elevenlabs(): Provedor {
   const chave = exigir('ELEVENLABS_API_KEY')
   const voz = exigir('ELEVENLABS_VOICE_ID')
-  const modelo = process.env.ELEVENLABS_MODEL ?? 'eleven_multilingual_v2'
+  const modelo = process.env.ELEVENLABS_MODEL ?? ELEVENLABS_FIXO.modelo
 
-  return async (texto) => {
-    const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voz}?output_format=mp3_22050_32`, {
+  return async (fala) => {
+    const { stability, style } = ELEVENLABS[fala.intencao]
+    const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voz}?output_format=${ELEVENLABS_FIXO.formato}`, {
       method: 'POST',
       headers: { 'xi-api-key': chave, 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        text: texto,
+        text: fala.texto,
         model_id: modelo,
-        voice_settings: { stability: 0.45, similarity_boost: 0.8, style: 0.35 },
+        voice_settings: { stability, similarity_boost: ELEVENLABS_FIXO.similarity_boost, style },
       }),
     })
     if (!r.ok) throw new Error(`ElevenLabs ${r.status}: ${await r.text()}`)
@@ -84,8 +90,9 @@ function azure(): Provedor {
   const regiao = process.env.AZURE_TTS_REGION ?? 'brazilsouth'
   const voz = process.env.AZURE_TTS_VOICE ?? 'pt-BR-FranciscaNeural'
 
-  return async (texto) => {
-    const ssml = `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="pt-BR"><voice name="${voz}"><mstts:express-as style="friendly"><prosody rate="-8%">${escapar(texto)}</prosody></mstts:express-as></voice></speak>`
+  return async (fala) => {
+    const { estilo, ritmo } = AZURE[fala.intencao]
+    const ssml = `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="pt-BR"><voice name="${voz}"><mstts:express-as style="${estilo}"><prosody rate="${ritmo}">${escapar(fala.texto)}</prosody></mstts:express-as></voice></speak>`
 
     const r = await fetch(`https://${regiao}.tts.speech.microsoft.com/cognitiveservices/v1`, {
       method: 'POST',
@@ -164,9 +171,9 @@ async function main() {
     }
 
     try {
-      writeFileSync(caminho, await gerar(fala.texto))
+      writeFileSync(caminho, await gerar(fala))
       feitas++
-      console.log(`  ${fala.chave}  ${fala.texto.slice(0, 60)}`)
+      console.log(`  ${fala.chave}  [${fala.intencao}] ${fala.texto.slice(0, 50)}`)
     } catch (e) {
       console.error(`✗ falhou em "${fala.texto.slice(0, 40)}": ${(e as Error).message}`)
       process.exit(1)

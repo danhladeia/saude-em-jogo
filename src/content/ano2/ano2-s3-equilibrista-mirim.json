@@ -23,7 +23,7 @@
           "correta": false
         }
       ],
-      "explicacao": "Sim! O corpo precisa se ajustar o tempo todo para não sair da linha.",
+      "explicacao": "Sim! O corpo se ajusta o tempo todo para não cair.",
       "imagem": "equilibrio/linha"
     },
     {
@@ -44,7 +44,7 @@
           "correta": false
         }
       ],
-      "explicacao": "Muito! Com um apoio só, o corpo trabalha bem mais para se manter firme.",
+      "explicacao": "Muito! Com um apoio só, o corpo trabalha mais para ficar firme.",
       "imagem": "equilibrio/um-pe"
     },
     {
@@ -65,7 +65,7 @@
           "correta": true
         }
       ],
-      "explicacao": "Deitado o corpo está todo apoiado — não precisa de equilíbrio.",
+      "explicacao": "Deitado o corpo está todo apoiado. Não precisa de equilíbrio.",
       "imagem": "equilibrio/deitado"
     },
     {
@@ -183,35 +183,40 @@
         "rotulo": "Um pé só",
         "descricao": "Fique em um pé só. Segure o máximo que conseguir!",
         "emoji": "🦩",
-        "segundos": 20
+        "segundos": 20,
+        "verificacao": "em-um-pe-so"
       },
       {
         "id": "careta",
         "rotulo": "Careta em um pé só",
-        "descricao": "Continue em um pé só e faça a careta mais engraçada que souber.",
+        "descricao": "Continue em um pé só. Faça a careta mais engraçada que souber.",
         "emoji": "😝",
-        "segundos": 15
+        "segundos": 15,
+        "verificacao": "em-um-pe-so"
       },
       {
         "id": "palmas",
         "rotulo": "Palmas em um pé só",
         "descricao": "Ainda em um pé só, bata palmas sem cair.",
         "emoji": "👏",
-        "segundos": 15
+        "segundos": 15,
+        "verificacao": "em-um-pe-so"
       },
       {
         "id": "rodadinha",
         "rotulo": "Rodadinha em um pé só",
         "descricao": "Dê uma voltinha devagar apoiado em um pé só.",
         "emoji": "🌀",
-        "segundos": 15
+        "segundos": 15,
+        "verificacao": "em-um-pe-so"
       },
       {
         "id": "trocar",
         "rotulo": "Troque o pé!",
         "descricao": "Agora repita tudo apoiado no outro pé.",
         "emoji": "🔁",
-        "segundos": 30
+        "segundos": 30,
+        "verificacao": "em-um-pe-so"
       }
     ],
     "perguntaEmocao": {

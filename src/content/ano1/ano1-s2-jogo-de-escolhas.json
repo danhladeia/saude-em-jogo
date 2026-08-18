@@ -58,7 +58,7 @@
           "correta": false
         }
       ],
-      "explicacao": "O certo é escovar depois de cada refeição, pelo menos 3 vezes por dia."
+      "explicacao": "Escove depois de cada refeição. São pelo menos 3 vezes por dia."
     },
     {
       "id": "banho-quando",
@@ -84,7 +84,7 @@
           "correta": false
         }
       ],
-      "explicacao": "Banho todos os dias tira o suor e a sujeira que o corpo junta."
+      "explicacao": "Banho todo dia tira o suor e a sujeira do corpo."
     },
     {
       "id": "lavar-maos",

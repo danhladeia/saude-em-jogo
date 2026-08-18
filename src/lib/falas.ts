@@ -15,7 +15,14 @@
  * cai para a voz do sistema (ver narracao.ts).
  */
 
-const PASTA = '/falas'
+/**
+ * Precisa passar pela base do Vite (`/saude-em-jogo/` no Pages), não por
+ * uma barra solta. Com caminho absoluto o manifesto dá 404, `temClipe`
+ * responde sempre `false` e todo clipe gravado é ignorado em silêncio —
+ * a narração continuaria robótica sem nenhum erro na tela. É o mesmo
+ * defeito que já tinha quebrado o logo publicado.
+ */
+const PASTA = `${import.meta.env.BASE_URL}falas`
 
 /**
  * Chave determinística de uma fala.
@@ -74,13 +81,23 @@ export function pararClipe() {
 /**
  * Toca o clipe do texto. Resolve `false` quando não há clipe ou quando a
  * reprodução falha — aí quem chama cai para a voz do sistema.
+ *
+ * `aoTerminar` avisa quando o áudio acaba, para quem encadeia uma fala
+ * depois da outra. Não é garantido: aba em segundo plano e arquivo
+ * truncado engolem o evento, então quem depende disso precisa do próprio
+ * temporizador de segurança (ver narracao.ts).
  */
-export function tocarClipe(texto: string): Promise<boolean> {
+export function tocarClipe(texto: string, aoTerminar?: () => void): Promise<boolean> {
   if (!temClipe(texto)) return Promise.resolve(false)
 
   pararClipe()
   const audio = new Audio(`${PASTA}/${chaveDaFala(texto)}.mp3`)
   tocando = audio
+
+  // Só o fim de verdade. Ligar `error` aqui também faria a fala seguinte
+  // começar no mesmo instante em que a voz do sistema assumisse o texto
+  // do clipe que faltou — as duas por cima uma da outra.
+  if (aoTerminar) audio.addEventListener('ended', aoTerminar, { once: true })
 
   return audio
     .play()

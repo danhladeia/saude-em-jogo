@@ -2,6 +2,7 @@
   {
     "chave": "0hhhfw5",
     "texto": "Arraste cada parte do corpo para o lugar certo.",
+    "intencao": "instrucao",
     "onde": [
       "ano1-s1-monte-o-corpo"
     ]
@@ -9,6 +10,7 @@
   {
     "chave": "1kwgea5",
     "texto": "Toque a cabeça. Coloque as duas mãos na sua cabeça.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano1-s1-monte-o-corpo/movimento"
     ]
@@ -16,6 +18,7 @@
   {
     "chave": "1ow3hw6",
     "texto": "Abrace o tronco. Cruze os braços e abrace o seu tronco.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano1-s1-monte-o-corpo/movimento"
     ]
@@ -23,6 +26,7 @@
   {
     "chave": "1b4t7gh",
     "texto": "Mexa os braços. Estique os dois braços para os lados e balance.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano1-s1-monte-o-corpo/movimento"
     ]
@@ -30,6 +34,7 @@
   {
     "chave": "1cztwsd",
     "texto": "Mexa as pernas. Marche no lugar levantando bem os joelhos.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano1-s1-monte-o-corpo/movimento"
     ]
@@ -37,6 +42,7 @@
   {
     "chave": "0nnylc0",
     "texto": "Cabeça",
+    "intencao": "comemoracao",
     "onde": [
       "ano1-s1-monte-o-corpo/peça"
     ]
@@ -44,6 +50,7 @@
   {
     "chave": "0cnu72w",
     "texto": "Tronco",
+    "intencao": "comemoracao",
     "onde": [
       "ano1-s1-monte-o-corpo/peça"
     ]
@@ -51,6 +58,7 @@
   {
     "chave": "034u7me",
     "texto": "Braço direito",
+    "intencao": "comemoracao",
     "onde": [
       "ano1-s1-monte-o-corpo/peça"
     ]
@@ -58,6 +66,7 @@
   {
     "chave": "0lot7ia",
     "texto": "Braço esquerdo",
+    "intencao": "comemoracao",
     "onde": [
       "ano1-s1-monte-o-corpo/peça"
     ]
@@ -65,6 +74,7 @@
   {
     "chave": "1xa6s1z",
     "texto": "Perna direita",
+    "intencao": "comemoracao",
     "onde": [
       "ano1-s1-monte-o-corpo/peça"
     ]
@@ -72,6 +82,7 @@
   {
     "chave": "1kmcqyl",
     "texto": "Perna esquerda",
+    "intencao": "comemoracao",
     "onde": [
       "ano1-s1-monte-o-corpo/peça"
     ]
@@ -79,6 +90,7 @@
   {
     "chave": "03on40v",
     "texto": "Escolha a atitude certa para cuidar do seu corpo.",
+    "intencao": "instrucao",
     "onde": [
       "ano1-s2-jogo-de-escolhas"
     ]
@@ -86,6 +98,7 @@
   {
     "chave": "14gyjvn",
     "texto": "O que usamos para tomar banho?",
+    "intencao": "pergunta",
     "onde": [
       "ano1-s2-jogo-de-escolhas/banho"
     ]
@@ -93,13 +106,15 @@
   {
     "chave": "1r0nc7k",
     "texto": "De quanto em quanto tempo devemos tomar banho?",
+    "intencao": "pergunta",
     "onde": [
       "ano1-s2-jogo-de-escolhas/banho-quando"
     ]
   },
   {
-    "chave": "02hhsjx",
-    "texto": "Banho todos os dias tira o suor e a sujeira que o corpo junta.",
+    "chave": "1hu6sh4",
+    "texto": "Banho todo dia tira o suor e a sujeira do corpo.",
+    "intencao": "curiosidade",
     "onde": [
       "ano1-s2-jogo-de-escolhas/banho-quando/explicação"
     ]
@@ -107,6 +122,7 @@
   {
     "chave": "1340vdi",
     "texto": "Sabonete e água limpam o corpo e tiram os germes.",
+    "intencao": "curiosidade",
     "onde": [
       "ano1-s2-jogo-de-escolhas/banho/explicação"
     ]
@@ -114,6 +130,7 @@
   {
     "chave": "020b7ph",
     "texto": "O que usamos para lavar o cabelo?",
+    "intencao": "pergunta",
     "onde": [
       "ano1-s2-jogo-de-escolhas/cabelo"
     ]
@@ -121,6 +138,7 @@
   {
     "chave": "1cobo4e",
     "texto": "O xampu limpa o cabelo e o couro cabeludo.",
+    "intencao": "curiosidade",
     "onde": [
       "ano1-s2-jogo-de-escolhas/cabelo/explicação"
     ]
@@ -128,6 +146,7 @@
   {
     "chave": "0x35aa8",
     "texto": "Quais destes cuidados deixam o corpo saudável?",
+    "intencao": "pergunta",
     "onde": [
       "ano1-s2-jogo-de-escolhas/cuidados"
     ]
@@ -135,6 +154,7 @@
   {
     "chave": "1k43776",
     "texto": "Cuidar do corpo é um hábito de todo dia.",
+    "intencao": "curiosidade",
     "onde": [
       "ano1-s2-jogo-de-escolhas/cuidados/explicação"
     ]
@@ -142,6 +162,7 @@
   {
     "chave": "0ocu1of",
     "texto": "A escova de dentes pode ser dividida com o amigo?",
+    "intencao": "pergunta",
     "onde": [
       "ano1-s2-jogo-de-escolhas/escova-de-quem"
     ]
@@ -149,6 +170,7 @@
   {
     "chave": "0w7sibj",
     "texto": "Cada pessoa tem a sua escova. Dividir passa germes de uma boca para a outra.",
+    "intencao": "curiosidade",
     "onde": [
       "ano1-s2-jogo-de-escolhas/escova-de-quem/explicação"
     ]
@@ -156,13 +178,15 @@
   {
     "chave": "01uue0e",
     "texto": "Quantas vezes por dia devemos escovar os dentes?",
+    "intencao": "pergunta",
     "onde": [
       "ano1-s2-jogo-de-escolhas/escovar-quantas"
     ]
   },
   {
-    "chave": "0o75uni",
-    "texto": "O certo é escovar depois de cada refeição, pelo menos 3 vezes por dia.",
+    "chave": "0svtf66",
+    "texto": "Escove depois de cada refeição. São pelo menos 3 vezes por dia.",
+    "intencao": "curiosidade",
     "onde": [
       "ano1-s2-jogo-de-escolhas/escovar-quantas/explicação"
     ]
@@ -170,6 +194,7 @@
   {
     "chave": "0wixa7w",
     "texto": "Quando precisamos lavar as mãos?",
+    "intencao": "pergunta",
     "onde": [
       "ano1-s2-jogo-de-escolhas/lavar-maos"
     ]
@@ -177,6 +202,7 @@
   {
     "chave": "1o0nsow",
     "texto": "Mãos limpas evitam que os germes entrem no nosso corpo.",
+    "intencao": "curiosidade",
     "onde": [
       "ano1-s2-jogo-de-escolhas/lavar-maos/explicação"
     ]
@@ -184,6 +210,7 @@
   {
     "chave": "1lm4it1",
     "texto": "O que fazemos com as unhas para cuidar do corpo?",
+    "intencao": "pergunta",
     "onde": [
       "ano1-s2-jogo-de-escolhas/unhas"
     ]
@@ -191,6 +218,7 @@
   {
     "chave": "0y1udgt",
     "texto": "Unhas grandes guardam sujeira embaixo. Cortadas e limpas é melhor.",
+    "intencao": "curiosidade",
     "onde": [
       "ano1-s2-jogo-de-escolhas/unhas/explicação"
     ]
@@ -198,6 +226,7 @@
   {
     "chave": "0ow2noe",
     "texto": "Arraste cada rostinho para o sentimento certo.",
+    "intencao": "instrucao",
     "onde": [
       "ano1-s3-como-me-sinto"
     ]
@@ -205,6 +234,7 @@
   {
     "chave": "0w271f4",
     "texto": "Faça alegria. Sorria bem grande e levante os braços.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano1-s3-como-me-sinto/movimento"
     ]
@@ -212,6 +242,7 @@
   {
     "chave": "0lmmbms",
     "texto": "Faça surpresa. Abra bem a boca e arregale os olhos.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano1-s3-como-me-sinto/movimento"
     ]
@@ -219,6 +250,7 @@
   {
     "chave": "15k9akp",
     "texto": "Faça tristeza. Abaixe os ombros e faça um bico.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano1-s3-como-me-sinto/movimento"
     ]
@@ -226,6 +258,7 @@
   {
     "chave": "0dn2ln7",
     "texto": "Volte à calma. Respire fundo três vezes e solte o corpo.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano1-s3-como-me-sinto/movimento"
     ]
@@ -233,6 +266,7 @@
   {
     "chave": "0b1o7fw",
     "texto": "Alegria",
+    "intencao": "comemoracao",
     "onde": [
       "ano1-s3-como-me-sinto/peça"
     ]
@@ -240,6 +274,7 @@
   {
     "chave": "0xpfgb5",
     "texto": "Tristeza",
+    "intencao": "comemoracao",
     "onde": [
       "ano1-s3-como-me-sinto/peça"
     ]
@@ -247,6 +282,7 @@
   {
     "chave": "01v2ngi",
     "texto": "Medo",
+    "intencao": "comemoracao",
     "onde": [
       "ano1-s3-como-me-sinto/peça"
     ]
@@ -254,6 +290,7 @@
   {
     "chave": "05qlbn2",
     "texto": "Raiva",
+    "intencao": "comemoracao",
     "onde": [
       "ano1-s3-como-me-sinto/peça"
     ]
@@ -261,6 +298,7 @@
   {
     "chave": "05vxot0",
     "texto": "Choro",
+    "intencao": "comemoracao",
     "onde": [
       "ano1-s3-como-me-sinto/peça"
     ]
@@ -268,6 +306,7 @@
   {
     "chave": "0fwfqlm",
     "texto": "Surpresa",
+    "intencao": "comemoracao",
     "onde": [
       "ano1-s3-como-me-sinto/peça"
     ]
@@ -275,6 +314,7 @@
   {
     "chave": "10x5kdp",
     "texto": "Sério",
+    "intencao": "comemoracao",
     "onde": [
       "ano1-s3-como-me-sinto/peça"
     ]
@@ -282,6 +322,7 @@
   {
     "chave": "15y7wqx",
     "texto": "Espanto",
+    "intencao": "comemoracao",
     "onde": [
       "ano1-s3-como-me-sinto/peça"
     ]
@@ -289,6 +330,7 @@
   {
     "chave": "11mz6oj",
     "texto": "Copie os movimentos do personagem com o seu corpo!",
+    "intencao": "instrucao",
     "onde": [
       "ano1-s4-corpo-que-danca"
     ]
@@ -296,6 +338,7 @@
   {
     "chave": "1t5441e",
     "texto": "Pular. Pule no lugar com os dois pés juntos.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano1-s4-corpo-que-danca/movimento"
     ]
@@ -303,6 +346,7 @@
   {
     "chave": "0uojfrj",
     "texto": "Girar. Dê uma voltinha devagar, de braços abertos.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano1-s4-corpo-que-danca/movimento"
     ]
@@ -310,6 +354,7 @@
   {
     "chave": "18yk1jm",
     "texto": "Esticar os braços. Estique os dois braços bem alto, como se fosse tocar o céu.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano1-s4-corpo-que-danca/movimento"
     ]
@@ -317,6 +362,7 @@
   {
     "chave": "1tyw60n",
     "texto": "Levantar. Fique na ponta dos pés e cresça bem alto.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano1-s4-corpo-que-danca/movimento"
     ]
@@ -324,6 +370,7 @@
   {
     "chave": "1jbeuo8",
     "texto": "Abaixar. Agache devagar e fique pequenininho.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano1-s4-corpo-que-danca/movimento"
     ]
@@ -331,6 +378,7 @@
   {
     "chave": "1eg4xau",
     "texto": "Respirar. Puxe o ar pelo nariz e solte devagar pela boca.",
+    "intencao": "acalmar",
     "onde": [
       "ano1-s4-corpo-que-danca/movimento"
     ]
@@ -338,6 +386,7 @@
   {
     "chave": "1g1jl8p",
     "texto": "Ligue cada gesto ao que o corpo está dizendo.",
+    "intencao": "instrucao",
     "onde": [
       "ano2-s1-corpo-que-fala"
     ]
@@ -345,6 +394,7 @@
   {
     "chave": "01bafjx",
     "texto": "Bater palmas",
+    "intencao": "instrucao",
     "onde": [
       "ano2-s1-corpo-que-fala/aplauso"
     ]
@@ -352,6 +402,7 @@
   {
     "chave": "0wuie9x",
     "texto": "Palmas comemoram e elogiam alguém.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s1-corpo-que-fala/aplauso/par"
     ]
@@ -359,6 +410,7 @@
   {
     "chave": "0co0i6z",
     "texto": "Polegar para cima",
+    "intencao": "instrucao",
     "onde": [
       "ano2-s1-corpo-que-fala/bem"
     ]
@@ -366,6 +418,7 @@
   {
     "chave": "19sqbte",
     "texto": "O polegar para cima diz que está tudo certo.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s1-corpo-que-fala/bem/par"
     ]
@@ -373,6 +426,7 @@
   {
     "chave": "1ahlzaq",
     "texto": "Polegar para baixo",
+    "intencao": "instrucao",
     "onde": [
       "ano2-s1-corpo-que-fala/mal"
     ]
@@ -380,6 +434,7 @@
   {
     "chave": "1tghfgr",
     "texto": "O polegar para baixo mostra que algo não está legal.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s1-corpo-que-fala/mal/par"
     ]
@@ -387,13 +442,15 @@
   {
     "chave": "02tmtyo",
     "texto": "Peça silêncio. Faça o gesto de silêncio para um colega.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s1-corpo-que-fala/movimento"
     ]
   },
   {
-    "chave": "12azvmy",
-    "texto": "Diga sim e não. Use só a cabeça: sim, depois não.",
+    "chave": "0rhzyr7",
+    "texto": "Diga sim e não. Use só a cabeça. Primeiro sim, depois não.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s1-corpo-que-fala/movimento"
     ]
@@ -401,6 +458,7 @@
   {
     "chave": "03e0faz",
     "texto": "Comemore. Bata palmas e levante os braços!",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s1-corpo-que-fala/movimento"
     ]
@@ -408,6 +466,7 @@
   {
     "chave": "0b1iq6i",
     "texto": "Balançar a cabeça para os lados",
+    "intencao": "instrucao",
     "onde": [
       "ano2-s1-corpo-que-fala/nao"
     ]
@@ -415,6 +474,7 @@
   {
     "chave": "1v61mho",
     "texto": "Para os lados, a cabeça está dizendo não.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s1-corpo-que-fala/nao/par"
     ]
@@ -422,6 +482,7 @@
   {
     "chave": "087h3y6",
     "texto": "Mão aberta na frente",
+    "intencao": "instrucao",
     "onde": [
       "ano2-s1-corpo-que-fala/pare"
     ]
@@ -429,6 +490,7 @@
   {
     "chave": "1fgul2f",
     "texto": "A mão aberta na frente do corpo pede para parar.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s1-corpo-que-fala/pare/par"
     ]
@@ -436,6 +498,7 @@
   {
     "chave": "1nqtdd7",
     "texto": "Dedo na boca",
+    "intencao": "instrucao",
     "onde": [
       "ano2-s1-corpo-que-fala/silencio"
     ]
@@ -443,6 +506,7 @@
   {
     "chave": "0i6g8m8",
     "texto": "O dedo na boca pede silêncio sem usar nenhuma palavra.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s1-corpo-que-fala/silencio/par"
     ]
@@ -450,13 +514,15 @@
   {
     "chave": "1lacx5p",
     "texto": "Balançar a cabeça para cima e para baixo",
+    "intencao": "instrucao",
     "onde": [
       "ano2-s1-corpo-que-fala/sim"
     ]
   },
   {
-    "chave": "1gtji5r",
-    "texto": "A cabeça também responde: para cima e para baixo é sim.",
+    "chave": "0b19a2r",
+    "texto": "A cabeça também responde. Para cima e para baixo é sim.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s1-corpo-que-fala/sim/par"
     ]
@@ -464,6 +530,7 @@
   {
     "chave": "04ggpit",
     "texto": "Mão balançando",
+    "intencao": "instrucao",
     "onde": [
       "ano2-s1-corpo-que-fala/tchau"
     ]
@@ -471,6 +538,7 @@
   {
     "chave": "0pcfviu",
     "texto": "Acenar com a mão é dizer oi ou tchau.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s1-corpo-que-fala/tchau/par"
     ]
@@ -478,6 +546,7 @@
   {
     "chave": "14ahf2t",
     "texto": "Marque as atividades que fazem o corpo se movimentar. Cada acerto dá energia ao personagem!",
+    "intencao": "instrucao",
     "onde": [
       "ano2-s2-movimente-se"
     ]
@@ -485,13 +554,15 @@
   {
     "chave": "1lxlu2k",
     "texto": "O que acontece com o coração quando a gente se movimenta?",
+    "intencao": "pergunta",
     "onde": [
       "ano2-s2-movimente-se/beneficio-coracao"
     ]
   },
   {
-    "chave": "1sy3lvf",
-    "texto": "O coração é um músculo: quanto mais a gente se movimenta, mais forte ele fica.",
+    "chave": "0saif9j",
+    "texto": "O coração é um músculo. Quanto mais você se movimenta, mais forte ele fica.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s2-movimente-se/beneficio-coracao/explicação"
     ]
@@ -499,13 +570,15 @@
   {
     "chave": "1ogf3xx",
     "texto": "O que a atividade física faz pelo nosso corpo?",
+    "intencao": "pergunta",
     "onde": [
       "ano2-s2-movimente-se/beneficios"
     ]
   },
   {
-    "chave": "0kw2xwl",
-    "texto": "Movimentar-se dá energia, melhora o sono e ainda deixa a gente mais feliz.",
+    "chave": "1ejrkgp",
+    "texto": "Movimento dá energia e melhora o sono. E ainda deixa a gente mais feliz.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s2-movimente-se/beneficios/explicação"
     ]
@@ -513,6 +586,7 @@
   {
     "chave": "17ih8vh",
     "texto": "Quais brincadeiras são atividade física?",
+    "intencao": "pergunta",
     "onde": [
       "ano2-s2-movimente-se/brincadeiras"
     ]
@@ -520,6 +594,7 @@
   {
     "chave": "15yeklc",
     "texto": "Brincar correndo, pulando ou pedalando também é atividade física.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s2-movimente-se/brincadeiras/explicação"
     ]
@@ -527,13 +602,15 @@
   {
     "chave": "14cruu4",
     "texto": "O que fica mais forte quando nos movimentamos?",
+    "intencao": "pergunta",
     "onde": [
       "ano2-s2-movimente-se/musculos"
     ]
   },
   {
-    "chave": "0e61jbs",
-    "texto": "Movimento fortalece músculos e ossos — por isso é tão importante na infância.",
+    "chave": "1thae9b",
+    "texto": "Movimento deixa músculos e ossos mais fortes. Por isso criança precisa se mexer.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s2-movimente-se/musculos/explicação"
     ]
@@ -541,6 +618,7 @@
   {
     "chave": "0q4c0cu",
     "texto": "Quais destas atividades fazem o corpo se movimentar?",
+    "intencao": "pergunta",
     "onde": [
       "ano2-s2-movimente-se/quais-movimentam"
     ]
@@ -548,6 +626,7 @@
   {
     "chave": "0dxe3wm",
     "texto": "Correr, nadar e pular corda colocam o corpo inteiro em movimento.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s2-movimente-se/quais-movimentam/explicação"
     ]
@@ -555,13 +634,15 @@
   {
     "chave": "124ugg1",
     "texto": "Quanto tempo por dia uma criança precisa se movimentar?",
+    "intencao": "pergunta",
     "onde": [
       "ano2-s2-movimente-se/quanto-tempo"
     ]
   },
   {
-    "chave": "1onhrrm",
-    "texto": "O recomendado é pelo menos 1 hora de movimento por dia — e brincar já conta!",
+    "chave": "1aq95gy",
+    "texto": "O certo é pelo menos 1 hora de movimento por dia. E brincar já conta!",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s2-movimente-se/quanto-tempo/explicação"
     ]
@@ -569,6 +650,7 @@
   {
     "chave": "1a4stxo",
     "texto": "Qual dessas ações exige equilíbrio? Cada acerto mantém o personagem de pé na prancha!",
+    "intencao": "instrucao",
     "onde": [
       "ano2-s3-equilibrista-mirim"
     ]
@@ -576,6 +658,7 @@
   {
     "chave": "1mb5av0",
     "texto": "E andar de bicicleta?",
+    "intencao": "pergunta",
     "onde": [
       "ano2-s3-equilibrista-mirim/bicicleta"
     ]
@@ -583,6 +666,7 @@
   {
     "chave": "1s6j5c5",
     "texto": "Muito! Foi por isso que aprender a pedalar deu tanto trabalho no começo.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s3-equilibrista-mirim/bicicleta/explicação"
     ]
@@ -590,13 +674,15 @@
   {
     "chave": "0oh1yrl",
     "texto": "E ficar deitado na cama?",
+    "intencao": "pergunta",
     "onde": [
       "ano2-s3-equilibrista-mirim/deitado"
     ]
   },
   {
-    "chave": "1qidfgm",
-    "texto": "Deitado o corpo está todo apoiado — não precisa de equilíbrio.",
+    "chave": "0nzkyli",
+    "texto": "Deitado o corpo está todo apoiado. Não precisa de equilíbrio.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s3-equilibrista-mirim/deitado/explicação"
     ]
@@ -604,6 +690,7 @@
   {
     "chave": "0etnips",
     "texto": "E subir uma escada?",
+    "intencao": "pergunta",
     "onde": [
       "ano2-s3-equilibrista-mirim/escada"
     ]
@@ -611,6 +698,7 @@
   {
     "chave": "0v3r0en",
     "texto": "Sim! A cada degrau o corpo fica um instante em um pé só.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s3-equilibrista-mirim/escada/explicação"
     ]
@@ -618,6 +706,7 @@
   {
     "chave": "16pbwzy",
     "texto": "E descer no escorregador sentado?",
+    "intencao": "pergunta",
     "onde": [
       "ano2-s3-equilibrista-mirim/escorregar"
     ]
@@ -625,6 +714,7 @@
   {
     "chave": "1w6mr83",
     "texto": "Sentado no escorregador o corpo está apoiado e só desliza.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s3-equilibrista-mirim/escorregar/explicação"
     ]
@@ -632,13 +722,15 @@
   {
     "chave": "1b6rj0t",
     "texto": "Andar em cima de uma linha exige equilíbrio?",
+    "intencao": "pergunta",
     "onde": [
       "ano2-s3-equilibrista-mirim/linha"
     ]
   },
   {
-    "chave": "1qcpst0",
-    "texto": "Sim! O corpo precisa se ajustar o tempo todo para não sair da linha.",
+    "chave": "1cd022g",
+    "texto": "Sim! O corpo se ajusta o tempo todo para não cair.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s3-equilibrista-mirim/linha/explicação"
     ]
@@ -646,13 +738,15 @@
   {
     "chave": "17k5qev",
     "texto": "Um pé só. Fique em um pé só. Segure o máximo que conseguir!",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s3-equilibrista-mirim/movimento"
     ]
   },
   {
-    "chave": "1c88vvg",
-    "texto": "Careta em um pé só. Continue em um pé só e faça a careta mais engraçada que souber.",
+    "chave": "1g25uan",
+    "texto": "Careta em um pé só. Continue em um pé só. Faça a careta mais engraçada que souber.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s3-equilibrista-mirim/movimento"
     ]
@@ -660,6 +754,7 @@
   {
     "chave": "0x7auuu",
     "texto": "Palmas em um pé só. Ainda em um pé só, bata palmas sem cair.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s3-equilibrista-mirim/movimento"
     ]
@@ -667,6 +762,7 @@
   {
     "chave": "1f0rbjo",
     "texto": "Rodadinha em um pé só. Dê uma voltinha devagar apoiado em um pé só.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s3-equilibrista-mirim/movimento"
     ]
@@ -674,6 +770,7 @@
   {
     "chave": "0cu4cmf",
     "texto": "Troque o pé!. Agora repita tudo apoiado no outro pé.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s3-equilibrista-mirim/movimento"
     ]
@@ -681,6 +778,7 @@
   {
     "chave": "091pcvo",
     "texto": "E andar na ponta dos pés?",
+    "intencao": "pergunta",
     "onde": [
       "ano2-s3-equilibrista-mirim/na-ponta"
     ]
@@ -688,6 +786,7 @@
   {
     "chave": "0g0cyi9",
     "texto": "Sim! Quanto menor o apoio no chão, mais equilíbrio o corpo precisa.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s3-equilibrista-mirim/na-ponta/explicação"
     ]
@@ -695,6 +794,7 @@
   {
     "chave": "1m2bbi2",
     "texto": "E ficar sentado na cadeira?",
+    "intencao": "pergunta",
     "onde": [
       "ano2-s3-equilibrista-mirim/sentado"
     ]
@@ -702,6 +802,7 @@
   {
     "chave": "03p6vn5",
     "texto": "Sentado a cadeira segura o corpo, então o equilíbrio descansa.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s3-equilibrista-mirim/sentado/explicação"
     ]
@@ -709,13 +810,15 @@
   {
     "chave": "0tsoq0n",
     "texto": "E ficar em um pé só?",
+    "intencao": "pergunta",
     "onde": [
       "ano2-s3-equilibrista-mirim/um-pe"
     ]
   },
   {
-    "chave": "04z1guw",
-    "texto": "Muito! Com um apoio só, o corpo trabalha bem mais para se manter firme.",
+    "chave": "0f250uq",
+    "texto": "Muito! Com um apoio só, o corpo trabalha mais para ficar firme.",
+    "intencao": "curiosidade",
     "onde": [
       "ano2-s3-equilibrista-mirim/um-pe/explicação"
     ]
@@ -723,6 +826,7 @@
   {
     "chave": "1e07krq",
     "texto": "Clique em GIRAR. Onde a roleta parar, é o alongamento que você vai fazer!",
+    "intencao": "instrucao",
     "onde": [
       "ano2-s4-roleta-alongamentos"
     ]
@@ -730,6 +834,7 @@
   {
     "chave": "0bvmlav",
     "texto": "Borboleta. Sente com as solas dos pés juntas e balance os joelhos devagar.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s4-roleta-alongamentos/borboleta"
     ]
@@ -737,6 +842,7 @@
   {
     "chave": "1fa3hjh",
     "texto": "Braços para o alto. Estique os dois braços bem alto e cresça o máximo que conseguir.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s4-roleta-alongamentos/bracos-alto"
     ]
@@ -744,6 +850,7 @@
   {
     "chave": "0l6bhco",
     "texto": "Frente da coxa. Em pé, dobre uma perna para trás e segure o pé. Troque de perna.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s4-roleta-alongamentos/coxa"
     ]
@@ -751,6 +858,7 @@
   {
     "chave": "0t8458j",
     "texto": "Gatinho. De quatro apoios, arredonde as costas para cima e depois abaixe devagar.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s4-roleta-alongamentos/gato"
     ]
@@ -758,13 +866,15 @@
   {
     "chave": "09rhuz9",
     "texto": "Lateral do corpo. Levante um braço e incline o corpo para o lado contrário. Troque.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s4-roleta-alongamentos/lateral"
     ]
   },
   {
-    "chave": "0q0da33",
-    "texto": "Mãos e punhos. Abra e feche as mãos, depois gire os punhos para os dois lados.",
+    "chave": "1pxpn79",
+    "texto": "Mãos e punhos. Abra e feche as mãos. Depois gire os punhos para os dois lados.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s4-roleta-alongamentos/maos"
     ]
@@ -772,20 +882,23 @@
   {
     "chave": "1fsmu3j",
     "texto": "Ombro. Passe um braço na frente do peito e puxe com o outro. Troque o lado.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s4-roleta-alongamentos/ombro"
     ]
   },
   {
-    "chave": "19lzsd8",
-    "texto": "Panturrilha. Apoie as mãos na parede e estique uma perna para trás, com o calcanhar no chão.",
+    "chave": "19c7djl",
+    "texto": "Panturrilha. Apoie as mãos na parede. Estique uma perna para trás. Deixe o calcanhar no chão.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s4-roleta-alongamentos/panturrilha"
     ]
   },
   {
-    "chave": "0p3229o",
-    "texto": "Atrás da perna. Sente no chão com as pernas esticadas e tente alcançar a ponta dos pés sem forçar.",
+    "chave": "1edlqah",
+    "texto": "Atrás da perna. Sente no chão com as pernas esticadas. Tente alcançar a ponta dos pés sem forçar.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s4-roleta-alongamentos/perna-tras"
     ]
@@ -793,48 +906,1504 @@
   {
     "chave": "14tny9w",
     "texto": "Pescoço. Incline a cabeça para o ombro direito, depois para o esquerdo. Bem devagar.",
+    "intencao": "convite-movimento",
     "onde": [
       "ano2-s4-roleta-alongamentos/pescoco"
     ]
   },
   {
-    "chave": "09arh6b",
-    "texto": "Respiração. Puxe o ar pelo nariz contando até 4 e solte pela boca contando até 4.",
+    "chave": "0pr8lh6",
+    "texto": "Respiração. Puxe o ar pelo nariz contando até 4. Solte pela boca contando até 4.",
+    "intencao": "acalmar",
     "onde": [
       "ano2-s4-roleta-alongamentos/respirar"
     ]
   },
   {
-    "chave": "0i6wexx",
-    "texto": "Tronco. Com os pés firmes no chão, gire o tronco devagar para um lado e para o outro.",
+    "chave": "0j9fv7p",
+    "texto": "Tronco. Fixe os pés no chão. Gire o tronco devagar para os dois lados.",
+    "intencao": "convite-movimento",
     "onde": [
-      "ano2-s4-roleta-alongamentos/tronco"
+      "ano2-s4-roleta-alongamentos/tronco",
+      "movimento/alongamentos/movimento"
     ]
   },
   {
-    "chave": "189geyv",
-    "texto": "Alimentação. Quanto mais cores no prato, mais nutrientes para o corpo. Frutas e verduras dão energia de verdade. Beba água ao longo do dia, mesmo sem sentir sede. Alimentos ultraprocessados são para de vez em quando, não todo dia.",
+    "chave": "1xu8uwy",
+    "texto": "Responda o que a água faz dentro do seu corpo.",
+    "intencao": "instrucao",
+    "onde": [
+      "ano3-s1-agua-em-jogo"
+    ]
+  },
+  {
+    "chave": "1uaucl1",
+    "texto": "Qual bebida mata a sede sem nenhum açúcar?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano3-s1-agua-em-jogo/melhor-bebida"
+    ]
+  },
+  {
+    "chave": "14h9fee",
+    "texto": "Água pura mata a sede na hora. As outras bebidas alimentam, mas não substituem a água.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s1-agua-em-jogo/melhor-bebida/explicação"
+    ]
+  },
+  {
+    "chave": "1vk5xca",
+    "texto": "Corra no lugar. Corra parado levantando bem os joelhos.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano3-s1-agua-em-jogo/movimento"
+    ]
+  },
+  {
+    "chave": "0n1me5m",
+    "texto": "Polichinelo. Abra e feche as pernas batendo palma em cima.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano3-s1-agua-em-jogo/movimento"
+    ]
+  },
+  {
+    "chave": "0v78szh",
+    "texto": "Beba água. Pegue sua garrafa e beba alguns goles devagar.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano3-s1-agua-em-jogo/movimento"
+    ]
+  },
+  {
+    "chave": "1f8aas9",
+    "texto": "O que a água faz dentro de você?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano3-s1-agua-em-jogo/o-que-faz"
+    ]
+  },
+  {
+    "chave": "0gla4o4",
+    "texto": "A água refresca, ajuda a digestão e limpa o corpo por dentro.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s1-agua-em-jogo/o-que-faz/explicação"
+    ]
+  },
+  {
+    "chave": "1scilom",
+    "texto": "Quando o corpo perde mais água?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano3-s1-agua-em-jogo/quando-perde"
+    ]
+  },
+  {
+    "chave": "0zblfmi",
+    "texto": "O suor é água saindo para refrescar você. Depois de correr, o corpo pede água de volta.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s1-agua-em-jogo/quando-perde/explicação"
+    ]
+  },
+  {
+    "chave": "1wtrusa",
+    "texto": "Quanto do seu corpo é feito de água?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano3-s1-agua-em-jogo/quanto-de-agua"
+    ]
+  },
+  {
+    "chave": "055t1ke",
+    "texto": "Mais da metade do seu corpo é água. Por isso ela faz tanta falta.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s1-agua-em-jogo/quanto-de-agua/explicação"
+    ]
+  },
+  {
+    "chave": "1grigeu",
+    "texto": "Quantos copos de água uma criança precisa por dia?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano3-s1-agua-em-jogo/quantos-copos"
+    ]
+  },
+  {
+    "chave": "0jz3s6i",
+    "texto": "Seis a oito copos por dia. E mais ainda nos dias de calor ou de muito movimento.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s1-agua-em-jogo/quantos-copos/explicação"
+    ]
+  },
+  {
+    "chave": "0oau1qn",
+    "texto": "Cada resposta certa anda uma casa na trilha até a cama.",
+    "intencao": "instrucao",
+    "onde": [
+      "ano3-s2-trilha-do-sono"
+    ]
+  },
+  {
+    "chave": "141gig3",
+    "texto": "O que ajuda a pegar no sono?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano3-s2-trilha-do-sono/antes-de-dormir"
+    ]
+  },
+  {
+    "chave": "0v07djv",
+    "texto": "A luz da tela engana o cérebro e atrasa o sono. Um livro faz o contrário.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s2-trilha-do-sono/antes-de-dormir/explicação"
+    ]
+  },
+  {
+    "chave": "1czejo9",
+    "texto": "O que acontece quando você dorme pouco?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano3-s2-trilha-do-sono/dormir-pouco"
+    ]
+  },
+  {
+    "chave": "087rbls",
+    "texto": "Noite curta cobra o preço no outro dia inteiro.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s2-trilha-do-sono/dormir-pouco/explicação"
+    ]
+  },
+  {
+    "chave": "19glael",
+    "texto": "O que fazer antes de deitar?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano3-s2-trilha-do-sono/escovar"
+    ]
+  },
+  {
+    "chave": "1g33u6c",
+    "texto": "A escovação da noite é a mais importante. A boca fica muitas horas fechada até de manhã.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s2-trilha-do-sono/escovar/explicação"
+    ]
+  },
+  {
+    "chave": "128fss9",
+    "texto": "Respire fundo. Puxe o ar pelo nariz contando até quatro. Solte devagar pela boca.",
+    "intencao": "acalmar",
+    "onde": [
+      "ano3-s2-trilha-do-sono/movimento"
+    ]
+  },
+  {
+    "chave": "1cm9zu8",
+    "texto": "Solte o pescoço. Incline a cabeça para um ombro, depois para o outro. Bem devagar.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano3-s2-trilha-do-sono/movimento"
+    ]
+  },
+  {
+    "chave": "10zbbhm",
+    "texto": "Estique o corpo. Estique os braços para cima e depois solte tudo, mole.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano3-s2-trilha-do-sono/movimento"
+    ]
+  },
+  {
+    "chave": "0xepz4u",
+    "texto": "Quantas horas uma criança precisa dormir?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano3-s2-trilha-do-sono/quantas-horas"
+    ]
+  },
+  {
+    "chave": "1oc2s2u",
+    "texto": "De nove a onze horas por noite. É dormindo que o corpo cresce e guarda o que você aprendeu.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s2-trilha-do-sono/quantas-horas/explicação"
+    ]
+  },
+  {
+    "chave": "0vrypd3",
+    "texto": "Como o quarto ajuda a dormir melhor?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano3-s2-trilha-do-sono/quarto"
+    ]
+  },
+  {
+    "chave": "12m98sx",
+    "texto": "Escuro, quieto e arrumado. O corpo entende que chegou a hora.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s2-trilha-do-sono/quarto/explicação"
+    ]
+  },
+  {
+    "chave": "0z9pdxj",
+    "texto": "Qual é o sinal de que o corpo está pedindo sono?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano3-s2-trilha-do-sono/sinal-de-sono"
+    ]
+  },
+  {
+    "chave": "1y9qk7k",
+    "texto": "O bocejo é o corpo avisando. Quando ele avisa, vale ir para a cama.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s2-trilha-do-sono/sinal-de-sono/explicação"
+    ]
+  },
+  {
+    "chave": "11h008t",
+    "texto": "Vire duas cartas e ache o esporte junto com o gesto dele.",
+    "intencao": "instrucao",
+    "onde": [
+      "ano3-s3-tipos-de-esporte"
+    ]
+  },
+  {
+    "chave": "1mum30d",
+    "texto": "Atletismo",
+    "intencao": "instrucao",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/atletismo"
+    ]
+  },
+  {
+    "chave": "0r3bzoi",
+    "texto": "O atletismo é correr, saltar e lançar. É o esporte mais antigo que existe.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/atletismo/par"
+    ]
+  },
+  {
+    "chave": "1h27cpx",
+    "texto": "Basquete",
+    "intencao": "instrucao",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/basquete"
+    ]
+  },
+  {
+    "chave": "111gw56",
+    "texto": "No basquete o gesto é arremessar. Os braços empurram a bola para o alto.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/basquete/par"
+    ]
+  },
+  {
+    "chave": "0m7e6p2",
+    "texto": "Ciclismo",
+    "intencao": "instrucao",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/ciclismo"
+    ]
+  },
+  {
+    "chave": "0kbgmbe",
+    "texto": "No ciclismo as pernas giram sem parar. É a perna que faz a bicicleta andar.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/ciclismo/par"
+    ]
+  },
+  {
+    "chave": "0inbuq4",
+    "texto": "Futebol",
+    "intencao": "instrucao",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/futebol"
+    ]
+  },
+  {
+    "chave": "1g61chd",
+    "texto": "No futebol o gesto principal é chutar. A perna manda na bola.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/futebol/par"
+    ]
+  },
+  {
+    "chave": "1ffkclu",
+    "texto": "Chute no ar. Chute devagar com uma perna, depois com a outra.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/movimento"
+    ]
+  },
+  {
+    "chave": "0mdix8g",
+    "texto": "Arremesse no ar. Levante os dois braços. Faça o gesto de jogar a bola na cesta.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/movimento"
+    ]
+  },
+  {
+    "chave": "0p0ns25",
+    "texto": "Nade parado. Gire os braços para a frente como quem nada crawl.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/movimento"
+    ]
+  },
+  {
+    "chave": "1kgar01",
+    "texto": "Corra no lugar. Corra parado por um pouquinho, bem rápido no fim.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/movimento"
+    ]
+  },
+  {
+    "chave": "1im7kc2",
+    "texto": "Natação",
+    "intencao": "instrucao",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/natacao"
+    ]
+  },
+  {
+    "chave": "1khnnsr",
+    "texto": "Na natação braços e pernas trabalham juntos para empurrar a água.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/natacao/par"
+    ]
+  },
+  {
+    "chave": "0vujmwf",
+    "texto": "Vôlei",
+    "intencao": "instrucao",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/volei"
+    ]
+  },
+  {
+    "chave": "1rqky86",
+    "texto": "No vôlei o saque começa o ponto. A mão bate na bola com força.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s3-tipos-de-esporte/volei/par"
+    ]
+  },
+  {
+    "chave": "0ar2zdf",
+    "texto": "Arraste cada movimento para a caixa certa. Os dois fazem bem. O que muda é o combinado.",
+    "intencao": "instrucao",
+    "onde": [
+      "ano3-s4-classificacao-corporal"
+    ]
+  },
+  {
+    "chave": "18wnxrx",
+    "texto": "Ande pela sala. Levante e dê uma volta andando, sem pressa nenhuma.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano3-s4-classificacao-corporal/movimento"
+    ]
+  },
+  {
+    "chave": "12zdbqe",
+    "texto": "Dez agachamentos. Agache e levante dez vezes, contando alto.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano3-s4-classificacao-corporal/movimento"
+    ]
+  },
+  {
+    "chave": "171zq82",
+    "texto": "Respire. Puxe o ar pelo nariz e solte pela boca, três vezes.",
+    "intencao": "acalmar",
+    "onde": [
+      "ano3-s4-classificacao-corporal/movimento"
+    ]
+  },
+  {
+    "chave": "0obxjq6",
+    "texto": "Subir escada é atividade física. Acontece no meio do dia, sem ninguém marcar.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s4-classificacao-corporal/peça"
+    ]
+  },
+  {
+    "chave": "1olpm25",
+    "texto": "Brincadeira é atividade física. Você corre muito sem estar treinando.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s4-classificacao-corporal/peça"
+    ]
+  },
+  {
+    "chave": "0ja0z11",
+    "texto": "Ir a pé é atividade física. O corpo se mexe porque a vida pede.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s4-classificacao-corporal/peça"
+    ]
+  },
+  {
+    "chave": "0qi0osi",
+    "texto": "Até arrumar a cama é atividade física. Toda tarefa da casa move o corpo.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s4-classificacao-corporal/peça"
+    ]
+  },
+  {
+    "chave": "0fy04wb",
+    "texto": "Treino de natação é exercício físico. Tem hora, tem professor e tem repetição.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s4-classificacao-corporal/peça"
+    ]
+  },
+  {
+    "chave": "12ddfvk",
+    "texto": "A aula de futsal é exercício físico. Alguém planejou o que fazer e por quanto tempo.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s4-classificacao-corporal/peça"
+    ]
+  },
+  {
+    "chave": "0z66gw9",
+    "texto": "Contando séries vira exercício físico. O objetivo é melhorar, não só brincar.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s4-classificacao-corporal/peça"
+    ]
+  },
+  {
+    "chave": "1709btp",
+    "texto": "Treino de ciclismo é exercício físico. Tem distância combinada e tem repetição.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano3-s4-classificacao-corporal/peça"
+    ]
+  },
+  {
+    "chave": "1d8828p",
+    "texto": "Monte o prato. Arraste cada alimento para o grupo dele.",
+    "intencao": "instrucao",
+    "onde": [
+      "ano4-s1-prato-colorido"
+    ]
+  },
+  {
+    "chave": "1ozgha9",
+    "texto": "Marche. Marche no lugar levantando bem os joelhos.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano4-s1-prato-colorido/movimento"
+    ]
+  },
+  {
+    "chave": "1od0prx",
+    "texto": "Pule. Dez pulinhos com os dois pés juntos.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano4-s1-prato-colorido/movimento"
+    ]
+  },
+  {
+    "chave": "15us8oz",
+    "texto": "Estique. Estique os braços para cima e cresça bem alto.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano4-s1-prato-colorido/movimento"
+    ]
+  },
+  {
+    "chave": "1jsct93",
+    "texto": "Folha verde no prato todo dia. É fibra e vitamina.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s1-prato-colorido/peça"
+    ]
+  },
+  {
+    "chave": "1gk0dt0",
+    "texto": "Cenoura é do grupo das verduras. A cor laranja avisa que tem vitamina A.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s1-prato-colorido/peça"
+    ]
+  },
+  {
+    "chave": "0h9zbfz",
+    "texto": "Brócolis tem fibra e ferro. Quanto mais cor no prato, melhor.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s1-prato-colorido/peça"
+    ]
+  },
+  {
+    "chave": "04kz0nt",
+    "texto": "Fruta entra no mesmo grupo das verduras. Vale como sobremesa também.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s1-prato-colorido/peça"
+    ]
+  },
+  {
+    "chave": "1qiqbxc",
+    "texto": "Arroz é energia. É o combustível para brincar e prestar atenção na aula.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s1-prato-colorido/peça"
+    ]
+  },
+  {
+    "chave": "0box6o8",
+    "texto": "Pão também é energia. Integral dura mais tempo no corpo.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s1-prato-colorido/peça"
+    ]
+  },
+  {
+    "chave": "04w2k9q",
+    "texto": "Feijão constrói o corpo. Com arroz, forma uma dupla completa.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s1-prato-colorido/peça"
+    ]
+  },
+  {
+    "chave": "1o0tcnb",
+    "texto": "Ovo é proteína pura. Constrói músculo, cabelo e pele.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s1-prato-colorido/peça"
+    ]
+  },
+  {
+    "chave": "1k0pbkw",
+    "texto": "Carne é do grupo da construção. Ajuda o corpo a crescer.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s1-prato-colorido/peça"
+    ]
+  },
+  {
+    "chave": "0zb0s2s",
+    "texto": "Leite constrói osso forte. Tem cálcio.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s1-prato-colorido/peça"
+    ]
+  },
+  {
+    "chave": "0dgrwxn",
+    "texto": "Chocolate é para de vez em quando. Dá energia rápida e passa rápido.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s1-prato-colorido/peça"
+    ]
+  },
+  {
+    "chave": "0tirqtk",
+    "texto": "Salgadinho tem muito sal e pouca coisa boa. Fica fora do dia a dia.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s1-prato-colorido/peça"
+    ]
+  },
+  {
+    "chave": "1u30toq",
+    "texto": "Separe os lanches em dois grupos. O de todo dia e o de vez em quando.",
+    "intencao": "instrucao",
+    "onde": [
+      "ano4-s2-super-lanche"
+    ]
+  },
+  {
+    "chave": "0av2exo",
+    "texto": "Ande. Dê uma volta andando pela sala, sem correr.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano4-s2-super-lanche/movimento"
+    ]
+  },
+  {
+    "chave": "1b0xqtk",
+    "texto": "Gire o tronco. Com os pés firmes, gire o tronco para os dois lados.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano4-s2-super-lanche/movimento"
+    ]
+  },
+  {
+    "chave": "0ivi4vy",
+    "texto": "Respire. Puxe o ar pelo nariz e solte pela boca.",
+    "intencao": "acalmar",
+    "onde": [
+      "ano4-s2-super-lanche/movimento"
+    ]
+  },
+  {
+    "chave": "0s3fqfb",
+    "texto": "Fruta inteira tem fibra. A fibra segura a fome por mais tempo.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s2-super-lanche/peça"
+    ]
+  },
+  {
+    "chave": "1aa4w7e",
+    "texto": "Banana é lanche de bolso. Energia e potássio para o recreio.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s2-super-lanche/peça"
+    ]
+  },
+  {
+    "chave": "1kuaba7",
+    "texto": "Pão sustenta até a próxima refeição. Melhor ainda com ovo ou queijo.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s2-super-lanche/peça"
+    ]
+  },
+  {
+    "chave": "0hkylaj",
+    "texto": "Leite tem cálcio e proteína. Acompanha bem qualquer lanche.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s2-super-lanche/peça"
+    ]
+  },
+  {
+    "chave": "1e7dw5v",
+    "texto": "Água é a bebida do dia a dia. Mata a sede sem nenhum açúcar.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s2-super-lanche/peça"
+    ]
+  },
+  {
+    "chave": "139wx3g",
+    "texto": "Uva é doce de verdade, do jeito que veio da planta.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s2-super-lanche/peça"
+    ]
+  },
+  {
+    "chave": "06dr8ag",
+    "texto": "Chocolate é de vez em quando. O açúcar dá um pique curto e depois some.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s2-super-lanche/peça"
+    ]
+  },
+  {
+    "chave": "1m1tctw",
+    "texto": "Salgadinho é sal e gordura. Enche a boca e não alimenta.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s2-super-lanche/peça"
+    ]
+  },
+  {
+    "chave": "1uvn7qy",
+    "texto": "Suco de caixinha tem açúcar de sobra. A fruta inteira é melhor.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s2-super-lanche/peça"
+    ]
+  },
+  {
+    "chave": "06xlk3o",
+    "texto": "Cinco perguntas para encher a barra de energia. Depois a missão é com o seu corpo.",
+    "intencao": "instrucao",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento"
+    ]
+  },
+  {
+    "chave": "0elxsn9",
+    "texto": "O que fazer antes de uma corrida?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/antes-de-correr"
+    ]
+  },
+  {
+    "chave": "1020vp4",
+    "texto": "Aquecer avisa o músculo que o movimento vem. Assim ele não se machuca.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/antes-de-correr/explicação"
+    ]
+  },
+  {
+    "chave": "06tas3g",
+    "texto": "O que conta como se mexer?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/conta-como-movimento"
+    ]
+  },
+  {
+    "chave": "12rqdh0",
+    "texto": "Vale tudo que tira você da cadeira. Assistir não conta. Quem se mexe é o jogador.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/conta-como-movimento/explicação"
+    ]
+  },
+  {
+    "chave": "0530n6z",
+    "texto": "O que acontece com o coração quando você corre?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/coracao"
+    ]
+  },
+  {
+    "chave": "04hom2q",
+    "texto": "O coração é um músculo. Quanto mais você corre, mais forte ele fica.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/coracao/explicação"
+    ]
+  },
+  {
+    "chave": "151x85s",
+    "texto": "Aqueça. Marche no lugar e gire os braços para a frente.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/movimento"
+    ]
+  },
+  {
+    "chave": "1bxhlyj",
+    "texto": "Corrida parada. Corra no lugar levantando bem os joelhos.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/movimento"
+    ]
+  },
+  {
+    "chave": "1c5ecud",
+    "texto": "Salto. Dez pulos com os dois pés juntos, como se pulasse corda.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/movimento"
+    ]
+  },
+  {
+    "chave": "14r06hu",
+    "texto": "Equilíbrio. Fique num pé só. Troque de pé na metade.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/movimento"
+    ]
+  },
+  {
+    "chave": "1c6uvrk",
+    "texto": "Volte à calma. Ande devagar e respire fundo três vezes.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/movimento"
+    ]
+  },
+  {
+    "chave": "1dm3930",
+    "texto": "Quanto tempo por dia uma criança precisa se mexer?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/quanto-por-dia"
+    ]
+  },
+  {
+    "chave": "09d4p21",
+    "texto": "Uma hora por dia, somando tudo. Recreio, brincadeira e caminho da escola contam.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/quanto-por-dia/explicação"
+    ]
+  },
+  {
+    "chave": "0yy5z3m",
+    "texto": "O que o corpo sente quando fica sentado tempo demais?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/sentado-demais"
+    ]
+  },
+  {
+    "chave": "182sq2y",
+    "texto": "Corpo parado enferruja. De hora em hora vale levantar e dar uma volta.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s3-missao-corpo-e-movimento/sentado-demais/explicação"
+    ]
+  },
+  {
+    "chave": "05wja5y",
+    "texto": "Monte o seu dia. Arraste cada coisa para a hora certa.",
+    "intencao": "instrucao",
+    "onde": [
+      "ano4-s4-dia-ativo-saudavel"
+    ]
+  },
+  {
+    "chave": "07zu4ur",
+    "texto": "Corra no lugar. Corra parado por um tempinho.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano4-s4-dia-ativo-saudavel/movimento"
+    ]
+  },
+  {
+    "chave": "0sm4w2d",
+    "texto": "Pule como na amarelinha. Pule num pé só, depois nos dois. Repita.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano4-s4-dia-ativo-saudavel/movimento"
+    ]
+  },
+  {
+    "chave": "16n3srn",
+    "texto": "Alongue as pernas. Estique uma perna para trás e segure. Troque o lado.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano4-s4-dia-ativo-saudavel/movimento"
+    ]
+  },
+  {
+    "chave": "0ecac9k",
+    "texto": "Acordar sempre na mesma hora deixa o corpo com o relógio certo.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s4-dia-ativo-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "160hljt",
+    "texto": "Café da manhã liga o corpo. Sem ele a aula fica mais difícil.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s4-dia-ativo-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "0bxwqxd",
+    "texto": "Se der para ir a pé, melhor ainda. Já conta como movimento.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s4-dia-ativo-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "1mvbc18",
+    "texto": "Almoço com arroz, feijão, carne e verdura sustenta a tarde inteira.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s4-dia-ativo-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "08oydyo",
+    "texto": "Água ao longo do dia, sem esperar a sede chegar.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s4-dia-ativo-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "03jqxja",
+    "texto": "A tarde é a melhor hora de se mexer. Uma hora por dia, somando tudo.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s4-dia-ativo-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "1wbuatu",
+    "texto": "Ler também descansa. Descanso não é só ficar deitado.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s4-dia-ativo-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "1i5hc84",
+    "texto": "A escovação da noite é a mais importante do dia.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s4-dia-ativo-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "0yhv3c0",
+    "texto": "Dormir cedo fecha o dia. É de noite que o corpo cresce.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano4-s4-dia-ativo-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "0pl58sa",
+    "texto": "Cinco perguntas sobre corpos diferentes. Não existe um corpo certo.",
+    "intencao": "instrucao",
+    "onde": [
+      "ano5-s1-corpos-do-mundo"
+    ]
+  },
+  {
+    "chave": "0qbbxga",
+    "texto": "Um colega faz piada com o corpo de outro. O que fazer?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano5-s1-corpos-do-mundo/apelido"
+    ]
+  },
+  {
+    "chave": "1ir52wj",
+    "texto": "Piada sobre o corpo do outro machuca por dentro. Quem vê e fala ajuda a parar.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s1-corpos-do-mundo/apelido/explicação"
+    ]
+  },
+  {
+    "chave": "1bxwowt",
+    "texto": "Existe um tipo de corpo certo?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano5-s1-corpos-do-mundo/corpo-certo"
+    ]
+  },
+  {
+    "chave": "0950xa7",
+    "texto": "Não existe corpo certo. Existe corpo cuidado, e cada um cuida do que tem.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s1-corpos-do-mundo/corpo-certo/explicação"
+    ]
+  },
+  {
+    "chave": "0rqjq8b",
+    "texto": "O que mostra que alguém cuida do próprio corpo?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano5-s1-corpos-do-mundo/cuidar"
+    ]
+  },
+  {
+    "chave": "0ul4c3j",
+    "texto": "Cuidado se vê no hábito, não no número da balança.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s1-corpos-do-mundo/cuidar/explicação"
+    ]
+  },
+  {
+    "chave": "0e4vfz2",
+    "texto": "Estique o lado. Levante um braço e incline o corpo para o lado. Troque.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s1-corpos-do-mundo/movimento"
+    ]
+  },
+  {
+    "chave": "077ojq5",
+    "texto": "Fique num pé. Fique num pé só o tempo que conseguir. Pode se apoiar.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s1-corpos-do-mundo/movimento"
+    ]
+  },
+  {
+    "chave": "0v2uq6r",
+    "texto": "Respire. Puxe o ar pelo nariz e solte devagar.",
+    "intencao": "acalmar",
+    "onde": [
+      "ano5-s1-corpos-do-mundo/movimento"
+    ]
+  },
+  {
+    "chave": "0vctie8",
+    "texto": "O que faz um corpo ser diferente do outro?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano5-s1-corpos-do-mundo/o-que-muda"
+    ]
+  },
+  {
+    "chave": "0w291rz",
+    "texto": "Herança, idade e história moldam o corpo. Não é só questão de esforço.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s1-corpos-do-mundo/o-que-muda/explicação"
+    ]
+  },
+  {
+    "chave": "1ppl0oe",
+    "texto": "Quem pode praticar esporte?",
+    "intencao": "pergunta",
+    "onde": [
+      "ano5-s1-corpos-do-mundo/todos-podem"
+    ]
+  },
+  {
+    "chave": "140j6qb",
+    "texto": "Todo corpo se movimenta. O que muda é o ritmo, não o direito.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s1-corpos-do-mundo/todos-podem/explicação"
+    ]
+  },
+  {
+    "chave": "1aupiw0",
+    "texto": "Organize o fim do dia. A tela tem hora certa. A última hora antes de dormir não é dela.",
+    "intencao": "instrucao",
+    "onde": [
+      "ano5-s2-digital-saude"
+    ]
+  },
+  {
+    "chave": "09eonfr",
+    "texto": "Olhe longe. Procure a coisa mais distante da sala e olhe para ela.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s2-digital-saude/movimento"
+    ]
+  },
+  {
+    "chave": "1meha3n",
+    "texto": "Solte o pescoço. Incline a cabeça para um ombro e depois para o outro.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s2-digital-saude/movimento"
+    ]
+  },
+  {
+    "chave": "1x9h9dx",
+    "texto": "Levante e ande. Levante da cadeira e dê uma volta pela sala.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s2-digital-saude/movimento"
+    ]
+  },
+  {
+    "chave": "1nnumv4",
+    "texto": "Movimento no fim da tarde ajuda a dormir melhor à noite.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s2-digital-saude/peça"
+    ]
+  },
+  {
+    "chave": "19yochl",
+    "texto": "Tela mais cedo, sem problema. Perto de dormir é que atrapalha.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s2-digital-saude/peça"
+    ]
+  },
+  {
+    "chave": "0mxgg4f",
+    "texto": "Luz do dia e movimento acertam o relógio do corpo.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s2-digital-saude/peça"
+    ]
+  },
+  {
+    "chave": "1unco2r",
+    "texto": "O banho morno baixa a temperatura do corpo depois. Isso dá sono.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s2-digital-saude/peça"
+    ]
+  },
+  {
+    "chave": "006k0w2",
+    "texto": "Escovar à noite protege o dente pelas horas de boca fechada.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s2-digital-saude/peça"
+    ]
+  },
+  {
+    "chave": "1eqefet",
+    "texto": "Livro no lugar da tela. O cérebro entende que o dia acabou.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s2-digital-saude/peça"
+    ]
+  },
+  {
+    "chave": "0uvt0tf",
+    "texto": "Respiração lenta acalma o corpo. Funciona melhor que rolar o feed.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s2-digital-saude/peça"
+    ]
+  },
+  {
+    "chave": "026s4lw",
+    "texto": "No escuro o corpo produz a substância que traz o sono.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s2-digital-saude/peça"
+    ]
+  },
+  {
+    "chave": "0u2rkkz",
+    "texto": "Nove a onze horas. É de noite que o corpo cresce e organiza a memória.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s2-digital-saude/peça"
+    ]
+  },
+  {
+    "chave": "0sf9xwt",
+    "texto": "O quarto está bagunçado. Arraste cada coisa para o lugar dela.",
+    "intencao": "instrucao",
+    "onde": [
+      "ano5-s3-missao-ambiente-saudavel"
+    ]
+  },
+  {
+    "chave": "1si00c3",
+    "texto": "Agache para pegar. Agache dobrando os joelhos, como quem pega algo do chão. Dez vezes.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s3-missao-ambiente-saudavel/movimento"
+    ]
+  },
+  {
+    "chave": "1iv7ow0",
+    "texto": "Guarde no alto. Estique os braços para cima como quem guarda na prateleira.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s3-missao-ambiente-saudavel/movimento"
+    ]
+  },
+  {
+    "chave": "0e5hiol",
+    "texto": "Ande carregando. Ande pela sala com os braços para a frente. Faça de conta que leva uma caixa.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s3-missao-ambiente-saudavel/movimento"
+    ]
+  },
+  {
+    "chave": "1qwybs8",
+    "texto": "Plástico é reciclável. Vira garrafa nova em vez de virar lixo no rio.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s3-missao-ambiente-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "1w7c2ag",
+    "texto": "Papel é reciclável. Cada quilo reciclado poupa árvore e água.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s3-missao-ambiente-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "0k2897h",
+    "texto": "Casca é orgânico. Vira adubo em vez de mau cheiro no quarto.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s3-missao-ambiente-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "0c2hrb2",
+    "texto": "Roupa suja no cesto. No chão vira mofo e ácaro, que fazem mal para respirar.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s3-missao-ambiente-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "1a5jnd4",
+    "texto": "Brinquedo guardado é brinquedo que ninguém pisa nem tropeça.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s3-missao-ambiente-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "1ayq7ke",
+    "texto": "Luz acesa à toa gasta energia sem servir para nada.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s3-missao-ambiente-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "0501ew0",
+    "texto": "Torneira pingando desperdiça litros por dia. Fechar é o gesto mais barato que existe.",
+    "intencao": "curiosidade",
+    "onde": [
+      "ano5-s3-missao-ambiente-saudavel/peça"
+    ]
+  },
+  {
+    "chave": "12iqbdy",
+    "texto": "Uma sessão inteira de movimento. Do aquecimento até a volta à calma.",
+    "intencao": "instrucao",
+    "onde": [
+      "ano5-s4-corpo-em-acao"
+    ]
+  },
+  {
+    "chave": "0t9gpp5",
+    "texto": "Aquecimento. Marche no lugar. Gire os braços para a frente e para trás.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s4-corpo-em-acao/movimento"
+    ]
+  },
+  {
+    "chave": "1nrwev8",
+    "texto": "Corrida parada. Corra no lugar levantando os joelhos até a altura da cintura.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s4-corpo-em-acao/movimento"
+    ]
+  },
+  {
+    "chave": "19d2twa",
+    "texto": "Polichinelo. Abra e feche as pernas batendo as mãos acima da cabeça.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s4-corpo-em-acao/movimento"
+    ]
+  },
+  {
+    "chave": "1wuu1cz",
+    "texto": "Agachamento. Agache até onde der e volte. Costas retas, joelho na direção do pé.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s4-corpo-em-acao/movimento"
+    ]
+  },
+  {
+    "chave": "1vvv8dm",
+    "texto": "Equilíbrio. Fique num pé só, braços abertos. Troque de pé na metade.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s4-corpo-em-acao/movimento"
+    ]
+  },
+  {
+    "chave": "1mpoiun",
+    "texto": "Alongamento. Estique uma perna para trás e segure. Depois a outra.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s4-corpo-em-acao/movimento"
+    ]
+  },
+  {
+    "chave": "0can80d",
+    "texto": "Volta à calma. Ande devagar e respire fundo. Sinta o coração ir desacelerando.",
+    "intencao": "convite-movimento",
+    "onde": [
+      "ano5-s4-corpo-em-acao/movimento"
+    ]
+  },
+  {
+    "chave": "1fbvx9i",
+    "texto": "Vamos falar de comida!",
+    "intencao": "comemoracao",
     "onde": [
       "dicas/alimentacao"
     ]
   },
   {
-    "chave": "1442dw7",
-    "texto": "Atividade Física. Movimente-se todos os dias: brincar também é se exercitar. Alongue o corpo antes e depois de se mexer. Brincar ao ar livre faz bem para o corpo e para a cabeça. Quem se movimenta, se cuida!",
+    "chave": "0phoqrn",
+    "texto": "Quanto mais cores no prato, melhor para o corpo.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/alimentacao"
+    ]
+  },
+  {
+    "chave": "0s1yiji",
+    "texto": "Fruta e verdura dão energia de verdade.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/alimentacao"
+    ]
+  },
+  {
+    "chave": "0oimizq",
+    "texto": "Beba água durante o dia todo, mesmo sem sede.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/alimentacao"
+    ]
+  },
+  {
+    "chave": "1dakc6f",
+    "texto": "Ultraprocessado é de vez em quando, não todo dia.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/alimentacao"
+    ]
+  },
+  {
+    "chave": "03g8sq1",
+    "texto": "Vamos falar de movimento!",
+    "intencao": "comemoracao",
     "onde": [
       "dicas/atividade-fisica"
     ]
   },
   {
-    "chave": "145mskc",
-    "texto": "Higiene. Tome banho todos os dias — o corpo agradece. Lave as mãos antes de comer e depois de usar o banheiro. Escove os dentes três vezes por dia, sempre depois das refeições. Corte as unhas e lave os cabelos com frequência.",
+    "chave": "0g4bczp",
+    "texto": "Movimente-se todos os dias. Brincar também é se exercitar.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/atividade-fisica"
+    ]
+  },
+  {
+    "chave": "045ia2q",
+    "texto": "Alongue o corpo antes e depois de se mexer.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/atividade-fisica"
+    ]
+  },
+  {
+    "chave": "02wa86s",
+    "texto": "Brincar ao ar livre faz bem para o corpo.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/atividade-fisica"
+    ]
+  },
+  {
+    "chave": "0tay83f",
+    "texto": "E faz bem para a cabeça também.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/atividade-fisica"
+    ]
+  },
+  {
+    "chave": "0ccdb02",
+    "texto": "Quem se movimenta, se cuida!",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/atividade-fisica"
+    ]
+  },
+  {
+    "chave": "07hg00y",
+    "texto": "Vamos falar de higiene!",
+    "intencao": "comemoracao",
     "onde": [
       "dicas/higiene"
     ]
   },
   {
-    "chave": "08n5vy1",
-    "texto": "Sono. Dormir bem ajuda a crescer e a aprender. Desligue as telas antes de deitar — elas atrapalham o sono. Tenha um horário para dormir e acordar. O corpo fala quando está cansado. Escute ele!",
+    "chave": "1sn3rlc",
+    "texto": "Tome banho todos os dias. O corpo agradece.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/higiene"
+    ]
+  },
+  {
+    "chave": "1ue9901",
+    "texto": "Lave as mãos antes de comer.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/higiene"
+    ]
+  },
+  {
+    "chave": "0w7417p",
+    "texto": "E depois de usar o banheiro também.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/higiene"
+    ]
+  },
+  {
+    "chave": "0g4febm",
+    "texto": "Escove os dentes três vezes por dia.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/higiene"
+    ]
+  },
+  {
+    "chave": "1hmuvvc",
+    "texto": "Corte as unhas e lave o cabelo com frequência.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/higiene"
+    ]
+  },
+  {
+    "chave": "1cm2iko",
+    "texto": "Vamos falar de sono!",
+    "intencao": "comemoracao",
+    "onde": [
+      "dicas/sono"
+    ]
+  },
+  {
+    "chave": "0teqe58",
+    "texto": "Dormir bem ajuda a crescer e a aprender.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/sono"
+    ]
+  },
+  {
+    "chave": "0y2bnvr",
+    "texto": "Desligue as telas antes de deitar. Elas atrapalham o sono.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/sono"
+    ]
+  },
+  {
+    "chave": "1662fux",
+    "texto": "Tenha uma hora para dormir e uma para acordar.",
+    "intencao": "instrucao",
+    "onde": [
+      "dicas/sono"
+    ]
+  },
+  {
+    "chave": "167qp4f",
+    "texto": "O corpo avisa quando está cansado. Escute ele!",
+    "intencao": "instrucao",
     "onde": [
       "dicas/sono"
     ]
@@ -842,6 +2411,7 @@
   {
     "chave": "1fcgf9c",
     "texto": "Saúde em jogo!",
+    "intencao": "comemoracao",
     "onde": [
       "interface"
     ]
@@ -849,6 +2419,7 @@
   {
     "chave": "0bz2taj",
     "texto": "Seja bem-vindo! Digite o seu nome.",
+    "intencao": "instrucao",
     "onde": [
       "interface"
     ]
@@ -856,6 +2427,7 @@
   {
     "chave": "0je24vz",
     "texto": "Isso mesmo!",
+    "intencao": "comemoracao",
     "onde": [
       "interface"
     ]
@@ -863,6 +2435,7 @@
   {
     "chave": "0qycl0j",
     "texto": "Tente outro lugar.",
+    "intencao": "consolo",
     "onde": [
       "interface"
     ]
@@ -870,6 +2443,7 @@
   {
     "chave": "15jivpn",
     "texto": "Muito bem! Você ganhou 1 estrela.",
+    "intencao": "comemoracao",
     "onde": [
       "interface"
     ]
@@ -877,6 +2451,7 @@
   {
     "chave": "0the2pb",
     "texto": "Muito bem! Você ganhou 2 estrelas.",
+    "intencao": "comemoracao",
     "onde": [
       "interface"
     ]
@@ -884,6 +2459,7 @@
   {
     "chave": "030oxqw",
     "texto": "Muito bem! Você ganhou 3 estrelas.",
+    "intencao": "comemoracao",
     "onde": [
       "interface"
     ]
@@ -891,6 +2467,7 @@
   {
     "chave": "1x8afrs",
     "texto": "Pescoço. Incline a cabeça para um lado e depois para o outro.",
+    "intencao": "convite-movimento",
     "onde": [
       "movimento/alongamentos/movimento"
     ]
@@ -898,6 +2475,7 @@
   {
     "chave": "1o9yjr2",
     "texto": "Braços para cima. Estique os dois braços bem alto, como se fosse pegar o teto.",
+    "intencao": "convite-movimento",
     "onde": [
       "movimento/alongamentos/movimento"
     ]
@@ -905,27 +2483,23 @@
   {
     "chave": "0qc3e3p",
     "texto": "Ombros. Puxe um braço na frente do peito com a ajuda do outro. Troque o lado.",
+    "intencao": "convite-movimento",
     "onde": [
       "movimento/alongamentos/movimento"
     ]
   },
   {
-    "chave": "1er7d5t",
-    "texto": "Tronco. Com os pés firmes, gire o tronco devagar para um lado e para o outro.",
+    "chave": "1ixy2zp",
+    "texto": "Atrás da perna. Tente encostar as mãos na ponta dos pés. Nada de forçar.",
+    "intencao": "convite-movimento",
     "onde": [
       "movimento/alongamentos/movimento"
     ]
   },
   {
-    "chave": "1gazq74",
-    "texto": "Atrás da perna. Sentado ou em pé, tente encostar as mãos na ponta dos pés sem forçar.",
-    "onde": [
-      "movimento/alongamentos/movimento"
-    ]
-  },
-  {
-    "chave": "120ijp8",
-    "texto": "Respirar fundo. Puxe o ar pelo nariz contando até 4 e solte pela boca contando até 4.",
+    "chave": "18ln3en",
+    "texto": "Respirar fundo. Puxe o ar pelo nariz contando até 4. Solte pela boca contando até 4.",
+    "intencao": "acalmar",
     "onde": [
       "movimento/alongamentos/movimento"
     ]
@@ -933,6 +2507,7 @@
   {
     "chave": "0gdxmat",
     "texto": "Marchar no lugar. Levante bem os joelhos, um de cada vez.",
+    "intencao": "convite-movimento",
     "onde": [
       "movimento/movimentos/movimento"
     ]
@@ -940,6 +2515,7 @@
   {
     "chave": "0m1er0c",
     "texto": "Pular. Pule com os dois pés juntos, sem sair do lugar.",
+    "intencao": "convite-movimento",
     "onde": [
       "movimento/movimentos/movimento"
     ]
@@ -947,6 +2523,7 @@
   {
     "chave": "0zl2msi",
     "texto": "Equilibrar. Fique em um pé só. Depois troque o pé.",
+    "intencao": "convite-movimento",
     "onde": [
       "movimento/movimentos/movimento"
     ]
@@ -954,6 +2531,7 @@
   {
     "chave": "0sfl0et",
     "texto": "Girar. Dê uma volta devagar para um lado e outra para o outro.",
+    "intencao": "convite-movimento",
     "onde": [
       "movimento/movimentos/movimento"
     ]
@@ -961,6 +2539,7 @@
   {
     "chave": "05joa5n",
     "texto": "Agachar e levantar. Agache como se fosse sentar numa cadeira e volte devagar.",
+    "intencao": "convite-movimento",
     "onde": [
       "movimento/movimentos/movimento"
     ]
@@ -968,8 +2547,201 @@
   {
     "chave": "0hweex6",
     "texto": "Acalmar. Pare, respire fundo e sinta o coração batendo.",
+    "intencao": "acalmar",
     "onde": [
       "movimento/movimentos/movimento"
+    ]
+  },
+  {
+    "chave": "04jxfs3",
+    "texto": "Você ganhou Arco-íris!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/arco-iris"
+    ]
+  },
+  {
+    "chave": "1fdlw5h",
+    "texto": "Você tirou Arco-íris de novo!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/arco-iris/repetida"
+    ]
+  },
+  {
+    "chave": "10qyoug",
+    "texto": "Você ganhou Coração!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/coracao"
+    ]
+  },
+  {
+    "chave": "0pyu17q",
+    "texto": "Você tirou Coração de novo!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/coracao/repetida"
+    ]
+  },
+  {
+    "chave": "09qkp5k",
+    "texto": "Você ganhou Corda de pular!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/corda"
+    ]
+  },
+  {
+    "chave": "0c6injs",
+    "texto": "Você tirou Corda de pular de novo!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/corda/repetida"
+    ]
+  },
+  {
+    "chave": "01khvn5",
+    "texto": "Você ganhou Escova de dentes!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/escova"
+    ]
+  },
+  {
+    "chave": "1d6e9jt",
+    "texto": "Você tirou Escova de dentes de novo!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/escova/repetida"
+    ]
+  },
+  {
+    "chave": "1bznyvg",
+    "texto": "Você ganhou Estrela!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/estrela"
+    ]
+  },
+  {
+    "chave": "17cj482",
+    "texto": "Você tirou Estrela de novo!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/estrela/repetida"
+    ]
+  },
+  {
+    "chave": "0d00bzm",
+    "texto": "Você ganhou Gota de água!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/gota"
+    ]
+  },
+  {
+    "chave": "0k096rm",
+    "texto": "Você tirou Gota de água de novo!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/gota/repetida"
+    ]
+  },
+  {
+    "chave": "0022jyg",
+    "texto": "Você ganhou Lua do bom sono!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/lua"
+    ]
+  },
+  {
+    "chave": "1pvvpuq",
+    "texto": "Você tirou Lua do bom sono de novo!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/lua/repetida"
+    ]
+  },
+  {
+    "chave": "0iscdvw",
+    "texto": "Você ganhou Maçã!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/maca"
+    ]
+  },
+  {
+    "chave": "1of5stk",
+    "texto": "Você tirou Maçã de novo!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/maca/repetida"
+    ]
+  },
+  {
+    "chave": "19hru8n",
+    "texto": "Você ganhou Força!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/musculo"
+    ]
+  },
+  {
+    "chave": "13u0p9p",
+    "texto": "Você tirou Força de novo!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/musculo/repetida"
+    ]
+  },
+  {
+    "chave": "1lg1828",
+    "texto": "Você ganhou Sol!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/sol"
+    ]
+  },
+  {
+    "chave": "0a8wole",
+    "texto": "Você tirou Sol de novo!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/sol/repetida"
+    ]
+  },
+  {
+    "chave": "0dmbfx2",
+    "texto": "Você ganhou Tênis!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/tenis"
+    ]
+  },
+  {
+    "chave": "0whrb68",
+    "texto": "Você tirou Tênis de novo!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/tenis/repetida"
+    ]
+  },
+  {
+    "chave": "0xkz2wb",
+    "texto": "Você ganhou Troféu!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/trofeu"
+    ]
+  },
+  {
+    "chave": "0mi9yt3",
+    "texto": "Você tirou Troféu de novo!",
+    "intencao": "comemoracao",
+    "onde": [
+      "recompensa/trofeu/repetida"
     ]
   }
 ]

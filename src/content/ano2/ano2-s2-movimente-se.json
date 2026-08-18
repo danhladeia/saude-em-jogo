@@ -65,7 +65,7 @@
           "correta": false
         }
       ],
-      "explicacao": "O coração é um músculo: quanto mais a gente se movimenta, mais forte ele fica."
+      "explicacao": "O coração é um músculo. Quanto mais você se movimenta, mais forte ele fica."
     },
     {
       "id": "brincadeiras",
@@ -127,7 +127,7 @@
           "correta": false
         }
       ],
-      "explicacao": "O recomendado é pelo menos 1 hora de movimento por dia — e brincar já conta!"
+      "explicacao": "O certo é pelo menos 1 hora de movimento por dia. E brincar já conta!"
     },
     {
       "id": "beneficios",
@@ -159,7 +159,7 @@
           "correta": false
         }
       ],
-      "explicacao": "Movimentar-se dá energia, melhora o sono e ainda deixa a gente mais feliz."
+      "explicacao": "Movimento dá energia e melhora o sono. E ainda deixa a gente mais feliz."
     },
     {
       "id": "musculos",
@@ -185,7 +185,7 @@
           "correta": false
         }
       ],
-      "explicacao": "Movimento fortalece músculos e ossos — por isso é tão importante na infância."
+      "explicacao": "Movimento deixa músculos e ossos mais fortes. Por isso criança precisa se mexer."
     }
   ]
 }

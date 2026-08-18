@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { TEMAS_DE_DICA, falaDoTema } from '@/content/dicas'
-import { narrar } from '@/lib/narracao'
+import { TEMAS_DE_DICA, falasDoTema } from '@/content/dicas'
+import { calar, narrarSequencia } from '@/lib/narracao'
 import { cn } from '@/design/cn'
 
 /** Tela 7 do mockup. O conteúdo vive em @/content/dicas. */
@@ -22,7 +22,10 @@ export function DicasDeSaude() {
                 onClick={() => {
                   const proximo = expandido ? null : tema.id
                   setAberto(proximo)
-                  if (proximo) narrar(falaDoTema(tema))
+                  // Fechar cala: a sequência continuaria tocando com o
+                  // painel já recolhido.
+                  if (proximo) void narrarSequencia(falasDoTema(tema))
+                  else calar()
                 }}
                 aria-expanded={expandido}
                 className={cn(

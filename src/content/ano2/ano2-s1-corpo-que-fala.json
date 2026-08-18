@@ -73,7 +73,7 @@
         "emoji": "☑️",
         "imagem": "simbolos/sim"
       },
-      "explicacao": "A cabeça também responde: para cima e para baixo é sim."
+      "explicacao": "A cabeça também responde. Para cima e para baixo é sim."
     },
     {
       "id": "nao",
@@ -132,7 +132,7 @@
       {
         "id": "diga-sim",
         "rotulo": "Diga sim e não",
-        "descricao": "Use só a cabeça: sim, depois não.",
+        "descricao": "Use só a cabeça. Primeiro sim, depois não.",
         "emoji": "🙆",
         "segundos": 12
       },

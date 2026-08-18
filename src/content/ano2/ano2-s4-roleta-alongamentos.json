@@ -11,7 +11,8 @@
       "emoji": "🙂",
       "instrucao": "Incline a cabeça para o ombro direito, depois para o esquerdo. Bem devagar.",
       "segundos": 20,
-      "imagem": "alongamentos/pescoco"
+      "imagem": "alongamentos/pescoco",
+      "verificacao": "cabeca-inclinada"
     },
     {
       "id": "bracos-alto",
@@ -19,7 +20,8 @@
       "emoji": "🙌",
       "instrucao": "Estique os dois braços bem alto e cresça o máximo que conseguir.",
       "segundos": 20,
-      "imagem": "alongamentos/bracos-alto"
+      "imagem": "alongamentos/bracos-alto",
+      "verificacao": "bracos-acima-da-cabeca"
     },
     {
       "id": "ombro",
@@ -27,15 +29,17 @@
       "emoji": "💪",
       "instrucao": "Passe um braço na frente do peito e puxe com o outro. Troque o lado.",
       "segundos": 25,
-      "imagem": "alongamentos/ombro"
+      "imagem": "alongamentos/ombro",
+      "verificacao": "bracos-para-frente"
     },
     {
       "id": "tronco",
       "rotulo": "Tronco",
       "emoji": "🔄",
-      "instrucao": "Com os pés firmes no chão, gire o tronco devagar para um lado e para o outro.",
+      "instrucao": "Fixe os pés no chão. Gire o tronco devagar para os dois lados.",
       "segundos": 25,
-      "imagem": "movimentos/tronco"
+      "imagem": "movimentos/tronco",
+      "verificacao": "tronco-girado"
     },
     {
       "id": "lateral",
@@ -43,15 +47,17 @@
       "emoji": "🤸",
       "instrucao": "Levante um braço e incline o corpo para o lado contrário. Troque.",
       "segundos": 25,
-      "imagem": "alongamentos/lateral"
+      "imagem": "alongamentos/lateral",
+      "verificacao": "tronco-inclinado-lateral"
     },
     {
       "id": "perna-tras",
       "rotulo": "Atrás da perna",
       "emoji": "🦵",
-      "instrucao": "Sente no chão com as pernas esticadas e tente alcançar a ponta dos pés sem forçar.",
+      "instrucao": "Sente no chão com as pernas esticadas. Tente alcançar a ponta dos pés sem forçar.",
       "segundos": 25,
-      "imagem": "alongamentos/perna-tras"
+      "imagem": "alongamentos/perna-tras",
+      "verificacao": "agachado"
     },
     {
       "id": "coxa",
@@ -59,15 +65,17 @@
       "emoji": "🦿",
       "instrucao": "Em pé, dobre uma perna para trás e segure o pé. Troque de perna.",
       "segundos": 25,
-      "imagem": "alongamentos/coxa"
+      "imagem": "alongamentos/coxa",
+      "verificacao": "em-um-pe-so"
     },
     {
       "id": "panturrilha",
       "rotulo": "Panturrilha",
       "emoji": "🦶",
-      "instrucao": "Apoie as mãos na parede e estique uma perna para trás, com o calcanhar no chão.",
+      "instrucao": "Apoie as mãos na parede. Estique uma perna para trás. Deixe o calcanhar no chão.",
       "segundos": 25,
-      "imagem": "alongamentos/panturrilha"
+      "imagem": "alongamentos/panturrilha",
+      "verificacao": "bracos-para-frente"
     },
     {
       "id": "borboleta",
@@ -89,7 +97,7 @@
       "id": "maos",
       "rotulo": "Mãos e punhos",
       "emoji": "🤲",
-      "instrucao": "Abra e feche as mãos, depois gire os punhos para os dois lados.",
+      "instrucao": "Abra e feche as mãos. Depois gire os punhos para os dois lados.",
       "segundos": 15,
       "imagem": "alongamentos/maos"
     },
@@ -97,7 +105,8 @@
       "id": "respirar",
       "rotulo": "Respiração",
       "emoji": "🌬️",
-      "instrucao": "Puxe o ar pelo nariz contando até 4 e solte pela boca contando até 4.",
+      "instrucao": "Puxe o ar pelo nariz contando até 4. Solte pela boca contando até 4.",
+      "intencao": "acalmar",
       "segundos": 20,
       "imagem": "alongamentos/respirar"
     }

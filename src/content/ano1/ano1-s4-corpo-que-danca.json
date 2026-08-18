@@ -46,6 +46,7 @@
         "id": "respirar",
         "rotulo": "Respirar",
         "descricao": "Puxe o ar pelo nariz e solte devagar pela boca.",
+        "intencao": "acalmar",
         "emoji": "🌬️",
         "segundos": 20
       }

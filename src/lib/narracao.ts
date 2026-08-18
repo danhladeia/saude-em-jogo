@@ -73,8 +73,16 @@ export function vozEmUso(): string | null {
   return vozPtBr?.name ?? null
 }
 
+/**
+ * Cada pedido de narração recebe um número. `calar()` avança o contador,
+ * o que invalida qualquer sequência em andamento — sem isso a criança
+ * abre outro tema e ouve os dois ao mesmo tempo.
+ */
+let geracao = 0
+
 /** Interrompe qualquer fala em andamento, gravada ou sintetizada. */
 export function calar() {
+  geracao++
   pararClipe()
   if (suportado()) window.speechSynthesis.cancel()
 }
@@ -99,19 +107,84 @@ export function narrar(texto: string, opcoes: OpcoesNarracao = {}) {
   })
 }
 
-function sintetizar(texto: string, { velocidade = 0.95 }: OpcoesNarracao) {
-  if (!suportado()) return
+function sintetizar(texto: string, { velocidade = 0.95 }: OpcoesNarracao, aoTerminar?: () => void) {
+  if (!suportado()) {
+    aoTerminar?.()
+    return
+  }
 
   const fala = new SpeechSynthesisUtterance(texto)
   fala.lang = 'pt-BR'
   fala.rate = velocidade
   fala.pitch = 1.1
   if (vozPtBr) fala.voice = vozPtBr
+  if (aoTerminar) {
+    fala.onend = aoTerminar
+    fala.onerror = aoTerminar
+  }
 
   try {
     window.speechSynthesis.speak(fala)
   } catch {
     // Alguns navegadores bloqueiam TTS antes da primeira interação do
     // usuário. Perder a narração é aceitável; travar o jogo não é.
+    aoTerminar?.()
+  }
+}
+
+/** Pausa entre uma fala e a próxima. Meio segundo é o respiro de quem conversa. */
+const PAUSA_ENTRE_FALAS = 500
+
+/**
+ * Quanto tempo uma fala deve durar, no pior caso.
+ *
+ * Existe porque nem `ended` do <audio> nem `onend` da Web Speech são
+ * confiáveis: aba em segundo plano, autoplay bloqueado e voz do sistema
+ * ausente engolem o evento, e a sequência ficaria parada para sempre. É
+ * o mesmo princípio do resultado por temporizador nos motores — o avanço
+ * não pode depender de um evento que talvez não chegue.
+ */
+function tetoDeDuracao(texto: string): number {
+  const palavras = texto.split(/\s+/).filter(Boolean).length
+  return 1500 + palavras * 900
+}
+
+function falarAteOFim(texto: string, opcoes: OpcoesNarracao): Promise<void> {
+  return new Promise((resolve) => {
+    let pronto = false
+    const terminar = () => {
+      if (pronto) return
+      pronto = true
+      clearTimeout(limite)
+      resolve()
+    }
+    const limite = setTimeout(terminar, tetoDeDuracao(texto))
+
+    void tocarClipe(texto, terminar).then((tocou) => {
+      if (!tocou) sintetizar(texto, opcoes, terminar)
+    })
+  })
+}
+
+/**
+ * Fala várias frases curtas em fila, com pausa real entre elas.
+ *
+ * É o que substitui o parágrafo de quarenta palavras numa string só: o
+ * mesmo conteúdo, quebrado em ideias, com silêncio no meio. Ver
+ * docs/plano-da-voz.md.
+ *
+ * Cancela o que estiver tocando e é cancelada por qualquer `calar()` ou
+ * `narrar()` posterior.
+ */
+export async function narrarSequencia(falas: string[], opcoes: OpcoesNarracao = {}) {
+  calar()
+  const minha = geracao
+
+  for (const fala of falas) {
+    if (geracao !== minha) return
+    if (!fala.trim()) continue
+    await falarAteOFim(fala, opcoes)
+    if (geracao !== minha) return
+    await new Promise((r) => setTimeout(r, PAUSA_ENTRE_FALAS))
   }
 }

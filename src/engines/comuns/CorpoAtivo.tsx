@@ -5,6 +5,7 @@ import { Cronometro } from './Cronometro'
 import { Botao } from '@/design/Botao'
 import { Mascote } from '@/design/Mascote'
 import { celebrarConclusao } from '@/design/celebrar'
+import { EspelhoDePose } from './EspelhoDePose'
 import { narrar } from '@/lib/narracao'
 import { usarPerfil } from '@/store/usarPerfil'
 import { urlDoSprite } from '@/assets/registro'
@@ -26,9 +27,15 @@ type Etapa = 'convite' | 'movendo' | 'emocao'
  * Equilibrista mirim ("segundo momento: praticar o equilíbrio real"),
  * Roleta de alongamentos e Corpo em ação.
  *
- * Sem câmera, de propósito: são crianças, e a cartilha já coloca o
- * professor como mediador presencial. O app cronometra e guia; quem
- * observa é a professora.
+ * A câmera confere a execução quando o passo declara `verificacao` — o
+ * cronômetro só começa depois que a criança entra na posição. Nada é
+ * gravado (ver src/lib/pose.ts).
+ *
+ * Mas ela NUNCA é a única porta. Sem webcam, sem permissão, sem WASM, ou
+ * simplesmente sem conseguir encaixar — corpo diferente do previsto,
+ * espaço apertado, cadeira de rodas — o cronômetro começa assim mesmo e o
+ * botão de avançar continua ali. A professora segue sendo a mediadora que
+ * a cartilha prevê; a câmera é ajuda, não porteiro.
  */
 export function CorpoAtivo({ bloco, aoConcluir }: CorpoAtivoProps) {
   const narracaoLigada = usarPerfil((e) => e.preferencias.narracao)
@@ -43,6 +50,18 @@ export function CorpoAtivo({ bloco, aoConcluir }: CorpoAtivoProps) {
 
   const passo = bloco.passos[indice]
   const ultimo = indice === bloco.passos.length - 1
+
+  /**
+   * O cronômetro fica parado até a pose ser confirmada. Passo sem
+   * `verificacao` já nasce liberado, e a câmera indisponível libera na
+   * hora — nunca existe estado em que a criança fica presa esperando.
+   */
+  const [liberado, setLiberado] = useState(!passo.verificacao)
+  const [semCamera, setSemCamera] = useState(false)
+
+  useEffect(() => {
+    setLiberado(!passo.verificacao)
+  }, [passo])
 
   useEffect(() => {
     if (etapa === 'movendo' && narracaoLigada) narrar(`${passo.rotulo}. ${passo.descricao}`)
@@ -144,14 +163,31 @@ export function CorpoAtivo({ bloco, aoConcluir }: CorpoAtivoProps) {
           <h2 className="text-4xl text-ceu-600">{passo.rotulo}</h2>
           <p className="max-w-xl text-xl text-tinta-600">{passo.descricao}</p>
 
+          {passo.verificacao && !liberado && (
+            <EspelhoDePose
+              verificacao={passo.verificacao}
+              aoConfirmar={() => setLiberado(true)}
+              aoIndisponivel={() => {
+                setSemCamera(true)
+                setLiberado(true)
+              }}
+            />
+          )}
+
           <Cronometro
             segundos={passo.segundos}
-            chave={passo.id}
-            pausado={pausado}
+            chave={`${passo.id}-${liberado}`}
+            pausado={pausado || !liberado}
             aoTerminar={proximo}
           />
         </motion.div>
       </div>
+
+      {semCamera && passo.verificacao && (
+        <p className="max-w-md text-center text-sm text-tinta-500">
+          Sem câmera aqui — faça o movimento e a professora confere.
+        </p>
+      )}
 
       <div className="flex flex-wrap justify-center gap-3">
         <Botao cor="neutro" onClick={() => setPausado((p) => !p)}>

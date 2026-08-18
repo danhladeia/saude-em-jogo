@@ -4,6 +4,7 @@ import type { ConteudoRoleta } from '@/content/schemas'
 import type { PropsDeMotor } from '../tipos'
 import { Enunciado } from '../comuns/Enunciado'
 import { Cronometro } from '../comuns/Cronometro'
+import { EspelhoDePose } from '../comuns/EspelhoDePose'
 import { Botao } from '@/design/Botao'
 import { celebrarConclusao } from '@/design/celebrar'
 import { narrar } from '@/lib/narracao'
@@ -39,6 +40,15 @@ export function MotorRoleta({ conteudo, aoConcluir }: PropsDeMotor<ConteudoRolet
   const narracaoLigada = usarPerfil((e) => e.preferencias.narracao)
 
   const [fase, setFase] = useState<Fase>('parada')
+
+  /**
+   * Espelho de pose: o cronômetro do alongamento só anda depois que a
+   * criança entra na posição. Item sem `verificacao` já nasce liberado, e
+   * câmera indisponível libera na hora — o alongamento nunca fica preso
+   * atrás da câmera.
+   */
+  const [liberado, setLiberado] = useState(false)
+  const [semCamera, setSemCamera] = useState(false)
   const [sorteado, setSorteado] = useState<number | null>(null)
   const [rodada, setRodada] = useState(0)
   const [angulo, setAngulo] = useState(0)
@@ -94,6 +104,8 @@ export function MotorRoleta({ conteudo, aoConcluir }: PropsDeMotor<ConteudoRolet
     setSorteado(alvo)
     setFase('executando')
     if (narracaoLigada) narrar(`${conteudo.itens[alvo].rotulo}. ${conteudo.itens[alvo].instrucao}`)
+    setLiberado(!conteudo.itens[alvo].verificacao)
+    setSemCamera(false)
   }
 
   function concluirRodada() {
@@ -203,7 +215,29 @@ export function MotorRoleta({ conteudo, aoConcluir }: PropsDeMotor<ConteudoRolet
           <h3 className="text-3xl text-folha-600">{item.rotulo}</h3>
           <p className="max-w-lg text-xl text-tinta-600">{item.instrucao}</p>
 
-          <Cronometro segundos={item.segundos} chave={`${rodada}-${item.id}`} aoTerminar={concluirRodada} />
+          {item.verificacao && !liberado && (
+            <EspelhoDePose
+              verificacao={item.verificacao}
+              aoConfirmar={() => setLiberado(true)}
+              aoIndisponivel={() => {
+                setSemCamera(true)
+                setLiberado(true)
+              }}
+            />
+          )}
+
+          <Cronometro
+            segundos={item.segundos}
+            chave={`${rodada}-${item.id}-${liberado}`}
+            pausado={!liberado}
+            aoTerminar={concluirRodada}
+          />
+
+          {semCamera && item.verificacao && (
+            <p className="text-sm text-tinta-500">
+              Sem câmera aqui — faça o alongamento e a professora confere.
+            </p>
+          )}
 
           <Botao cor="ceu" onClick={concluirRodada}>
             Já fiz!

@@ -24,6 +24,24 @@ export default defineConfig({
         // fica de fora do cache sem nenhum aviso.
         globPatterns: ['**/*.{js,css,html,svg,woff2,mp3,webp,png}', 'falas/manifesto.json'],
         // O limite padrao (2 MiB) e por arquivo e sobra para sprite e clipe.
+        // O detector de pose e a excecao a regra do "tudo no precache":
+        // sao ~17 MB entre WASM e modelo, e escola sem webcam nenhuma
+        // baixaria tudo isso para nunca usar. Fica fora do precache e e
+        // buscado na primeira vez que uma crianca abre um bloco de
+        // movimento com verificacao; dai em diante sai do cache.
+        globIgnores: ['**/pose/**'],
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.pathname.includes('/pose/'),
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'pose-v1',
+              expiration: { maxEntries: 8 },
+              cacheableResponse: { statuses: [0, 200] },
+              rangeRequests: true,
+            },
+          },
+        ],
       },
       manifest: {
         name: 'Saúde em Jogo!',

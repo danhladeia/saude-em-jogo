@@ -1,0 +1,207 @@
+{
+  "id": "ano5-s1-corpos-do-mundo",
+  "motor": "quiz",
+  "titulo": "Corpos do mundo",
+  "instrucao": "Cinco perguntas sobre corpos diferentes. Não existe um corpo certo.",
+  "feedback": "padrao",
+  "perguntas": [
+    {
+      "id": "corpo-certo",
+      "enunciado": "Existe um tipo de corpo certo?",
+      "tipo": "unica",
+      "opcoes": [
+        {
+          "id": "nao-existe",
+          "rotulo": "Não. Cada corpo é de um jeito",
+          "correta": true,
+          "emoji": "🌍"
+        },
+        {
+          "id": "magro",
+          "rotulo": "Sim, o corpo magro",
+          "correta": false,
+          "emoji": "🚫"
+        },
+        {
+          "id": "forte",
+          "rotulo": "Sim, o corpo forte",
+          "correta": false,
+          "emoji": "🚫"
+        }
+      ],
+      "explicacao": "Não existe corpo certo. Existe corpo cuidado, e cada um cuida do que tem."
+    },
+    {
+      "id": "o-que-muda",
+      "enunciado": "O que faz um corpo ser diferente do outro?",
+      "tipo": "multipla",
+      "opcoes": [
+        {
+          "id": "familia",
+          "rotulo": "A família de onde a pessoa veio",
+          "correta": true,
+          "emoji": "👪"
+        },
+        {
+          "id": "idade",
+          "rotulo": "A idade",
+          "correta": true,
+          "emoji": "🎂"
+        },
+        {
+          "id": "historia",
+          "rotulo": "A história e o lugar onde ela vive",
+          "correta": true,
+          "emoji": "🏘️"
+        },
+        {
+          "id": "esforco",
+          "rotulo": "Só o esforço de cada um",
+          "correta": false,
+          "emoji": "🚫"
+        }
+      ],
+      "explicacao": "Herança, idade e história moldam o corpo. Não é só questão de esforço."
+    },
+    {
+      "id": "apelido",
+      "enunciado": "Um colega faz piada com o corpo de outro. O que fazer?",
+      "tipo": "unica",
+      "opcoes": [
+        {
+          "id": "falar",
+          "rotulo": "Dizer que não tem graça e chamar um adulto",
+          "correta": true,
+          "emoji": "🗣️"
+        },
+        {
+          "id": "rir",
+          "rotulo": "Rir junto para não sobrar para você",
+          "correta": false,
+          "emoji": "🚫"
+        },
+        {
+          "id": "ignorar",
+          "rotulo": "Fingir que não viu",
+          "correta": false,
+          "emoji": "🙈"
+        }
+      ],
+      "explicacao": "Piada sobre o corpo do outro machuca por dentro. Quem vê e fala ajuda a parar."
+    },
+    {
+      "id": "todos-podem",
+      "enunciado": "Quem pode praticar esporte?",
+      "tipo": "unica",
+      "opcoes": [
+        {
+          "id": "todos",
+          "rotulo": "Qualquer pessoa, do jeito dela",
+          "correta": true,
+          "emoji": "🤸"
+        },
+        {
+          "id": "so-atletas",
+          "rotulo": "Só quem já é bom",
+          "correta": false,
+          "emoji": "🚫"
+        },
+        {
+          "id": "so-magros",
+          "rotulo": "Só quem é magro",
+          "correta": false,
+          "emoji": "🚫"
+        }
+      ],
+      "explicacao": "Todo corpo se movimenta. O que muda é o ritmo, não o direito."
+    },
+    {
+      "id": "cuidar",
+      "enunciado": "O que mostra que alguém cuida do próprio corpo?",
+      "tipo": "multipla",
+      "opcoes": [
+        {
+          "id": "mexer",
+          "rotulo": "Se movimenta quase todo dia",
+          "correta": true,
+          "emoji": "🏃"
+        },
+        {
+          "id": "comer",
+          "rotulo": "Come de tudo um pouco",
+          "correta": true,
+          "emoji": "🍽️"
+        },
+        {
+          "id": "dormir",
+          "rotulo": "Dorme o suficiente",
+          "correta": true,
+          "emoji": "😴"
+        },
+        {
+          "id": "balanca",
+          "rotulo": "Tem um número certo na balança",
+          "correta": false,
+          "emoji": "🚫"
+        }
+      ],
+      "explicacao": "Cuidado se vê no hábito, não no número da balança."
+    }
+  ],
+  "corpoAtivo": {
+    "titulo": "Do meu jeito",
+    "instrucao": "Cada corpo tem um limite. Faça o que der, no seu ritmo.",
+    "passos": [
+      {
+        "id": "alongar-lateral",
+        "rotulo": "Estique o lado",
+        "descricao": "Levante um braço e incline o corpo para o lado. Troque.",
+        "emoji": "🤸",
+        "imagem": "alongamentos/lateral",
+        "segundos": 25
+      },
+      {
+        "id": "equilibrio",
+        "rotulo": "Fique num pé",
+        "descricao": "Fique num pé só o tempo que conseguir. Pode se apoiar.",
+        "emoji": "🦩",
+        "imagem": "equilibrio/um-pe",
+        "segundos": 25
+      },
+      {
+        "id": "respirar",
+        "rotulo": "Respire",
+        "descricao": "Puxe o ar pelo nariz e solte devagar.",
+        "intencao": "acalmar",
+        "emoji": "🌬️",
+        "imagem": "alongamentos/respirar",
+        "segundos": 20
+      }
+    ],
+    "perguntaEmocao": {
+      "enunciado": "Como você se sente com o seu corpo hoje?",
+      "opcoes": [
+        {
+          "id": "bem",
+          "rotulo": "Bem",
+          "emoji": "😄"
+        },
+        {
+          "id": "forte",
+          "rotulo": "Forte",
+          "emoji": "💪"
+        },
+        {
+          "id": "cansado",
+          "rotulo": "Cansado",
+          "emoji": "😮‍💨"
+        },
+        {
+          "id": "pensativo",
+          "rotulo": "Pensativo",
+          "emoji": "🤔"
+        }
+      ]
+    }
+  }
+}

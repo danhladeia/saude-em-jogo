@@ -1,18 +1,17 @@
 export type Ano = 1 | 2 | 3 | 4 | 5
 export type Semana = 1 | 2 | 3 | 4
 
-/** Os nove motores. Motor é código; jogo é JSON. */
-export type Motor =
-  | 'quiz'
-  | 'arrastar-alvo'
-  | 'classificar'
-  | 'rotina'
-  | 'montagem'
-  | 'associacao'
-  | 'trilha'
-  | 'roleta'
-  | 'runner'
-  | 'corpo-ativo'
+/**
+ * Os cinco motores. Motor é código; jogo é JSON.
+ *
+ * O plano original previa dez. Os outros cinco — classificar, rotina,
+ * montagem, trilha e runner — não foram construídos porque cabiam nestes:
+ * classificar e montagem são `arrastar-alvo` com layout de colunas, rotina é
+ * o mesmo com linha do tempo, trilha é `quiz` com pele de trilha, e runner
+ * virou `corpo-ativo` (em vez de a criança clicar num boneco que pula, ela
+ * pula). Ver docs/plano-remodelacao.md.
+ */
+export type Motor = 'quiz' | 'arrastar-alvo' | 'associacao' | 'roleta' | 'corpo-ativo'
 
 /** Os dois eixos que a cartilha atravessa do começo ao fim. */
 export type Eixo = 'letramento-corporal' | 'promocao-da-saude'

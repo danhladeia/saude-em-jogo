@@ -1,0 +1,169 @@
+{
+  "id": "ano5-s2-digital-saude",
+  "motor": "arrastar-alvo",
+  "titulo": "Digital saúde",
+  "instrucao": "Organize o fim do dia. A tela tem hora certa. A última hora antes de dormir não é dela.",
+  "layout": "linha-do-tempo",
+  "alvos": [
+    {
+      "id": "fim-da-tarde",
+      "rotulo": "Fim da tarde",
+      "cor": "sol",
+      "legenda": "Corpo em movimento, tela liberada",
+      "emoji": "🌇",
+      "imagem": "atividades/bicicleta"
+    },
+    {
+      "id": "depois-do-jantar",
+      "rotulo": "Depois do jantar",
+      "cor": "ceu",
+      "legenda": "A casa vai desacelerando",
+      "emoji": "🚿",
+      "imagem": "higiene/tomar-banho"
+    },
+    {
+      "id": "uma-hora-antes",
+      "rotulo": "Uma hora antes de dormir",
+      "cor": "folha",
+      "legenda": "Telas desligadas",
+      "emoji": "📖",
+      "imagem": "rotina/lendo"
+    },
+    {
+      "id": "na-cama",
+      "rotulo": "Na cama",
+      "cor": "uva",
+      "legenda": "Quarto escuro e silencioso",
+      "emoji": "🌙",
+      "imagem": "rotina/lua"
+    }
+  ],
+  "pecas": [
+    {
+      "id": "bicicleta",
+      "rotulo": "Andar de bicicleta",
+      "alvoId": "fim-da-tarde",
+      "emoji": "🚲",
+      "imagem": "atividades/bicicleta",
+      "explicacao": "Movimento no fim da tarde ajuda a dormir melhor à noite."
+    },
+    {
+      "id": "celular",
+      "rotulo": "Jogar no celular",
+      "alvoId": "fim-da-tarde",
+      "emoji": "📱",
+      "imagem": "atividades/celular-sentado",
+      "explicacao": "Tela mais cedo, sem problema. Perto de dormir é que atrapalha."
+    },
+    {
+      "id": "brincar",
+      "rotulo": "Brincar na rua",
+      "alvoId": "fim-da-tarde",
+      "emoji": "🤸",
+      "imagem": "rotina/brincar-fora",
+      "explicacao": "Luz do dia e movimento acertam o relógio do corpo."
+    },
+    {
+      "id": "banho",
+      "rotulo": "Tomar banho",
+      "alvoId": "depois-do-jantar",
+      "emoji": "🚿",
+      "imagem": "higiene/tomar-banho",
+      "explicacao": "O banho morno baixa a temperatura do corpo depois. Isso dá sono."
+    },
+    {
+      "id": "escovar",
+      "rotulo": "Escovar os dentes",
+      "alvoId": "depois-do-jantar",
+      "emoji": "🪥",
+      "imagem": "rotina/escovar-noite",
+      "explicacao": "Escovar à noite protege o dente pelas horas de boca fechada."
+    },
+    {
+      "id": "ler",
+      "rotulo": "Ler um livro",
+      "alvoId": "uma-hora-antes",
+      "emoji": "📖",
+      "imagem": "rotina/lendo",
+      "explicacao": "Livro no lugar da tela. O cérebro entende que o dia acabou."
+    },
+    {
+      "id": "respirar",
+      "rotulo": "Respirar devagar",
+      "alvoId": "uma-hora-antes",
+      "emoji": "🌬️",
+      "imagem": "rotina/respirar-calmo",
+      "explicacao": "Respiração lenta acalma o corpo. Funciona melhor que rolar o feed."
+    },
+    {
+      "id": "luz-apagada",
+      "rotulo": "Apagar a luz",
+      "alvoId": "na-cama",
+      "emoji": "🌑",
+      "imagem": "ambiente/luz-apagada",
+      "explicacao": "No escuro o corpo produz a substância que traz o sono."
+    },
+    {
+      "id": "dormir",
+      "rotulo": "Dormir",
+      "alvoId": "na-cama",
+      "emoji": "😴",
+      "imagem": "atividades/dormir",
+      "explicacao": "Nove a onze horas. É de noite que o corpo cresce e organiza a memória."
+    }
+  ],
+  "corpoAtivo": {
+    "titulo": "Pausa da tela",
+    "instrucao": "Toda hora de tela pede uma pausa assim.",
+    "passos": [
+      {
+        "id": "olhar-longe",
+        "rotulo": "Olhe longe",
+        "descricao": "Procure a coisa mais distante da sala e olhe para ela.",
+        "emoji": "👀",
+        "segundos": 20
+      },
+      {
+        "id": "pescoco",
+        "rotulo": "Solte o pescoço",
+        "descricao": "Incline a cabeça para um ombro e depois para o outro.",
+        "emoji": "🙂",
+        "imagem": "alongamentos/pescoco-lado",
+        "segundos": 25,
+        "verificacao": "cabeca-inclinada"
+      },
+      {
+        "id": "levantar",
+        "rotulo": "Levante e ande",
+        "descricao": "Levante da cadeira e dê uma volta pela sala.",
+        "emoji": "🚶",
+        "segundos": 30
+      }
+    ],
+    "perguntaEmocao": {
+      "enunciado": "Como ficaram os seus olhos e o seu pescoço?",
+      "opcoes": [
+        {
+          "id": "melhor",
+          "rotulo": "Melhor",
+          "emoji": "😌"
+        },
+        {
+          "id": "leve",
+          "rotulo": "Leve",
+          "emoji": "🎈"
+        },
+        {
+          "id": "cansado",
+          "rotulo": "Ainda cansados",
+          "emoji": "😮‍💨"
+        },
+        {
+          "id": "igual",
+          "rotulo": "Igual",
+          "emoji": "😐"
+        }
+      ]
+    }
+  }
+}

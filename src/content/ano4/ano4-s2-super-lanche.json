@@ -1,0 +1,129 @@
+{
+  "id": "ano4-s2-super-lanche",
+  "motor": "arrastar-alvo",
+  "titulo": "Super lanche",
+  "instrucao": "Separe os lanches em dois grupos. O de todo dia e o de vez em quando.",
+  "layout": "colunas",
+  "alvos": [
+    {
+      "id": "todo-dia",
+      "rotulo": "Todo dia",
+      "cor": "folha",
+      "legenda": "Alimenta e sustenta até a próxima refeição",
+      "emoji": "🍎",
+      "imagem": "alimentos/maca"
+    },
+    {
+      "id": "de-vez-em-quando",
+      "rotulo": "De vez em quando",
+      "cor": "coral",
+      "legenda": "Gostoso, mas não sustenta",
+      "emoji": "🍫",
+      "imagem": "alimentos/chocolate"
+    }
+  ],
+  "pecas": [
+    {
+      "id": "maca",
+      "rotulo": "Maçã",
+      "alvoId": "todo-dia",
+      "emoji": "🍎",
+      "imagem": "alimentos/maca",
+      "explicacao": "Fruta inteira tem fibra. A fibra segura a fome por mais tempo."
+    },
+    {
+      "id": "banana",
+      "rotulo": "Banana",
+      "alvoId": "todo-dia",
+      "emoji": "🍌",
+      "imagem": "alimentos/banana",
+      "explicacao": "Banana é lanche de bolso. Energia e potássio para o recreio."
+    },
+    {
+      "id": "pao",
+      "rotulo": "Pão",
+      "alvoId": "todo-dia",
+      "emoji": "🍞",
+      "imagem": "alimentos/pao",
+      "explicacao": "Pão sustenta até a próxima refeição. Melhor ainda com ovo ou queijo."
+    },
+    {
+      "id": "leite",
+      "rotulo": "Leite",
+      "alvoId": "todo-dia",
+      "emoji": "🥛",
+      "imagem": "alimentos/leite",
+      "explicacao": "Leite tem cálcio e proteína. Acompanha bem qualquer lanche."
+    },
+    {
+      "id": "agua",
+      "rotulo": "Água",
+      "alvoId": "todo-dia",
+      "emoji": "💧",
+      "imagem": "alimentos/agua",
+      "explicacao": "Água é a bebida do dia a dia. Mata a sede sem nenhum açúcar."
+    },
+    {
+      "id": "uva",
+      "rotulo": "Uva",
+      "alvoId": "todo-dia",
+      "emoji": "🍇",
+      "imagem": "alimentos/uva",
+      "explicacao": "Uva é doce de verdade, do jeito que veio da planta."
+    },
+    {
+      "id": "chocolate",
+      "rotulo": "Chocolate",
+      "alvoId": "de-vez-em-quando",
+      "emoji": "🍫",
+      "imagem": "alimentos/chocolate",
+      "explicacao": "Chocolate é de vez em quando. O açúcar dá um pique curto e depois some."
+    },
+    {
+      "id": "salgadinho",
+      "rotulo": "Salgadinho de pacote",
+      "alvoId": "de-vez-em-quando",
+      "emoji": "🥔",
+      "imagem": "alimentos/salgadinho",
+      "explicacao": "Salgadinho é sal e gordura. Enche a boca e não alimenta."
+    },
+    {
+      "id": "suco-caixinha",
+      "rotulo": "Suco de caixinha",
+      "alvoId": "de-vez-em-quando",
+      "emoji": "🧃",
+      "imagem": "alimentos/suco-laranja",
+      "explicacao": "Suco de caixinha tem açúcar de sobra. A fruta inteira é melhor."
+    }
+  ],
+  "corpoAtivo": {
+    "titulo": "Depois do lanche",
+    "instrucao": "Nada de deitar. Vamos mexer o corpo devagar.",
+    "passos": [
+      {
+        "id": "andar",
+        "rotulo": "Ande",
+        "descricao": "Dê uma volta andando pela sala, sem correr.",
+        "emoji": "🚶",
+        "segundos": 30
+      },
+      {
+        "id": "girar-tronco",
+        "rotulo": "Gire o tronco",
+        "descricao": "Com os pés firmes, gire o tronco para os dois lados.",
+        "emoji": "🔄",
+        "imagem": "movimentos/tronco",
+        "segundos": 20
+      },
+      {
+        "id": "respirar",
+        "rotulo": "Respire",
+        "descricao": "Puxe o ar pelo nariz e solte pela boca.",
+        "intencao": "acalmar",
+        "emoji": "🌬️",
+        "imagem": "alongamentos/respirar",
+        "segundos": 15
+      }
+    ]
+  }
+}

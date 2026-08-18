@@ -1,0 +1,168 @@
+{
+  "id": "ano4-s1-prato-colorido",
+  "motor": "arrastar-alvo",
+  "titulo": "Prato colorido",
+  "instrucao": "Monte o prato. Arraste cada alimento para o grupo dele.",
+  "layout": "colunas",
+  "alvos": [
+    {
+      "id": "frutas-verduras",
+      "rotulo": "Frutas e verduras",
+      "cor": "folha",
+      "legenda": "Cor, vitamina e fibra",
+      "emoji": "🥦",
+      "imagem": "alimentos/brocolis"
+    },
+    {
+      "id": "energia",
+      "rotulo": "Energia",
+      "cor": "sol",
+      "legenda": "Arroz, pão e raízes",
+      "emoji": "🍚",
+      "imagem": "alimentos/arroz"
+    },
+    {
+      "id": "construcao",
+      "rotulo": "Construção",
+      "cor": "coral",
+      "legenda": "Carne, ovo, feijão e leite",
+      "emoji": "🥚",
+      "imagem": "alimentos/ovo"
+    },
+    {
+      "id": "de-vez-em-quando",
+      "rotulo": "De vez em quando",
+      "cor": "uva",
+      "legenda": "Muito açúcar, muita gordura",
+      "emoji": "🍫",
+      "imagem": "alimentos/chocolate"
+    }
+  ],
+  "pecas": [
+    {
+      "id": "alface",
+      "rotulo": "Alface",
+      "alvoId": "frutas-verduras",
+      "emoji": "🥬",
+      "imagem": "alimentos/alface",
+      "explicacao": "Folha verde no prato todo dia. É fibra e vitamina."
+    },
+    {
+      "id": "cenoura",
+      "rotulo": "Cenoura",
+      "alvoId": "frutas-verduras",
+      "emoji": "🥕",
+      "imagem": "alimentos/cenoura",
+      "explicacao": "Cenoura é do grupo das verduras. A cor laranja avisa que tem vitamina A."
+    },
+    {
+      "id": "brocolis",
+      "rotulo": "Brócolis",
+      "alvoId": "frutas-verduras",
+      "emoji": "🥦",
+      "imagem": "alimentos/brocolis",
+      "explicacao": "Brócolis tem fibra e ferro. Quanto mais cor no prato, melhor."
+    },
+    {
+      "id": "maca",
+      "rotulo": "Maçã",
+      "alvoId": "frutas-verduras",
+      "emoji": "🍎",
+      "imagem": "alimentos/maca",
+      "explicacao": "Fruta entra no mesmo grupo das verduras. Vale como sobremesa também."
+    },
+    {
+      "id": "arroz",
+      "rotulo": "Arroz",
+      "alvoId": "energia",
+      "emoji": "🍚",
+      "imagem": "alimentos/arroz",
+      "explicacao": "Arroz é energia. É o combustível para brincar e prestar atenção na aula."
+    },
+    {
+      "id": "pao",
+      "rotulo": "Pão",
+      "alvoId": "energia",
+      "emoji": "🍞",
+      "imagem": "alimentos/pao",
+      "explicacao": "Pão também é energia. Integral dura mais tempo no corpo."
+    },
+    {
+      "id": "feijao",
+      "rotulo": "Feijão",
+      "alvoId": "construcao",
+      "emoji": "🫘",
+      "imagem": "alimentos/feijao",
+      "explicacao": "Feijão constrói o corpo. Com arroz, forma uma dupla completa."
+    },
+    {
+      "id": "ovo",
+      "rotulo": "Ovo",
+      "alvoId": "construcao",
+      "emoji": "🥚",
+      "imagem": "alimentos/ovo",
+      "explicacao": "Ovo é proteína pura. Constrói músculo, cabelo e pele."
+    },
+    {
+      "id": "frango",
+      "rotulo": "Frango",
+      "alvoId": "construcao",
+      "emoji": "🍗",
+      "imagem": "alimentos/frango",
+      "explicacao": "Carne é do grupo da construção. Ajuda o corpo a crescer."
+    },
+    {
+      "id": "leite",
+      "rotulo": "Leite",
+      "alvoId": "construcao",
+      "emoji": "🥛",
+      "imagem": "alimentos/leite",
+      "explicacao": "Leite constrói osso forte. Tem cálcio."
+    },
+    {
+      "id": "chocolate",
+      "rotulo": "Chocolate",
+      "alvoId": "de-vez-em-quando",
+      "emoji": "🍫",
+      "imagem": "alimentos/chocolate",
+      "explicacao": "Chocolate é para de vez em quando. Dá energia rápida e passa rápido."
+    },
+    {
+      "id": "salgadinho",
+      "rotulo": "Salgadinho",
+      "alvoId": "de-vez-em-quando",
+      "emoji": "🥔",
+      "imagem": "alimentos/salgadinho",
+      "explicacao": "Salgadinho tem muito sal e pouca coisa boa. Fica fora do dia a dia."
+    }
+  ],
+  "corpoAtivo": {
+    "titulo": "Prato feito, corpo em pé",
+    "instrucao": "Comida vira energia. Vamos gastar um pouco dela.",
+    "passos": [
+      {
+        "id": "marchar",
+        "rotulo": "Marche",
+        "descricao": "Marche no lugar levantando bem os joelhos.",
+        "emoji": "🚶",
+        "segundos": 25,
+        "verificacao": "joelho-levantado"
+      },
+      {
+        "id": "pular",
+        "rotulo": "Pule",
+        "descricao": "Dez pulinhos com os dois pés juntos.",
+        "emoji": "🦘",
+        "segundos": 20
+      },
+      {
+        "id": "alongar",
+        "rotulo": "Estique",
+        "descricao": "Estique os braços para cima e cresça bem alto.",
+        "emoji": "🙌",
+        "imagem": "alongamentos/bracos-alto",
+        "segundos": 20
+      }
+    ]
+  }
+}

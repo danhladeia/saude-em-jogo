@@ -1,0 +1,147 @@
+{
+  "id": "ano3-s3-tipos-de-esporte",
+  "motor": "associacao",
+  "titulo": "Jogo da memória",
+  "instrucao": "Vire duas cartas e ache o esporte junto com o gesto dele.",
+  "modo": "memoria",
+  "pares": [
+    {
+      "id": "futebol",
+      "esquerda": {
+        "rotulo": "Futebol",
+        "emoji": "⚽",
+        "imagem": "esportes/futebol"
+      },
+      "direita": {
+        "rotulo": "Chutar",
+        "emoji": "🦵"
+      },
+      "explicacao": "No futebol o gesto principal é chutar. A perna manda na bola."
+    },
+    {
+      "id": "basquete",
+      "esquerda": {
+        "rotulo": "Basquete",
+        "emoji": "🏀",
+        "imagem": "esportes/basquete"
+      },
+      "direita": {
+        "rotulo": "Arremessar",
+        "emoji": "🙌"
+      },
+      "explicacao": "No basquete o gesto é arremessar. Os braços empurram a bola para o alto."
+    },
+    {
+      "id": "volei",
+      "esquerda": {
+        "rotulo": "Vôlei",
+        "emoji": "🏐",
+        "imagem": "esportes/volei"
+      },
+      "direita": {
+        "rotulo": "Sacar",
+        "emoji": "✋"
+      },
+      "explicacao": "No vôlei o saque começa o ponto. A mão bate na bola com força."
+    },
+    {
+      "id": "natacao",
+      "esquerda": {
+        "rotulo": "Natação",
+        "emoji": "🏊",
+        "imagem": "esportes/natacao"
+      },
+      "direita": {
+        "rotulo": "Nadar",
+        "emoji": "🌊"
+      },
+      "explicacao": "Na natação braços e pernas trabalham juntos para empurrar a água."
+    },
+    {
+      "id": "atletismo",
+      "esquerda": {
+        "rotulo": "Atletismo",
+        "emoji": "🏃",
+        "imagem": "esportes/atletismo"
+      },
+      "direita": {
+        "rotulo": "Correr e saltar",
+        "emoji": "💨"
+      },
+      "explicacao": "O atletismo é correr, saltar e lançar. É o esporte mais antigo que existe."
+    },
+    {
+      "id": "ciclismo",
+      "esquerda": {
+        "rotulo": "Ciclismo",
+        "emoji": "🚴",
+        "imagem": "esportes/ciclismo"
+      },
+      "direita": {
+        "rotulo": "Pedalar",
+        "emoji": "🚲"
+      },
+      "explicacao": "No ciclismo as pernas giram sem parar. É a perna que faz a bicicleta andar."
+    }
+  ],
+  "corpoAtivo": {
+    "titulo": "Imite o gesto",
+    "instrucao": "Sem bola e sem quadra. Só o gesto, no lugar onde você está.",
+    "passos": [
+      {
+        "id": "chutar",
+        "rotulo": "Chute no ar",
+        "descricao": "Chute devagar com uma perna, depois com a outra.",
+        "emoji": "⚽",
+        "segundos": 20
+      },
+      {
+        "id": "arremessar",
+        "rotulo": "Arremesse no ar",
+        "descricao": "Levante os dois braços. Faça o gesto de jogar a bola na cesta.",
+        "emoji": "🏀",
+        "segundos": 20
+      },
+      {
+        "id": "nadar",
+        "rotulo": "Nade parado",
+        "descricao": "Gire os braços para a frente como quem nada crawl.",
+        "emoji": "🏊",
+        "segundos": 20
+      },
+      {
+        "id": "correr",
+        "rotulo": "Corra no lugar",
+        "descricao": "Corra parado por um pouquinho, bem rápido no fim.",
+        "emoji": "🏃",
+        "imagem": "atividades/correr",
+        "segundos": 25
+      }
+    ],
+    "perguntaEmocao": {
+      "enunciado": "Qual gesto você mais gostou de fazer?",
+      "opcoes": [
+        {
+          "id": "chutar",
+          "rotulo": "Chutar",
+          "emoji": "⚽"
+        },
+        {
+          "id": "arremessar",
+          "rotulo": "Arremessar",
+          "emoji": "🏀"
+        },
+        {
+          "id": "nadar",
+          "rotulo": "Nadar",
+          "emoji": "🏊"
+        },
+        {
+          "id": "correr",
+          "rotulo": "Correr",
+          "emoji": "🏃"
+        }
+      ]
+    }
+  }
+}

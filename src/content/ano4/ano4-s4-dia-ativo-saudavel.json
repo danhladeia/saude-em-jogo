@@ -1,0 +1,170 @@
+{
+  "id": "ano4-s4-dia-ativo-saudavel",
+  "motor": "arrastar-alvo",
+  "titulo": "Dia ativo saudável",
+  "instrucao": "Monte o seu dia. Arraste cada coisa para a hora certa.",
+  "layout": "linha-do-tempo",
+  "alvos": [
+    {
+      "id": "manha",
+      "rotulo": "Manhã",
+      "cor": "sol",
+      "legenda": "Ao acordar",
+      "emoji": "🌅",
+      "imagem": "rotina/acordando"
+    },
+    {
+      "id": "meio-dia",
+      "rotulo": "Meio-dia",
+      "cor": "folha",
+      "legenda": "Hora do almoço",
+      "emoji": "🍽️",
+      "imagem": "alimentos/arroz"
+    },
+    {
+      "id": "tarde",
+      "rotulo": "Tarde",
+      "cor": "ceu",
+      "legenda": "Depois da escola",
+      "emoji": "🤸",
+      "imagem": "atividades/pique-pega"
+    },
+    {
+      "id": "noite",
+      "rotulo": "Noite",
+      "cor": "uva",
+      "legenda": "Antes de dormir",
+      "emoji": "🌙",
+      "imagem": "rotina/lua"
+    }
+  ],
+  "pecas": [
+    {
+      "id": "acordar",
+      "rotulo": "Acordar na hora",
+      "alvoId": "manha",
+      "emoji": "⏰",
+      "imagem": "rotina/despertador",
+      "explicacao": "Acordar sempre na mesma hora deixa o corpo com o relógio certo."
+    },
+    {
+      "id": "cafe",
+      "rotulo": "Tomar café da manhã",
+      "alvoId": "manha",
+      "emoji": "🥐",
+      "imagem": "rotina/cafe-da-manha",
+      "explicacao": "Café da manhã liga o corpo. Sem ele a aula fica mais difícil."
+    },
+    {
+      "id": "escola",
+      "rotulo": "Ir para a escola",
+      "alvoId": "manha",
+      "emoji": "🎒",
+      "imagem": "rotina/mochila",
+      "explicacao": "Se der para ir a pé, melhor ainda. Já conta como movimento."
+    },
+    {
+      "id": "almoco",
+      "rotulo": "Almoçar",
+      "alvoId": "meio-dia",
+      "emoji": "🍚",
+      "imagem": "alimentos/arroz",
+      "explicacao": "Almoço com arroz, feijão, carne e verdura sustenta a tarde inteira."
+    },
+    {
+      "id": "beber-agua",
+      "rotulo": "Beber água",
+      "alvoId": "meio-dia",
+      "emoji": "💧",
+      "imagem": "rotina/beber-agua",
+      "explicacao": "Água ao longo do dia, sem esperar a sede chegar."
+    },
+    {
+      "id": "brincar",
+      "rotulo": "Brincar na rua",
+      "alvoId": "tarde",
+      "emoji": "🏃",
+      "imagem": "atividades/pique-pega",
+      "explicacao": "A tarde é a melhor hora de se mexer. Uma hora por dia, somando tudo."
+    },
+    {
+      "id": "ler",
+      "rotulo": "Ler um pouco",
+      "alvoId": "tarde",
+      "emoji": "📖",
+      "imagem": "rotina/lendo",
+      "explicacao": "Ler também descansa. Descanso não é só ficar deitado."
+    },
+    {
+      "id": "escovar",
+      "rotulo": "Escovar os dentes",
+      "alvoId": "noite",
+      "emoji": "🪥",
+      "imagem": "rotina/escovar-noite",
+      "explicacao": "A escovação da noite é a mais importante do dia."
+    },
+    {
+      "id": "dormir",
+      "rotulo": "Dormir cedo",
+      "alvoId": "noite",
+      "emoji": "😴",
+      "imagem": "atividades/dormir",
+      "explicacao": "Dormir cedo fecha o dia. É de noite que o corpo cresce."
+    }
+  ],
+  "corpoAtivo": {
+    "titulo": "A hora de mexer",
+    "instrucao": "Você acabou de montar o dia. Agora faça o pedaço da tarde.",
+    "passos": [
+      {
+        "id": "correr",
+        "rotulo": "Corra no lugar",
+        "descricao": "Corra parado por um tempinho.",
+        "emoji": "🏃",
+        "imagem": "atividades/correr",
+        "segundos": 30
+      },
+      {
+        "id": "amarelinha",
+        "rotulo": "Pule como na amarelinha",
+        "descricao": "Pule num pé só, depois nos dois. Repita.",
+        "emoji": "🦶",
+        "imagem": "atividades/amarelinha",
+        "segundos": 25
+      },
+      {
+        "id": "alongar",
+        "rotulo": "Alongue as pernas",
+        "descricao": "Estique uma perna para trás e segure. Troque o lado.",
+        "emoji": "🦵",
+        "imagem": "alongamentos/perna-tras",
+        "segundos": 25
+      }
+    ],
+    "perguntaEmocao": {
+      "enunciado": "Qual parte do dia você mais gosta?",
+      "opcoes": [
+        {
+          "id": "manha",
+          "rotulo": "Manhã",
+          "emoji": "🌅"
+        },
+        {
+          "id": "meio-dia",
+          "rotulo": "Meio-dia",
+          "emoji": "🍽️"
+        },
+        {
+          "id": "tarde",
+          "rotulo": "Tarde",
+          "emoji": "🤸"
+        },
+        {
+          "id": "noite",
+          "rotulo": "Noite",
+          "emoji": "🌙"
+        }
+      ]
+    }
+  }
+}

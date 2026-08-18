@@ -1,0 +1,245 @@
+{
+  "id": "ano3-s2-trilha-do-sono",
+  "motor": "quiz",
+  "titulo": "Trilha saudável",
+  "instrucao": "Cada resposta certa anda uma casa na trilha até a cama.",
+  "feedback": "trilha",
+  "perguntas": [
+    {
+      "id": "quantas-horas",
+      "enunciado": "Quantas horas uma criança precisa dormir?",
+      "tipo": "unica",
+      "opcoes": [
+        {
+          "id": "quatro",
+          "rotulo": "Umas quatro",
+          "correta": false,
+          "emoji": "4️⃣"
+        },
+        {
+          "id": "nove-a-onze",
+          "rotulo": "De nove a onze",
+          "correta": true,
+          "emoji": "🌙",
+          "imagem": "rotina/lua"
+        },
+        {
+          "id": "duas",
+          "rotulo": "Duas bastam",
+          "correta": false,
+          "emoji": "🚫"
+        }
+      ],
+      "explicacao": "De nove a onze horas por noite. É dormindo que o corpo cresce e guarda o que você aprendeu."
+    },
+    {
+      "id": "antes-de-dormir",
+      "enunciado": "O que ajuda a pegar no sono?",
+      "tipo": "unica",
+      "opcoes": [
+        {
+          "id": "ler",
+          "rotulo": "Ler um pouco na cama",
+          "correta": true,
+          "emoji": "📖",
+          "imagem": "rotina/lendo"
+        },
+        {
+          "id": "celular",
+          "rotulo": "Ficar no celular",
+          "correta": false,
+          "emoji": "📱",
+          "imagem": "atividades/celular-sentado"
+        },
+        {
+          "id": "correr",
+          "rotulo": "Correr pela casa",
+          "correta": false,
+          "emoji": "🏃",
+          "imagem": "atividades/correr"
+        }
+      ],
+      "explicacao": "A luz da tela engana o cérebro e atrasa o sono. Um livro faz o contrário."
+    },
+    {
+      "id": "escovar",
+      "enunciado": "O que fazer antes de deitar?",
+      "tipo": "unica",
+      "opcoes": [
+        {
+          "id": "escovar",
+          "rotulo": "Escovar os dentes",
+          "correta": true,
+          "emoji": "🪥",
+          "imagem": "rotina/escovar-noite"
+        },
+        {
+          "id": "comer-doce",
+          "rotulo": "Comer um doce",
+          "correta": false,
+          "emoji": "🍫",
+          "imagem": "alimentos/chocolate"
+        },
+        {
+          "id": "nada",
+          "rotulo": "Nada",
+          "correta": false,
+          "emoji": "🚫"
+        }
+      ],
+      "explicacao": "A escovação da noite é a mais importante. A boca fica muitas horas fechada até de manhã."
+    },
+    {
+      "id": "quarto",
+      "enunciado": "Como o quarto ajuda a dormir melhor?",
+      "tipo": "multipla",
+      "opcoes": [
+        {
+          "id": "escuro",
+          "rotulo": "Escuro",
+          "correta": true,
+          "emoji": "🌑",
+          "imagem": "ambiente/luz-apagada"
+        },
+        {
+          "id": "silencio",
+          "rotulo": "Silencioso",
+          "correta": true,
+          "emoji": "🤫",
+          "imagem": "simbolos/silencio"
+        },
+        {
+          "id": "arrumado",
+          "rotulo": "Com a cama arrumada",
+          "correta": true,
+          "emoji": "🛏️",
+          "imagem": "ambiente/cama-arrumada"
+        },
+        {
+          "id": "tv-ligada",
+          "rotulo": "Com a televisão ligada",
+          "correta": false,
+          "emoji": "📺",
+          "imagem": "atividades/tv-deitado"
+        }
+      ],
+      "explicacao": "Escuro, quieto e arrumado. O corpo entende que chegou a hora."
+    },
+    {
+      "id": "sinal-de-sono",
+      "enunciado": "Qual é o sinal de que o corpo está pedindo sono?",
+      "tipo": "unica",
+      "opcoes": [
+        {
+          "id": "bocejo",
+          "rotulo": "Bocejar",
+          "correta": true,
+          "emoji": "🥱",
+          "imagem": "rotina/bocejando"
+        },
+        {
+          "id": "fome",
+          "rotulo": "Sentir fome",
+          "correta": false,
+          "emoji": "🍽️"
+        },
+        {
+          "id": "sede",
+          "rotulo": "Sentir sede",
+          "correta": false,
+          "emoji": "💧"
+        }
+      ],
+      "explicacao": "O bocejo é o corpo avisando. Quando ele avisa, vale ir para a cama."
+    },
+    {
+      "id": "dormir-pouco",
+      "enunciado": "O que acontece quando você dorme pouco?",
+      "tipo": "multipla",
+      "opcoes": [
+        {
+          "id": "cansaco",
+          "rotulo": "Fica cansado no dia seguinte",
+          "correta": true,
+          "emoji": "😴"
+        },
+        {
+          "id": "irritado",
+          "rotulo": "Fica irritado com facilidade",
+          "correta": true,
+          "emoji": "😠",
+          "imagem": "emocoes/raiva"
+        },
+        {
+          "id": "dificuldade",
+          "rotulo": "Custa a prestar atenção na aula",
+          "correta": true,
+          "emoji": "🤔"
+        },
+        {
+          "id": "cresce-mais",
+          "rotulo": "Cresce mais rápido",
+          "correta": false,
+          "emoji": "🚫"
+        }
+      ],
+      "explicacao": "Noite curta cobra o preço no outro dia inteiro."
+    }
+  ],
+  "corpoAtivo": {
+    "titulo": "Modo soninho",
+    "instrucao": "Três coisas que acalmam o corpo antes de dormir.",
+    "passos": [
+      {
+        "id": "respirar",
+        "rotulo": "Respire fundo",
+        "descricao": "Puxe o ar pelo nariz contando até quatro. Solte devagar pela boca.",
+        "intencao": "acalmar",
+        "emoji": "🌬️",
+        "imagem": "rotina/respirar-calmo",
+        "segundos": 30
+      },
+      {
+        "id": "alongar-pescoco",
+        "rotulo": "Solte o pescoço",
+        "descricao": "Incline a cabeça para um ombro, depois para o outro. Bem devagar.",
+        "emoji": "🙂",
+        "imagem": "alongamentos/pescoco",
+        "segundos": 20
+      },
+      {
+        "id": "esticar-corpo",
+        "rotulo": "Estique o corpo",
+        "descricao": "Estique os braços para cima e depois solte tudo, mole.",
+        "emoji": "🙌",
+        "imagem": "alongamentos/bracos-alto",
+        "segundos": 20
+      }
+    ],
+    "perguntaEmocao": {
+      "enunciado": "Como o seu corpo está agora?",
+      "opcoes": [
+        {
+          "id": "calmo",
+          "rotulo": "Calmo",
+          "emoji": "😌"
+        },
+        {
+          "id": "com-sono",
+          "rotulo": "Com sono",
+          "emoji": "🥱"
+        },
+        {
+          "id": "leve",
+          "rotulo": "Leve",
+          "emoji": "🎈"
+        },
+        {
+          "id": "agitado",
+          "rotulo": "Ainda agitado",
+          "emoji": "⚡"
+        }
+      ]
+    }
+  }
+}

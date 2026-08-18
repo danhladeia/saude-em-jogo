@@ -1,0 +1,146 @@
+{
+  "id": "ano3-s4-classificacao-corporal",
+  "motor": "arrastar-alvo",
+  "titulo": "Classificação corporal",
+  "instrucao": "Arraste cada movimento para a caixa certa. Os dois fazem bem. O que muda é o combinado.",
+  "layout": "colunas",
+  "alvos": [
+    {
+      "id": "atividade-fisica",
+      "rotulo": "Atividade física",
+      "cor": "folha",
+      "legenda": "Movimento do dia a dia, sem hora marcada",
+      "emoji": "🚶",
+      "imagem": "rotina/mochila"
+    },
+    {
+      "id": "exercicio-fisico",
+      "rotulo": "Exercício físico",
+      "cor": "coral",
+      "legenda": "Planejado, com repetição e um objetivo",
+      "emoji": "🏋️",
+      "imagem": "esportes/natacao"
+    }
+  ],
+  "pecas": [
+    {
+      "id": "escada",
+      "rotulo": "Subir a escada",
+      "alvoId": "atividade-fisica",
+      "emoji": "🪜",
+      "imagem": "equilibrio/escada-a",
+      "explicacao": "Subir escada é atividade física. Acontece no meio do dia, sem ninguém marcar."
+    },
+    {
+      "id": "pique",
+      "rotulo": "Brincar de pique-pega",
+      "alvoId": "atividade-fisica",
+      "emoji": "🏃",
+      "imagem": "atividades/pique-pega",
+      "explicacao": "Brincadeira é atividade física. Você corre muito sem estar treinando."
+    },
+    {
+      "id": "ir-a-pe",
+      "rotulo": "Ir para a escola a pé",
+      "alvoId": "atividade-fisica",
+      "emoji": "🎒",
+      "imagem": "rotina/mochila",
+      "explicacao": "Ir a pé é atividade física. O corpo se mexe porque a vida pede."
+    },
+    {
+      "id": "arrumar-cama",
+      "rotulo": "Arrumar a cama",
+      "alvoId": "atividade-fisica",
+      "emoji": "🛏️",
+      "imagem": "ambiente/cama-arrumada",
+      "explicacao": "Até arrumar a cama é atividade física. Toda tarefa da casa move o corpo."
+    },
+    {
+      "id": "treino-natacao",
+      "rotulo": "Treino de natação",
+      "alvoId": "exercicio-fisico",
+      "emoji": "🏊",
+      "imagem": "esportes/natacao",
+      "explicacao": "Treino de natação é exercício físico. Tem hora, tem professor e tem repetição."
+    },
+    {
+      "id": "aula-futsal",
+      "rotulo": "Aula de futsal",
+      "alvoId": "exercicio-fisico",
+      "emoji": "⚽",
+      "imagem": "esportes/futsal",
+      "explicacao": "A aula de futsal é exercício físico. Alguém planejou o que fazer e por quanto tempo."
+    },
+    {
+      "id": "pular-corda",
+      "rotulo": "Pular corda contando séries",
+      "alvoId": "exercicio-fisico",
+      "emoji": "🪢",
+      "imagem": "atividades/pular-corda",
+      "explicacao": "Contando séries vira exercício físico. O objetivo é melhorar, não só brincar."
+    },
+    {
+      "id": "treino-bike",
+      "rotulo": "Treino de ciclismo",
+      "alvoId": "exercicio-fisico",
+      "emoji": "🚴",
+      "imagem": "esportes/ciclismo",
+      "explicacao": "Treino de ciclismo é exercício físico. Tem distância combinada e tem repetição."
+    }
+  ],
+  "corpoAtivo": {
+    "titulo": "Um de cada",
+    "instrucao": "Vamos fazer uma atividade física e um exercício físico, um atrás do outro.",
+    "passos": [
+      {
+        "id": "andar",
+        "rotulo": "Ande pela sala",
+        "descricao": "Levante e dê uma volta andando, sem pressa nenhuma.",
+        "emoji": "🚶",
+        "segundos": 25
+      },
+      {
+        "id": "agachar",
+        "rotulo": "Dez agachamentos",
+        "descricao": "Agache e levante dez vezes, contando alto.",
+        "emoji": "🏋️",
+        "segundos": 30,
+        "verificacao": "agachado"
+      },
+      {
+        "id": "respirar",
+        "rotulo": "Respire",
+        "descricao": "Puxe o ar pelo nariz e solte pela boca, três vezes.",
+        "intencao": "acalmar",
+        "emoji": "🌬️",
+        "imagem": "alongamentos/respirar",
+        "segundos": 20
+      }
+    ],
+    "perguntaEmocao": {
+      "enunciado": "Qual dos dois cansou mais?",
+      "opcoes": [
+        {
+          "id": "andar",
+          "rotulo": "Andar",
+          "emoji": "🚶"
+        },
+        {
+          "id": "agachar",
+          "rotulo": "Agachar",
+          "emoji": "🏋️"
+        },
+        {
+          "id": "iguais",
+          "rotulo": "Foram iguais",
+          "emoji": "🤝"
+        },
+        {
+          "id": "nenhum",
+          "rotulo": "Nenhum cansou",
+          "emoji": "😄"
+        }
+      ]
+    }
+  }
+}

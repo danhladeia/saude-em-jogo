@@ -1,0 +1,228 @@
+{
+  "id": "ano4-s3-missao-corpo-e-movimento",
+  "motor": "quiz",
+  "titulo": "Missão corpo e movimento",
+  "instrucao": "Cinco perguntas para encher a barra de energia. Depois a missão é com o seu corpo.",
+  "feedback": "energia",
+  "perguntas": [
+    {
+      "id": "quanto-por-dia",
+      "enunciado": "Quanto tempo por dia uma criança precisa se mexer?",
+      "tipo": "unica",
+      "opcoes": [
+        {
+          "id": "dez",
+          "rotulo": "Dez minutos",
+          "correta": false,
+          "emoji": "⏱️"
+        },
+        {
+          "id": "uma-hora",
+          "rotulo": "Pelo menos uma hora",
+          "correta": true,
+          "emoji": "⚡",
+          "imagem": "figurinhas/musculo"
+        },
+        {
+          "id": "nenhum",
+          "rotulo": "Não precisa",
+          "correta": false,
+          "emoji": "🚫"
+        }
+      ],
+      "explicacao": "Uma hora por dia, somando tudo. Recreio, brincadeira e caminho da escola contam."
+    },
+    {
+      "id": "coracao",
+      "enunciado": "O que acontece com o coração quando você corre?",
+      "tipo": "unica",
+      "opcoes": [
+        {
+          "id": "acelera",
+          "rotulo": "Ele bate mais rápido e fica mais forte",
+          "correta": true,
+          "emoji": "❤️",
+          "imagem": "figurinhas/coracao"
+        },
+        {
+          "id": "para",
+          "rotulo": "Ele desacelera",
+          "correta": false,
+          "emoji": "🚫"
+        },
+        {
+          "id": "nada",
+          "rotulo": "Não muda nada",
+          "correta": false,
+          "emoji": "😐"
+        }
+      ],
+      "explicacao": "O coração é um músculo. Quanto mais você corre, mais forte ele fica."
+    },
+    {
+      "id": "conta-como-movimento",
+      "enunciado": "O que conta como se mexer?",
+      "tipo": "multipla",
+      "opcoes": [
+        {
+          "id": "brincar",
+          "rotulo": "Brincar na rua",
+          "correta": true,
+          "emoji": "🤸",
+          "imagem": "atividades/pique-pega"
+        },
+        {
+          "id": "bicicleta",
+          "rotulo": "Andar de bicicleta",
+          "correta": true,
+          "emoji": "🚲",
+          "imagem": "atividades/bicicleta"
+        },
+        {
+          "id": "amarelinha",
+          "rotulo": "Jogar amarelinha",
+          "correta": true,
+          "emoji": "🦶",
+          "imagem": "atividades/amarelinha"
+        },
+        {
+          "id": "assistir",
+          "rotulo": "Assistir a um jogo na televisão",
+          "correta": false,
+          "emoji": "📺",
+          "imagem": "atividades/tv-deitado"
+        }
+      ],
+      "explicacao": "Vale tudo que tira você da cadeira. Assistir não conta. Quem se mexe é o jogador."
+    },
+    {
+      "id": "sentado-demais",
+      "enunciado": "O que o corpo sente quando fica sentado tempo demais?",
+      "tipo": "multipla",
+      "opcoes": [
+        {
+          "id": "dor-costas",
+          "rotulo": "Dor nas costas",
+          "correta": true,
+          "emoji": "😣"
+        },
+        {
+          "id": "perna-dura",
+          "rotulo": "Perna dura e pesada",
+          "correta": true,
+          "emoji": "🦵"
+        },
+        {
+          "id": "cansaco",
+          "rotulo": "Cansaço mesmo sem fazer nada",
+          "correta": true,
+          "emoji": "😮‍💨"
+        },
+        {
+          "id": "mais-forte",
+          "rotulo": "Músculo mais forte",
+          "correta": false,
+          "emoji": "🚫"
+        }
+      ],
+      "explicacao": "Corpo parado enferruja. De hora em hora vale levantar e dar uma volta."
+    },
+    {
+      "id": "antes-de-correr",
+      "enunciado": "O que fazer antes de uma corrida?",
+      "tipo": "unica",
+      "opcoes": [
+        {
+          "id": "aquecer",
+          "rotulo": "Aquecer o corpo devagar",
+          "correta": true,
+          "emoji": "🔥",
+          "imagem": "alongamentos/coxa"
+        },
+        {
+          "id": "comer-muito",
+          "rotulo": "Comer bastante",
+          "correta": false,
+          "emoji": "🍽️"
+        },
+        {
+          "id": "nada",
+          "rotulo": "Sair correndo direto",
+          "correta": false,
+          "emoji": "🚫"
+        }
+      ],
+      "explicacao": "Aquecer avisa o músculo que o movimento vem. Assim ele não se machuca."
+    }
+  ],
+  "corpoAtivo": {
+    "titulo": "A missão",
+    "instrucao": "Cinco estações, uma de cada vez. Faça no seu ritmo.",
+    "passos": [
+      {
+        "id": "aquecer",
+        "rotulo": "Aqueça",
+        "descricao": "Marche no lugar e gire os braços para a frente.",
+        "emoji": "🔥",
+        "segundos": 30
+      },
+      {
+        "id": "corrida",
+        "rotulo": "Corrida parada",
+        "descricao": "Corra no lugar levantando bem os joelhos.",
+        "emoji": "🏃",
+        "imagem": "atividades/correr",
+        "segundos": 30
+      },
+      {
+        "id": "salto",
+        "rotulo": "Salto",
+        "descricao": "Dez pulos com os dois pés juntos, como se pulasse corda.",
+        "emoji": "🪢",
+        "imagem": "atividades/pular-corda",
+        "segundos": 25
+      },
+      {
+        "id": "equilibrio",
+        "rotulo": "Equilíbrio",
+        "descricao": "Fique num pé só. Troque de pé na metade.",
+        "emoji": "🦩",
+        "imagem": "equilibrio/um-pe",
+        "segundos": 30
+      },
+      {
+        "id": "voltar-calma",
+        "rotulo": "Volte à calma",
+        "descricao": "Ande devagar e respire fundo três vezes.",
+        "emoji": "🌬️",
+        "imagem": "rotina/respirar-calmo",
+        "segundos": 30
+      }
+    ],
+    "perguntaEmocao": {
+      "enunciado": "Como você se sentiu na missão?",
+      "opcoes": [
+        {
+          "id": "forte",
+          "rotulo": "Forte",
+          "emoji": "💪"
+        },
+        {
+          "id": "animado",
+          "rotulo": "Animado",
+          "emoji": "🤩"
+        },
+        {
+          "id": "cansado",
+          "rotulo": "Cansado",
+          "emoji": "😮‍💨"
+        },
+        {
+          "id": "orgulhoso",
+          "rotulo": "Orgulhoso",
+          "emoji": "🏆"
+        }
+      ]
+    }
+  }
+}

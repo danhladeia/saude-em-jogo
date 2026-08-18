@@ -1,0 +1,161 @@
+{
+  "id": "ano5-s3-missao-ambiente-saudavel",
+  "motor": "arrastar-alvo",
+  "titulo": "Missão ambiente saudável",
+  "instrucao": "O quarto está bagunçado. Arraste cada coisa para o lugar dela.",
+  "layout": "colunas",
+  "alvos": [
+    {
+      "id": "reciclavel",
+      "rotulo": "Lixeira de reciclável",
+      "cor": "ceu",
+      "legenda": "Plástico, papel e vidro",
+      "emoji": "♻️",
+      "imagem": "ambiente/lixeira-reciclavel"
+    },
+    {
+      "id": "organico",
+      "rotulo": "Lixeira de orgânico",
+      "cor": "folha",
+      "legenda": "Restos de comida",
+      "emoji": "🍌",
+      "imagem": "ambiente/lixeira-organico"
+    },
+    {
+      "id": "cesto-roupa",
+      "rotulo": "Cesto de roupa",
+      "cor": "sol",
+      "legenda": "Roupa suja",
+      "emoji": "👕",
+      "imagem": "ambiente/cesto-roupa"
+    },
+    {
+      "id": "caixa-brinquedos",
+      "rotulo": "Caixa de brinquedos",
+      "cor": "coral",
+      "legenda": "O que é de brincar",
+      "emoji": "🧸",
+      "imagem": "ambiente/caixa-brinquedos"
+    },
+    {
+      "id": "desligar",
+      "rotulo": "Desligar e fechar",
+      "cor": "uva",
+      "legenda": "Economizar água e energia",
+      "emoji": "💡",
+      "imagem": "ambiente/luz-apagada"
+    }
+  ],
+  "pecas": [
+    {
+      "id": "garrafa",
+      "rotulo": "Garrafa plástica",
+      "alvoId": "reciclavel",
+      "emoji": "🍶",
+      "imagem": "ambiente/garrafa",
+      "explicacao": "Plástico é reciclável. Vira garrafa nova em vez de virar lixo no rio."
+    },
+    {
+      "id": "papel",
+      "rotulo": "Papel amassado",
+      "alvoId": "reciclavel",
+      "emoji": "📄",
+      "imagem": "ambiente/papel",
+      "explicacao": "Papel é reciclável. Cada quilo reciclado poupa árvore e água."
+    },
+    {
+      "id": "casca",
+      "rotulo": "Casca de banana",
+      "alvoId": "organico",
+      "emoji": "🍌",
+      "imagem": "ambiente/casca-banana",
+      "explicacao": "Casca é orgânico. Vira adubo em vez de mau cheiro no quarto."
+    },
+    {
+      "id": "camiseta",
+      "rotulo": "Camiseta no chão",
+      "alvoId": "cesto-roupa",
+      "emoji": "👕",
+      "imagem": "ambiente/camiseta-chao",
+      "explicacao": "Roupa suja no cesto. No chão vira mofo e ácaro, que fazem mal para respirar."
+    },
+    {
+      "id": "urso",
+      "rotulo": "Urso de pelúcia",
+      "alvoId": "caixa-brinquedos",
+      "emoji": "🧸",
+      "imagem": "ambiente/urso-chao",
+      "explicacao": "Brinquedo guardado é brinquedo que ninguém pisa nem tropeça."
+    },
+    {
+      "id": "luz",
+      "rotulo": "Luz acesa de dia",
+      "alvoId": "desligar",
+      "emoji": "💡",
+      "imagem": "ambiente/luz-acesa",
+      "explicacao": "Luz acesa à toa gasta energia sem servir para nada."
+    },
+    {
+      "id": "torneira",
+      "rotulo": "Torneira aberta",
+      "alvoId": "desligar",
+      "emoji": "🚰",
+      "imagem": "ambiente/torneira-aberta",
+      "explicacao": "Torneira pingando desperdiça litros por dia. Fechar é o gesto mais barato que existe."
+    }
+  ],
+  "corpoAtivo": {
+    "titulo": "Arrumar também é movimento",
+    "instrucao": "Arrumar a casa move o corpo de verdade. Vamos treinar os gestos.",
+    "passos": [
+      {
+        "id": "agachar",
+        "rotulo": "Agache para pegar",
+        "descricao": "Agache dobrando os joelhos, como quem pega algo do chão. Dez vezes.",
+        "emoji": "🙇",
+        "segundos": 30,
+        "verificacao": "agachado"
+      },
+      {
+        "id": "guardar-alto",
+        "rotulo": "Guarde no alto",
+        "descricao": "Estique os braços para cima como quem guarda na prateleira.",
+        "emoji": "🙌",
+        "imagem": "alongamentos/bracos-alto",
+        "segundos": 25
+      },
+      {
+        "id": "andar",
+        "rotulo": "Ande carregando",
+        "descricao": "Ande pela sala com os braços para a frente. Faça de conta que leva uma caixa.",
+        "emoji": "📦",
+        "segundos": 25
+      }
+    ],
+    "perguntaEmocao": {
+      "enunciado": "Como fica o quarto arrumado?",
+      "opcoes": [
+        {
+          "id": "leve",
+          "rotulo": "Mais leve",
+          "emoji": "🎈"
+        },
+        {
+          "id": "calmo",
+          "rotulo": "Mais calmo",
+          "emoji": "😌"
+        },
+        {
+          "id": "orgulhoso",
+          "rotulo": "Dá orgulho",
+          "emoji": "🏆"
+        },
+        {
+          "id": "cansativo",
+          "rotulo": "Deu trabalho",
+          "emoji": "😮‍💨"
+        }
+      ]
+    }
+  }
+}

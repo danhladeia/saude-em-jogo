@@ -8,6 +8,12 @@ interface FiguraProps {
   className?: string
   /** Esconde o rótulo escrito — usado quando o texto já aparece ao lado. */
   semTexto?: boolean
+  /**
+   * 'pequeno' para as peças já encaixadas nas caixas de classificar: ali
+   * cabem oito numa coluna, e 96px cada empurraria a bandeja para fora da
+   * tela do laboratório.
+   */
+  tamanho?: 'normal' | 'pequeno'
 }
 
 /**
@@ -18,9 +24,10 @@ interface FiguraProps {
  * cai no emoji: conteúdo novo continua jogável antes de a arte chegar, e o
  * validador de conteúdo é quem reclama da chave errada, no build.
  */
-export function Figura({ item, className, semTexto = false }: FiguraProps) {
+export function Figura({ item, className, semTexto = false, tamanho = 'normal' }: FiguraProps) {
   const personagem = usarPerfil((e) => e.perfil.personagem)
   const url = urlDoSprite(item.imagem, personagem)
+  const pequeno = tamanho === 'pequeno'
 
   return (
     <span className={cn('flex flex-col items-center justify-center gap-2 text-center', className)}>
@@ -29,10 +36,10 @@ export function Figura({ item, className, semTexto = false }: FiguraProps) {
           src={url}
           alt={semTexto ? item.rotulo : ''}
           draggable={false}
-          className="h-24 w-24 select-none object-contain"
+          className={cn('select-none object-contain', pequeno ? 'h-12 w-12' : 'h-24 w-24')}
         />
       ) : item.emoji ? (
-        <span aria-hidden={!semTexto} className="text-6xl leading-none">
+        <span aria-hidden={!semTexto} className={cn('leading-none', pequeno ? 'text-3xl' : 'text-6xl')}>
           {item.emoji}
         </span>
       ) : null}

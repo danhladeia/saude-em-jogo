@@ -140,7 +140,7 @@ export const CATALOGO: Atividade[] = [
     eixos: ['promocao-da-saude'],
     objetivo: 'Compreender como a água ajuda nas funções do corpo humano.',
     motor: 'quiz',
-    disponivel: false,
+    disponivel: true,
   },
   {
     id: 'ano3-s2-trilha-do-sono',
@@ -150,8 +150,10 @@ export const CATALOGO: Atividade[] = [
     jogo: 'Trilha saudável',
     eixos: ['promocao-da-saude'],
     objetivo: 'Compreender a importância do sono para o funcionamento do corpo e para a saúde.',
-    motor: 'trilha',
-    disponivel: false,
+    // 'trilha' virou quiz com a pele de trilha: cada acerto anda uma casa
+    // até a cama. O tabuleiro era moldura, não mecânica.
+    motor: 'quiz',
+    disponivel: true,
   },
   {
     id: 'ano3-s3-tipos-de-esporte',
@@ -163,7 +165,7 @@ export const CATALOGO: Atividade[] = [
     objetivo:
       'Compreender os diferentes tipos de esportes, reconhecendo suas características e gestos motores.',
     motor: 'associacao',
-    disponivel: false,
+    disponivel: true,
   },
   {
     id: 'ano3-s4-classificacao-corporal',
@@ -174,8 +176,9 @@ export const CATALOGO: Atividade[] = [
     eixos: ['letramento-corporal'],
     objetivo:
       'Compreender a diferença entre atividade física e exercício físico, reconhecendo como ambos contribuem para a saúde.',
-    motor: 'classificar',
-    disponivel: false,
+    // 'classificar' é arrastar-alvo com dois alvos grandes.
+    motor: 'arrastar-alvo',
+    disponivel: true,
   },
 
   // ---------------------------------------------------------------- 4º ano
@@ -188,8 +191,9 @@ export const CATALOGO: Atividade[] = [
     eixos: ['promocao-da-saude'],
     objetivo:
       'Reconhecer a importância de uma alimentação equilibrada, estimulando escolhas conscientes de alimentos.',
-    motor: 'montagem',
-    disponivel: false,
+    // 'montagem' é arrastar-alvo com uma caixa por grupo de alimento.
+    motor: 'arrastar-alvo',
+    disponivel: true,
   },
   {
     id: 'ano4-s2-super-lanche',
@@ -199,8 +203,8 @@ export const CATALOGO: Atividade[] = [
     jogo: 'Super lanche',
     eixos: ['promocao-da-saude'],
     objetivo: 'Identificar lanches saudáveis e os impactos das escolhas alimentares.',
-    motor: 'montagem',
-    disponivel: false,
+    motor: 'arrastar-alvo',
+    disponivel: true,
   },
   {
     id: 'ano4-s3-missao-corpo-e-movimento',
@@ -211,8 +215,10 @@ export const CATALOGO: Atividade[] = [
     eixos: ['letramento-corporal', 'promocao-da-saude'],
     objetivo:
       'Estimular o movimento corporal e a consciência sobre a importância de se manter ativo.',
-    motor: 'runner',
-    disponivel: false,
+    // 'runner' seria o jogo mais caro do plano. Virou quiz + bloco de
+    // movimento: em vez de clicar num boneco que pula, a criança pula.
+    motor: 'quiz',
+    disponivel: true,
   },
   {
     id: 'ano4-s4-dia-ativo-saudavel',
@@ -223,8 +229,9 @@ export const CATALOGO: Atividade[] = [
     eixos: ['letramento-corporal', 'promocao-da-saude'],
     objetivo:
       'Organizar o dia de forma equilibrada, combinando alimentação, movimento, descanso e hidratação.',
-    motor: 'rotina',
-    disponivel: false,
+    // 'rotina' é arrastar-alvo com layout de linha do tempo.
+    motor: 'arrastar-alvo',
+    disponivel: true,
   },
 
   // ---------------------------------------------------------------- 5º ano
@@ -238,7 +245,7 @@ export const CATALOGO: Atividade[] = [
     objetivo:
       'Reconhecer e respeitar a diversidade corporal, valorizando as diferenças entre as pessoas.',
     motor: 'quiz',
-    disponivel: false,
+    disponivel: true,
   },
   {
     id: 'ano5-s2-digital-saude',
@@ -248,8 +255,8 @@ export const CATALOGO: Atividade[] = [
     jogo: 'Digital saúde',
     eixos: ['letramento-corporal', 'promocao-da-saude'],
     objetivo: 'Refletir sobre o uso equilibrado das telas e sua relação com o corpo e a saúde.',
-    motor: 'rotina',
-    disponivel: false,
+    motor: 'arrastar-alvo',
+    disponivel: true,
   },
   {
     id: 'ano5-s3-missao-ambiente-saudavel',
@@ -260,8 +267,10 @@ export const CATALOGO: Atividade[] = [
     eixos: ['letramento-corporal', 'promocao-da-saude'],
     objetivo:
       'Compreender a importância de manter o ambiente limpo e organizado como forma de cuidar da saúde e do bem-estar coletivo.',
-    motor: 'classificar',
-    disponivel: false,
+    // Já era arrastar-alvo desde sempre: cenário bagunçado, arrasta cada
+    // coisa para o lugar dela.
+    motor: 'arrastar-alvo',
+    disponivel: true,
   },
   {
     id: 'ano5-s4-corpo-em-acao',
@@ -273,7 +282,7 @@ export const CATALOGO: Atividade[] = [
     objetivo:
       'Estimular a prática de atividade física, promovendo percepção corporal, coordenação e bem-estar.',
     motor: 'corpo-ativo',
-    disponivel: false,
+    disponivel: true,
   },
 ]
 

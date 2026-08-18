@@ -1,0 +1,208 @@
+{
+  "id": "ano3-s1-agua-em-jogo",
+  "motor": "quiz",
+  "titulo": "Água em jogo",
+  "instrucao": "Responda o que a água faz dentro do seu corpo.",
+  "feedback": "padrao",
+  "perguntas": [
+    {
+      "id": "quanto-de-agua",
+      "enunciado": "Quanto do seu corpo é feito de água?",
+      "tipo": "unica",
+      "opcoes": [
+        {
+          "id": "pouco",
+          "rotulo": "Quase nada",
+          "correta": false,
+          "emoji": "🚫"
+        },
+        {
+          "id": "mais-da-metade",
+          "rotulo": "Mais da metade",
+          "correta": true,
+          "emoji": "💧",
+          "imagem": "figurinhas/gota"
+        },
+        {
+          "id": "um-copo",
+          "rotulo": "Só um copinho",
+          "correta": false,
+          "emoji": "🥛",
+          "imagem": "rotina/copo-agua"
+        }
+      ],
+      "explicacao": "Mais da metade do seu corpo é água. Por isso ela faz tanta falta."
+    },
+    {
+      "id": "melhor-bebida",
+      "enunciado": "Qual bebida mata a sede sem nenhum açúcar?",
+      "tipo": "unica",
+      "opcoes": [
+        {
+          "id": "agua",
+          "rotulo": "Água",
+          "correta": true,
+          "emoji": "💧",
+          "imagem": "alimentos/agua"
+        },
+        {
+          "id": "suco",
+          "rotulo": "Suco de laranja",
+          "correta": false,
+          "emoji": "🍊",
+          "imagem": "alimentos/suco-laranja"
+        },
+        {
+          "id": "leite",
+          "rotulo": "Leite",
+          "correta": false,
+          "emoji": "🥛",
+          "imagem": "alimentos/leite"
+        }
+      ],
+      "explicacao": "Água pura mata a sede na hora. As outras bebidas alimentam, mas não substituem a água."
+    },
+    {
+      "id": "quando-perde",
+      "enunciado": "Quando o corpo perde mais água?",
+      "tipo": "unica",
+      "opcoes": [
+        {
+          "id": "suando",
+          "rotulo": "Correndo e suando",
+          "correta": true,
+          "emoji": "💦",
+          "imagem": "rotina/suando"
+        },
+        {
+          "id": "dormindo",
+          "rotulo": "Dormindo",
+          "correta": false,
+          "emoji": "😴",
+          "imagem": "atividades/dormir"
+        },
+        {
+          "id": "lendo",
+          "rotulo": "Lendo um livro",
+          "correta": false,
+          "emoji": "📖",
+          "imagem": "rotina/lendo"
+        }
+      ],
+      "explicacao": "O suor é água saindo para refrescar você. Depois de correr, o corpo pede água de volta."
+    },
+    {
+      "id": "o-que-faz",
+      "enunciado": "O que a água faz dentro de você?",
+      "tipo": "multipla",
+      "opcoes": [
+        {
+          "id": "refresca",
+          "rotulo": "Refresca quando você sua",
+          "correta": true,
+          "emoji": "💦"
+        },
+        {
+          "id": "digestao",
+          "rotulo": "Ajuda a digerir a comida",
+          "correta": true,
+          "emoji": "🍽️"
+        },
+        {
+          "id": "xixi",
+          "rotulo": "Leva embora o que o corpo não quer",
+          "correta": true,
+          "emoji": "🚽"
+        },
+        {
+          "id": "pesado",
+          "rotulo": "Deixa o corpo pesado e lento",
+          "correta": false,
+          "emoji": "🚫"
+        }
+      ],
+      "explicacao": "A água refresca, ajuda a digestão e limpa o corpo por dentro."
+    },
+    {
+      "id": "quantos-copos",
+      "enunciado": "Quantos copos de água uma criança precisa por dia?",
+      "tipo": "unica",
+      "opcoes": [
+        {
+          "id": "um",
+          "rotulo": "Um só",
+          "correta": false,
+          "emoji": "1️⃣"
+        },
+        {
+          "id": "seis-a-oito",
+          "rotulo": "De seis a oito",
+          "correta": true,
+          "emoji": "💧",
+          "imagem": "rotina/beber-agua"
+        },
+        {
+          "id": "nenhum",
+          "rotulo": "Nenhum, o suco basta",
+          "correta": false,
+          "emoji": "🚫"
+        }
+      ],
+      "explicacao": "Seis a oito copos por dia. E mais ainda nos dias de calor ou de muito movimento."
+    }
+  ],
+  "corpoAtivo": {
+    "titulo": "Suou, bebeu",
+    "instrucao": "Vamos gastar um pouco de água do corpo e repor depois.",
+    "passos": [
+      {
+        "id": "correr-lugar",
+        "rotulo": "Corra no lugar",
+        "descricao": "Corra parado levantando bem os joelhos.",
+        "emoji": "🏃",
+        "imagem": "atividades/correr",
+        "segundos": 30
+      },
+      {
+        "id": "polichinelo",
+        "rotulo": "Polichinelo",
+        "descricao": "Abra e feche as pernas batendo palma em cima.",
+        "emoji": "🤸",
+        "segundos": 20
+      },
+      {
+        "id": "beber",
+        "rotulo": "Beba água",
+        "descricao": "Pegue sua garrafa e beba alguns goles devagar.",
+        "emoji": "💧",
+        "imagem": "rotina/beber-agua",
+        "segundos": 20
+      }
+    ],
+    "perguntaEmocao": {
+      "enunciado": "Como o seu corpo ficou depois da água?",
+      "opcoes": [
+        {
+          "id": "refrescado",
+          "rotulo": "Refrescado",
+          "emoji": "😌"
+        },
+        {
+          "id": "com-energia",
+          "rotulo": "Com energia",
+          "emoji": "⚡"
+        },
+        {
+          "id": "com-sede",
+          "rotulo": "Ainda com sede",
+          "emoji": "😛"
+        },
+        {
+          "id": "cansado",
+          "rotulo": "Cansado",
+          "emoji": "😮‍💨"
+        }
+      ]
+    }
+  }
+}

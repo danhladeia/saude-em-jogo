@@ -1,0 +1,90 @@
+{
+  "id": "ano5-s4-corpo-em-acao",
+  "motor": "corpo-ativo",
+  "titulo": "Corpo em ação",
+  "instrucao": "Uma sessão inteira de movimento. Do aquecimento até a volta à calma.",
+  "bloco": {
+    "titulo": "Corpo em ação",
+    "instrucao": "Sete estações. Faça no seu ritmo — pode parar e voltar quando quiser.",
+    "passos": [
+      {
+        "id": "aquecer",
+        "rotulo": "Aquecimento",
+        "descricao": "Marche no lugar. Gire os braços para a frente e para trás.",
+        "emoji": "🔥",
+        "segundos": 40
+      },
+      {
+        "id": "corrida",
+        "rotulo": "Corrida parada",
+        "descricao": "Corra no lugar levantando os joelhos até a altura da cintura.",
+        "emoji": "🏃",
+        "imagem": "atividades/correr",
+        "segundos": 30
+      },
+      {
+        "id": "polichinelo",
+        "rotulo": "Polichinelo",
+        "descricao": "Abra e feche as pernas batendo as mãos acima da cabeça.",
+        "emoji": "🤸",
+        "segundos": 30
+      },
+      {
+        "id": "agachamento",
+        "rotulo": "Agachamento",
+        "descricao": "Agache até onde der e volte. Costas retas, joelho na direção do pé.",
+        "emoji": "🏋️",
+        "segundos": 30
+      },
+      {
+        "id": "equilibrio",
+        "rotulo": "Equilíbrio",
+        "descricao": "Fique num pé só, braços abertos. Troque de pé na metade.",
+        "emoji": "🦩",
+        "imagem": "equilibrio/um-pe",
+        "segundos": 40
+      },
+      {
+        "id": "alongar",
+        "rotulo": "Alongamento",
+        "descricao": "Estique uma perna para trás e segure. Depois a outra.",
+        "emoji": "🦵",
+        "imagem": "alongamentos/perna-tras",
+        "segundos": 40
+      },
+      {
+        "id": "volta-calma",
+        "rotulo": "Volta à calma",
+        "descricao": "Ande devagar e respire fundo. Sinta o coração ir desacelerando.",
+        "emoji": "🌬️",
+        "imagem": "rotina/respirar-calmo",
+        "segundos": 40
+      }
+    ],
+    "perguntaEmocao": {
+      "enunciado": "Como está o seu corpo agora?",
+      "opcoes": [
+        {
+          "id": "forte",
+          "rotulo": "Forte",
+          "emoji": "💪"
+        },
+        {
+          "id": "leve",
+          "rotulo": "Leve",
+          "emoji": "🎈"
+        },
+        {
+          "id": "cansado",
+          "rotulo": "Cansado",
+          "emoji": "😮‍💨"
+        },
+        {
+          "id": "orgulhoso",
+          "rotulo": "Orgulhoso",
+          "emoji": "🏆"
+        }
+      ]
+    }
+  }
+}
